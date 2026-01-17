@@ -23,7 +23,7 @@
         inputs.stylix.nixosModules.stylix
         ../modules/stylix
       ];
-      home = [
+      home-manager = [
         inputs.stylix.homeModules.stylix
         ../modules/stylix/home-manager.nix
       ];
@@ -32,7 +32,12 @@
       system = [
         inputs.ucodenix.nixosModules.default
         ../modules/ucodenix
-      ]
-    }
+      ];
+    };
+    librewolf = {
+      home-manager = [
+        ../apps/librewolf/home-manager.nix
+      ];
+    };
   };
 }

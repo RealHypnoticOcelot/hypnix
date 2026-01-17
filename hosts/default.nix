@@ -17,7 +17,6 @@ in
     system = "x86_64-linux";
     profiles = [ # Presets for different applications, useful if you need to import multiple modules for one application
       "sops"
-      "impermanence"
       "stylix"
       "ucodenix"
     ];
