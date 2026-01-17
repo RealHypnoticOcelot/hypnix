@@ -28,7 +28,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixos/nixpkgs/nixos-25.11";
-    ucodenix.url  "github:e-tho/ucodenix"
+    ucodenix.url = "github:e-tho/ucodenix";
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs"; # Instead of installing nixpkgs again(since it's a dependency of this package), just use the one that already exists!
