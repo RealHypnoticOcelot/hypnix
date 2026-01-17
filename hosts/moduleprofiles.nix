@@ -13,10 +13,7 @@
       ];
     };
     impermanence = {
-      system = [
-        inputs.impermanence.nixosModules.impermanence
-        ../modules/impermanence
-      ];
+      # This is handled specially in mkHost{}
     };
     stylix = {
       system = [
@@ -43,6 +40,6 @@
       home-manager = [
         ../apps/vesktop/home-manager.nix
       ];
-    }
+    };
   };
 }

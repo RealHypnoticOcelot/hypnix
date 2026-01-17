@@ -24,5 +24,6 @@ in
       ../modules/disko/btrfs-subvolumes.nix
       ../modules/common/printing.nix
     ];
+    extraPersist = []; # Directories to persist with Impermanence
   };
 }

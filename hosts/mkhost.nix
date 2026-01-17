@@ -2,6 +2,7 @@
 
 let
   moduleProfiles = import ./moduleprofiles.nix;
+  mkPersist = import ../modules/impermanence/mkpersist.nix;
 in
 {
   mkHost = { # The arguments that mkHost supports go below this line
@@ -11,6 +12,7 @@ in
     profiles ? [ ],
     extraModules ? [ ],
     extraHomeManagerModules ? [ ],
+    extraPersist ? [ ],
   }:
   let
     systemModules = lib.flatten (
@@ -33,6 +35,10 @@ in
         ) moduleProfiles.${profile}.home-manager
       ) profiles
     );
+    
+    _ = lib.optionals (profiles ? impermanence) (mkPersist { profiles = profiles; extraPersist = extraPersist; });
+    # This is how we're handling Impermanence! Maybe there's a better way, but I don't know it.
+    # The idea is that we'll be receiving the list of enabled profiles, so that we can account for them 
   in
   lib.nixosSystem {
     inherit system;

@@ -1,12 +1,24 @@
+{ lib, inputs, userName, ... }:
+
+let
+  modulePersist = import ./modulepersist.nix;
+in
 {
-  lib,
-  userName,
-  ...
-}:
-{
-  users.mutableUsers = lib.mkForce false;
-  users.users.${userName}.hashedPasswordFile = "/persistent/passwd_${userName}";
-  environment.persistence."/persistent" = {
+  mkPersist = {
+    profiles ? [ ],
+    extraPersist ? [],
+  }:
+  let
+    modulePersist = lib.flatten (
+      map (
+        profile:
+        lib.optionals (
+          modulePersist ? profile && modulePersist.${profile}
+        ) moduleProfiles.${profile}
+      ) profiles # The function isn't mapping TO profiles, it's mapping FROM profiles
+    );
+  in
+  environment.persistence."/persistent" {
     enable = true;
     hideMounts = true;
     directories = [
@@ -22,7 +34,9 @@
       # /etc is where configuration files live!
       "/etc/nixos" # NixOS configs, like the file you're looking at right now!
       "/etc/ssh" # Where the computer's(not user's) SSH keypairs live, this is necessary to ensure SOPS works as intended
-    ];
+    ]
+    ++ modulePersist
+    ++ extraPersist;
     files = [
       "/etc/machine-id" # A unique device ID generated upon first boot, useful for identifying devices even after hardware changes
     ];
@@ -35,5 +49,7 @@
         "Music"
       ];
     };
+  users.mutableUsers = lib.mkForce false;
+  users.users.${userName}.hashedPasswordFile = "/persistent/passwd_${userName}";
   };
 }
