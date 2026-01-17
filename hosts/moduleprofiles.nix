@@ -39,5 +39,10 @@
         ../apps/librewolf/home-manager.nix
       ];
     };
+    vesktop = {
+      home-manager = [
+        ../apps/vesktop/home-manager.nix
+      ];
+    }
   };
 }

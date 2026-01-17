@@ -27,7 +27,7 @@
   description = "Basic System Configuration";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixos/nixpkgs/nixos-25.11";
+    nixpkgs.url = "github:nixos/nixos/nixpkgs/nixos-unstable";
     ucodenix.url = "github:e-tho/ucodenix";
     disko = {
       url = "github:nix-community/disko";
