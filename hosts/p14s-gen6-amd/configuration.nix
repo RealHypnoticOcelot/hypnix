@@ -47,19 +47,13 @@
     enable32Bit = true; # Install 32-bit drivers for applications like Wine
   };
 
-  # Enable sound with pipewire.
-  services.fstrim.enable = true; # Tells SSDs when data is no longer in use, so that it can be erased and marked as free
-
-  security = {
-    rtkit.enable = true; # Increases Pipewire performance by allowing for use of the realtime scheduler
-  };
-
   environment.systemPackages = with pkgs; [
     git
   ];
 
-  programs.command-not-found.enable = true;
-  # If you run a command and it's not available, show what packages will provide that command
+  programs.command-not-found.enable = true; # If you run a command and it's not available, show what packages will provide that command
+  services.fstrim.enable = true; # Tells SSDs when data is no longer in use, so that it can be erased and marked as free
+  zramSwap.enable = false; # Increases RAM availability at the cost of computational power
 
   nix = {
     settings = {
@@ -69,9 +63,6 @@
       ]; # Enable flakes!
     };
   };
-
-  zramSwap.enable = false;
-  # Increases RAM availability at the cost of computational power
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

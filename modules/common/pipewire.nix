@@ -8,4 +8,7 @@
       jack.enable = true; # JACK Audio Connection Kit; I don't know that I have any applications that use this, but it can't hurt to enable!
     };
   };
+  security = {
+    rtkit.enable = true; # Increases Pipewire performance by allowing for use of the realtime scheduler
+  };
 }
