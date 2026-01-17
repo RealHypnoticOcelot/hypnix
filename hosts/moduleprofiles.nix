@@ -41,5 +41,25 @@
         ../apps/vesktop/home-manager.nix
       ];
     };
+    printing = {
+      system = [
+        ../modules/common/printing.nix
+      ];
+    };
+    networking = {
+      system = [
+        ../modules/common/networking.nix
+      ];
+    };
+    pipewire = {
+      system = [
+        ../modules/common/pipewire.nix
+      ];
+    };
+    fonts = {
+      system = [
+        ../modules/common/fonts.nix
+      ];
+    };
   };
 }

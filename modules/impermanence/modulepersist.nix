@@ -7,12 +7,11 @@
     };
     stylix = {
     };
-    ucodenix = {
-    };
     librewolf = {
-      
+      # TODO: Add paths that LibreWolf uses
     };
     vesktop = {
+      # TODO: Vesktop too
     };
   };
 }

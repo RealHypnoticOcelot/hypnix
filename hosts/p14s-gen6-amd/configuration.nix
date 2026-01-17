@@ -38,24 +38,9 @@
     isNormalUser = true;
     description = userName;
     extraGroups = [
-      "networkmanager" # Allows for network configuration
       "wheel" # Allows for use of sudo
       "video" # Allows for access to video devices(and virtual webcams, like OBS)
     ];
-  };
-
-  networking = {
-    inherit hostName;
-    networkmanager = {
-      enable = true;
-      wifi.backend = "iwd"; # A modern replacement for the alternative, wpa_supplicant
-    };
-    wireless.iwd.settings = {
-      Settings = {
-        AddressRandomization = network;
-        # "network" randomizes the MAC Address upon each connection to a network. See iwd.config(5) for more details
-      }
-    }
   };
 
   hardware.graphics = {
@@ -63,25 +48,7 @@
   };
 
   # Enable sound with pipewire.
-  services = {
-    pipewire = {
-      enable = true;
-      alsa.enable = true; # Kernel-level sound API
-      alsa.support32Bit = true;
-      pulse.enable = true;
-      jack.enable = true; # JACK Audio Connection Kit; I don't know that I have any applications that use this, but it can't hurt to enable!
-    };
-    fstrim.enable = true; # Tells SSDs when data is no longer in use, so that it can be erased and marked as free
-  };
-
-  fonts = {
-    packages = with pkgs; [
-      noto-fonts
-      noto-fonts-cjk-sans # Chinese, Japanese, and Korean fonts
-      noto-fonts-color-emoji
-      liberation_ttf
-    ];
-  };
+  services.fstrim.enable = true; # Tells SSDs when data is no longer in use, so that it can be erased and marked as free
 
   security = {
     rtkit.enable = true; # Increases Pipewire performance by allowing for use of the realtime scheduler

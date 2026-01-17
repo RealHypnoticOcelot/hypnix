@@ -16,13 +16,16 @@ in
     hostPreset = "p14s-gen6-amd"; # MUST be the same as the name of the attribute
     system = "x86_64-linux";
     profiles = [ # Presets for different applications, useful if you need to import multiple modules for one application
+      "printing"
+      "networking"
+      "fonts"
+      "pipewire"
       "sops"
       "stylix"
       "ucodenix"
     ];
     extraModules = [ # Basically just anything you'd need to import that's not a preset
       ../modules/disko/btrfs-subvolumes.nix
-      ../modules/common/printing.nix
     ];
     extraPersist = []; # Directories to persist with Impermanence
   };
