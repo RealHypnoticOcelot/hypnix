@@ -59,10 +59,5 @@
         ../modules/common/pipewire.nix
       ];
     };
-    fonts = {
-      system = [
-        ../modules/common/fonts.nix
-      ];
-    };
   };
 }

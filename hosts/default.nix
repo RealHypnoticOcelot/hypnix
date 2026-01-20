@@ -17,12 +17,13 @@ in
     system = "x86_64-linux";
     profiles = [ # Presets for different applications, useful if you need to import multiple modules for one application
       "networking-networkmanager-iwdbackend"
-      "fonts"
       "printing"
       "pipewire"
       "sops"
       "stylix"
       "ucodenix"
+      "librewolf"
+      "vesktop"
     ];
     extraModules = [ # Basically just anything you'd need to import that's not a preset
       ../modules/disko/btrfs-subvolumes.nix

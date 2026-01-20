@@ -47,6 +47,15 @@
     enable32Bit = true; # Install 32-bit drivers for applications like Wine
   };
 
+  fonts = {
+    packages = with pkgs; [
+      noto-fonts
+      noto-fonts-cjk-sans # Chinese, Japanese, and Korean fonts
+      noto-fonts-color-emoji
+      liberation_ttf
+    ];
+  };
+
   environment.systemPackages = with pkgs; [
     git
   ];
