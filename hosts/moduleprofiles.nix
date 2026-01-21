@@ -15,11 +15,10 @@
     disko = {
       system = [
         inputs.disko.nixosModules.disko
-        { inputs.disko.devices.disk.main.device = systemDisk; }
       ];
     };
     impermanence = {
-      # This is handled specially in mkHost{}
+      # This is also handled specially in mkHost{}
       system = [
         inputs.impermanence.nixosModules.impermanence
       ];

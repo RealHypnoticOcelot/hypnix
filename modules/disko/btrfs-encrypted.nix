@@ -1,4 +1,4 @@
-{ hostName, lib, config, ... }:
+{ hostName, lib, config, systemDisk, ... }:
 
 {
   config = {
@@ -7,6 +7,7 @@
       disk = {
         main = {
           type = "disk";
+          device = systemDisk;
           content = {
             type = "gpt";
             partitions = {
