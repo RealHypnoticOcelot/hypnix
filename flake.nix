@@ -21,7 +21,7 @@
       inputs = {
         nixpkgs.follows = "nixpkgs";
         home-manager.follows = "home-manager";
-      }
+      };
     };
     stylix = {
       url = "github:nix-community/stylix";
