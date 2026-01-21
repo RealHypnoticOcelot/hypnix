@@ -1,8 +1,9 @@
 { hostName, config, lib, systemDisk, ... }:
 
 {
+  options.disko.test = {};
   config = {
-    boot.supportedFilesystems = ["btrfs"];
+    boot.supportedFilesystems = [ "btrfs" ];
     disko.devices = {
       disk = {
         main = {
@@ -24,7 +25,7 @@
                   mountOptions = [ "umask=0077" ];
                 };
               };
-              root = { # The rest of the partition, contains all of the volumes you'll need
+              luks = { # The rest of the partition, contains all of the volumes you'll need
                 size = "100%";
                 content = {
                   type = "luks";
