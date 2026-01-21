@@ -1,16 +1,16 @@
 { pkgs, userName, stateVersion, ... }:
 {
+  # Let Home Manager install and manage itself.
+  programs.home-manager.enable = true;
+
   home = {
     username = userName;
-    homeDirectory = "/home/${userName}";
 
-    # Let Home Manager install and manage itself.
-    programs.home-manager.enable = true;
+    homeDirectory = "/home/${userName}";
 
     packages = with pkgs; [
       # Incude any packages you'd like installed for the user!
     ];
-    
     # This value determines the Home Manager release that your
     # configuration is compatible with. This helps avoid breakage
     # when a new Home Manager release introduces backwards
