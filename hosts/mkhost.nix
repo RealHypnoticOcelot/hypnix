@@ -1,4 +1,4 @@
-{ lib, inputs, moduleProfiles, userName, hostName, systemDisk, ... }:
+{ lib, inputs, userName, hostName, systemDisk, ... }:
 
 let
   moduleProfiles = import ./moduleprofiles.nix;
