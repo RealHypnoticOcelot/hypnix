@@ -25,7 +25,7 @@
   stylix = {
     system = [
       inputs.stylix.nixosModules.stylix
-      ../modules/stylix
+      # ../modules/stylix
     ];
     home-manager = [
       inputs.stylix.homeModules.stylix
