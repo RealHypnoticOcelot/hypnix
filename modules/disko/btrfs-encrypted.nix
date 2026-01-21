@@ -1,9 +1,9 @@
-{ hostName, lib, config, systemDisk, ... }:
+{ hostName, inputs, config, systemDisk, ... }:
 
 {
   config = {
     boot.supportedFilesystems = ["btrfs"];
-    disko.devices = {
+    inputs.disko.devices = {
       disk = {
         main = {
           type = "disk";
