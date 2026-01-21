@@ -36,12 +36,9 @@ environment.persistence."/persistent" {
     "/var/lib/bluetooth" # Bluetooth
     "/var/lib/nixos" # NixOS
     "/var/lib/systemd/coredump" # Logs generated upon program crashes
-    "/var/lib/iwd" # "iNet wireless daemon", daemon to improve connection speeds
-    "/var/lib/NetworkManager" # Allows for adding and configuring networks
     "/var/lib/fprint" # Fingerprint readers!
     # /etc is where configuration files live!
     "/etc/nixos" # NixOS configs, like the file you're looking at right now!
-    "/etc/ssh" # Where the computer's(not user's) SSH keypairs live, this is necessary to ensure SOPS works as intended
   ]
   ++ modulePersist
   ++ extraPersist;
