@@ -1,4 +1,4 @@
-{ hostName, config, ... }:
+{ hostName, lib, config, ... }:
 
 {
   config = {
