@@ -83,7 +83,7 @@ lib.nixosSystem {
   ]
   ++ systemModules
   ++ extraModules
-  ++ (if profiles ? impermanence then [
+  ++ (if profiles ? impermanence then [ # If impermanence is one of the profiles, import the module that handles it specially
     (import ../modules/impermanence/mkpersist.nix {
       inherit inputs profiles extraPersist extraHomeManagerPersist;
     })
