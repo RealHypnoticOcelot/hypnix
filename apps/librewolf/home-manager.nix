@@ -31,8 +31,8 @@
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/terms-of-service-didnt-read/latest.xpi";
           installation_mode = "force_installed";
           default_area = "menupanel";
-        }
-      }
+        };
+      };
     };
     settings = {
       # Librewolf-specific settings
