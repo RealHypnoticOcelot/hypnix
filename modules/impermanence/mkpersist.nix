@@ -1,14 +1,7 @@
-{ lib, inputs, userName, ... }:
+{ lib, inputs, userName, profiles, extraPersist, extraHomeManagerPersist, ... }:
 
 let
   modulePersist = import ./modulepersist.nix;
-in
-{
-  profiles ? [ ],
-  extraPersist ? [ ],
-  extraHomeManagerPersist ? [ ],
-}:
-let
   modulePersist = lib.flatten (
     map (
       profile:
