@@ -8,7 +8,7 @@
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs"; # Instead of installing nixpkgs again(since it's a dependency of this package), just use the one that already exists!
     };
-    sops = {
+    sops-nix = {
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs"; # Must be repeated, because you can't do "let ... in" with flake inputs
     };
