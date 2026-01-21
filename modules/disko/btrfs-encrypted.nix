@@ -1,4 +1,4 @@
-{ hostName, inputs, ... }:
+{ pkgs, lib, config, hostName, inputs, ... }:
 
 {
   inputs.disko.devices = {
