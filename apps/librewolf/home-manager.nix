@@ -16,7 +16,7 @@
           }
         ];
         Default = "Startpage";
-      }
+      };
     };
     preferences = {
       # Librewolf-specific settings
@@ -24,8 +24,7 @@
       "webgl.disabled" = false;
       "privacy.clearOnShutdown.history" = false;
       "privacy.clearOnShutdown.downloads" = false;
-      # Firefox settings
-      
+      # Firefox settings, put them down below this line
     } // lib.optionalAttrs services.desktopManager.plasma6.enable { # If Plasma 6 is enabled, then include these in preferences
       "widget.use-xdg-desktop-portal.file-picker" = 1;
     };
