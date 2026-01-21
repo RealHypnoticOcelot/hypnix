@@ -3,5 +3,5 @@
 {
   services.ucodenix = {
     enable = true;
-  }
+  };
 }
