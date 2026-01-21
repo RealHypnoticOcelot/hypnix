@@ -37,6 +37,4 @@
       };
     };
   };
-
-  environment.etc."firefox/policies/policies.json".target = "librewolf/policies/policies.json";
 }
