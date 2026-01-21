@@ -7,7 +7,7 @@
       discordBranch = "canary";
     };
     vencord.themes = {
-      "./themes/pesterchum.css"
+      Pesterchum = "./themes/pesterchum.css"
     };
     vencord.settings = {
       plugins = {
@@ -69,7 +69,7 @@
         VoiceMessages.enabled = true;
         YoutubeAdblock.enabled = true;
       };
-      enabledThemes = [ "pesterchum.css" ];
+      enabledThemes = [ "Pesterchum" ];
     };
   };
 }
