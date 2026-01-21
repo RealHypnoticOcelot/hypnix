@@ -1,7 +1,7 @@
-{ hostName, ... }:
+{ hostName, inputs, ... }:
 
 {
-  disko.devices = {
+  inputs.disko.devices = {
     disk = {
       main = {
         type = "disk";
