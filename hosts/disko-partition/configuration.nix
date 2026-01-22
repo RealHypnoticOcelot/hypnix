@@ -1,4 +1,4 @@
-{ stateVersion, userName, ... }:
+{ stateVersion, userName, lib, ... }:
 {
 
   users.mutableUsers = lib.mkDefault true; # This gets overridden if you use Impermanence
