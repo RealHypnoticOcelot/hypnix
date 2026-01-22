@@ -13,9 +13,17 @@ let
   }); #mkHost is the function that generates the system using the profiles and modules we specify
 in
 {
+  disko-partition = mkHost {
+    stateVersion = "25.11";
+    hostPreset = "p14s-gen6-amd";
+    profile = [ "disko" ];
+    extraModules = [
+      ../modules/disko/${diskFormat}.nix
+    ];
+  };
   p14s-gen6-amd = mkHost {
     stateVersion = "25.11";
-    hostPreset = "p14s-gen6-amd"; # MUST be the same as the name of the attribute
+    hostPreset = "p14s-gen6-amd"; # Determines which hosts/{host} folder you import from
     system = "x86_64-linux";
     profiles = [ # Presets for different applications, useful if you need to import multiple modules for one application
       "systemd-boot"
@@ -31,7 +39,7 @@ in
       "vesktop"
     ];
     extraModules = [ # Basically just anything you'd need to import that's not a preset
-      ../modules/disko/btrfs-encrypted.nix # When using Disko, you must import the specific disk layout you want.
+      ../modules/disko/${diskFormat}.nix # When using Disko, you must import the specific disk layout you want.
     ];
     extraPersist = []; # Extra directories to persist with Impermanence
   };

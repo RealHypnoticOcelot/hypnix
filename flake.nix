@@ -41,10 +41,11 @@
     userName = "hypnoticocelot";
     hostName = "hypnoticocelot-p14s";
     systemDisk = "/dev/nvme0n1";
+    diskFormat = "btrfs-encrypted";
   in {
     nixosConfigurations = import ./hosts { # Shorthand for ./hosts/default.nix
       inherit nixpkgs inputs; # ./hosts/default.nix will now be able to reference nixpkgs and inputs! Also inputs.disko, inputs.sops, etc.
-      inherit userName hostName systemDisk; # Values set prior to setup
+      inherit userName hostName systemDisk diskFormat; # Values set prior to setup
       inherit (nixpkgs) lib; # Equal to lib = nixpkgs.lib, and then inheriting lib
     };
   };
