@@ -43,6 +43,7 @@ in
     # These are imported in order!
       "systemd-boot"
       "disko"
+      "hyprland"
       "networking-networkmanager-iwdbackend"
       "printing"
       "pipewire"
@@ -51,6 +52,9 @@ in
       "ucodenix"
       "librewolf"
       "vesktop"
+      "obs"
+      "easyeffects"
+      "steam"
     ];
     extraModules = []; # Basically just anything you'd need to import that's not a preset
     extraHomeManagerModules = []; # The same, but for Home Manager

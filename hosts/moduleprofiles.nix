@@ -78,9 +78,27 @@
       ../apps/steam
     ];
   };
+  easyeffects = {
+    home-manager = [
+      ../apps/easyeffects/home-manager.nix
+    ];
+  };
   obs = {
     home-manager = [
       ../apps/obs
+    ];
+  };
+  plasma-6 = {
+    system = [
+      ../modules/common/window-system/plasma-6
+    ];
+  };
+  hyprland = {
+    system = [
+      ../modules/common/window-system/hyprland
+    ];
+    home-manager = [
+      ../modules/common/window-system/hyprland/home-manager.nix
     ];
   };
 }
