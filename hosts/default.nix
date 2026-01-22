@@ -37,7 +37,7 @@ in
   };
   # Normal hosts(follow this )
   p14s-gen6-amd = mkHost {
-    stateVersion = "25.11";
+    stateVersion = "26.05";
     hostPreset = "p14s-gen6-amd"; # Determines which hosts/{host} folder you import from
     profiles = [ # Presets for different applications, see moduleprofiles.nix to see what available profiles and what they import
     # These are imported in order!
