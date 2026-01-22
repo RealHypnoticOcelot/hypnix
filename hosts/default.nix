@@ -17,7 +17,7 @@ in
   disko-partition = mkHost {
     stateVersion = "25.11";
     hostPreset = "p14s-gen6-amd";
-    profile = [ "disko" ];
+    profiles = [ "disko" ];
     extraModules = [
       ../modules/disko/${diskFormat}.nix
     ];
