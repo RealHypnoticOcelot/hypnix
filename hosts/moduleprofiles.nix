@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, diskFormat, ... }:
 
 {
   sops = {
@@ -14,6 +14,7 @@
   disko = {
     system = [
       inputs.disko.nixosModules.disko
+      ../modules/disko/${diskFormat}.nix
     ];
   };
   impermanence = {

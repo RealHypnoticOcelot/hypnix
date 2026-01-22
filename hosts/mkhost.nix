@@ -1,8 +1,8 @@
-{ lib, inputs, userName, hostName, systemDisk, ... }:
+{ lib, inputs, userName, hostName, systemDisk, diskFormat, ... }:
 
 let
   moduleProfiles = (import ./moduleprofiles.nix {
-    inherit inputs systemDisk;
+    inherit inputs diskFormat;
   });
 in
 { # The arguments that mkHost supports go below this line

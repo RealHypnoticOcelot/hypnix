@@ -10,17 +10,19 @@
 
 let
   mkHost = (import ./mkhost.nix {
-    inherit lib inputs userName hostName systemDisk;
+    inherit lib inputs userName hostName systemDisk diskFormat;
   }); #mkHost is the function that generates the system using the profiles and modules we specify
 in
 {
-  disko-partition = mkHost {
+  disko-partition-grub = mkHost {
     stateVersion = "25.11";
-    hostPreset = "p14s-gen6-amd"; # I'm just going to leave it like this, since it has negligible effect on the partitioning process
+    hostPreset = "disko-partition"; # I'm just going to leave it like this, since it has negligible effect on the partitioning process
+    profiles = [ "disko" "grub" ];
+  };
+  disko-partition-systemd-boot = mkHost {
+    stateVersion = "25.11";
+    hostPreset = "disko-partition"; # I'm just going to leave it like this, since it has negligible effect on the partitioning process
     profiles = [ "disko" "systemd-boot" ];
-    extraModules = [
-      ../modules/disko/${diskFormat}.nix
-    ];
   };
   p14s-gen6-amd = mkHost {
     stateVersion = "25.11";
@@ -40,7 +42,6 @@ in
       "vesktop"
     ];
     extraModules = [ # Basically just anything you'd need to import that's not a preset
-      ../modules/disko/${diskFormat}.nix # When using Disko, you must import the specific disk layout you selected when partitioning.
     ];
     extraPersist = []; # Extra directories to persist with Impermanence
   };
