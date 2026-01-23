@@ -50,7 +50,7 @@ in
       "sops"
       "stylix"
       "ucodenix"
-      "librewolf"
+      # "librewolf"
       "vesktop"
       "obs"
       "easyeffects"
