@@ -150,6 +150,9 @@
     ];
   };
   hyprlock = {
+    system = [
+      ../apps/hyprlock
+    ];
     home-manager = [
       ../apps/hyprlock/home-manager.nix
     ];
