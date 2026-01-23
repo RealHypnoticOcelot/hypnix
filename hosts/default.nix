@@ -43,7 +43,7 @@ in
     # These are imported in order!
       "systemd-boot"
       "disko"
-      "sddm-wayland"
+      "sddm"
       "plasma-6"
       "stylix"
       "sops"
