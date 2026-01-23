@@ -48,7 +48,7 @@ in
       "networking-networkmanager-iwdbackend"
       "printing"
       "pipewire"
-      "brightness"
+      # "brightness"
       "sops"
       "stylix"
       "ucodenix"
