@@ -2,6 +2,62 @@
 
 My home-grown NixOS config! I've tried my very best to make the config as modular, maintainable, and expandable as possible.
 
+## Installation:
+
+### 1. Partitioning
+If you're installing on a brand-new system, you'll want to partition first! Here's how:
+
+First, run the NixOS minimal installer off of a USB, and select your desired kernel version(You may have to disable Secure Boot).
+Then, run the following commands:
+```
+# This will generate the hardware-configuration.nix needed for install.
+sudo nixos-generate-config --no-filesystems
+
+# Copy config to /tmp/hypnix, and navigate there.
+cd /tmp
+git clone https://github.com/realhypnoticocelot/hypnix
+cd hypnix
+
+# Run the flake! Make sure to choose either grub or systemd-boot, depending on which bootloader you want, and to replace {systemDisk} with the disk you're installing onto.
+sudo nix --extra-experimental-features 'nix-command flakes' run 'github:nix-community/disko/latest#disko-install' -- --flake .#disko-partition-{grub|systemd-boot} --disk main {systemDisk} --show-trace
+```
+
+You'll have to figure out what exactly to mount to /mnt next. I'd created a LUKS-encrypted BTRFS volume, so I did this:
+```
+sudo mount -o subvol=root /dev/mapper/root_vg_hypnoticocelot-p14s /mnt
+sudo mount -o subvol=persistent /dev/mapper/root_vg_hypnoticocelot-p14s /mnt
+sudo mount -o subvol=nix /dev/mapper/root_vg_hypnoticocelot-p14s /mnt
+```
+You can find what partition name to use in place of `root_vg_hypnoticocelot-p14s` by running `lsblk` and viewing the partition your LUKS-encrypted volume is on.
+If you're creating an unencrypted disk, you can just mount the partition directly instead of doing all of this subvolume nonsense. For example:
+```
+sudo mount /dev/nvme0n1p2 /mnt
+```
+Once you've mounted your disk, though, you can then run:
+```
+sudo nixos-enter --root /mnt -c 'passwd'
+```
+To set a password for the root user. Once that's done, reboot!
+
+### 2. Installing
+
+Once you have a working NixOS system with your desired partition scheme, and you've logged in(presumably as root if you followed the previous set of instructions), you'll want to run these commands:
+
+```
+cd /etc/nixos
+
+# Create a shell with the git package available.
+nix-shell --extra-experimental-features flakes -p git
+
+# Clone this repository into the current working directory.
+git clone https://github.com/realhypnoticocelot/hypnix .
+# Build!
+sudo nixos-rebuild switch --flake .#{host}
+```
+Reboot, or it might automatically reboot, and you'll have your fresh new system!
+
+At this point, your main user will not have any password available to it. You'll need to log in as root once more(if you're using a display manager, you'll have to open a TTY for this), and run `passwd {userName}`. Set the password and go back to business!
+
 ## How everything works:
 
 - In `flake.nix`, you determine your username, hostname, and the disk to be installed on(which you can determine via `lsblk`).
