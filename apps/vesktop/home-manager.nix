@@ -69,7 +69,7 @@
         VoiceMessages.enabled = true;
         YoutubeAdblock.enabled = true;
       };
-      enabledThemes = [ "pesterchum.css" ];
+      enabledThemes = [ "Pesterchum" ];
     };
   };
 }
