@@ -1,7 +1,7 @@
 { pkgs, userName, lib, config, ... }:
 
 {
-  programs.easyeffects = {
+  services.easyeffects = {
     enable = true;
   };
 }
