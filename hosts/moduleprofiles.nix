@@ -109,9 +109,14 @@
       ../apps/kitty/home-manager.nix
     ];
   };
-  sddm = {
+  sddm-xserver = {
     system = [
-      ../modules/common/window-system/display-manager/sddm.nix
+      ../modules/common/window-system/display-manager/sddm-xserver.nix
+    ];
+  };
+  sddm-wayland = {
+    system = [
+      ../modules/common/window-system/display-manager/sddm-xserver.nix
     ];
   };
 }
