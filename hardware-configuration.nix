@@ -1,1 +1,1 @@
-# Dummy file for Disko! Replace this during installation.
+{} # Dummy file for Disko! Replace this during installation.
