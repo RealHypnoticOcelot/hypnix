@@ -23,7 +23,7 @@ in
       inputs.disko.nixosModules.disko
       ../modules/common/bootloader/grub.nix
       ../modules/disko/${diskFormat}.nix
-      ../hardware-configuration.nix
+      ../etc/nixos/hardware-configuration.nix
     ];
   };
   disko-partition-systemd-boot = lib.nixosSystem {
@@ -32,7 +32,7 @@ in
       inputs.disko.nixosModules.disko
       ../modules/common/bootloader/systemd-boot.nix
       ../modules/disko/${diskFormat}.nix
-      ../hardware-configuration.nix
+      ../etc/nixos/hardware-configuration.nix
     ];
   };
   # Normal hosts(follow this )
