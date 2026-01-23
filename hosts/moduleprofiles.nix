@@ -112,6 +112,6 @@
   sddm = {
     system = [
       ../modules/common/window-system/display-manager/sddm.nix
-    ]
-  }
+    ];
+  };
 }
