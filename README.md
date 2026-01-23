@@ -10,13 +10,13 @@ If you're installing on a brand-new system, you'll want to partition first! Here
 First, run the NixOS minimal installer off of a USB, and select your desired kernel version(You may have to disable Secure Boot).
 Then, run the following commands:
 ```
-# This will generate the hardware-configuration.nix needed for install.
-sudo nixos-generate-config --no-filesystems
-
 # Copy config to /tmp/hypnix, and navigate there.
 cd /tmp
 git clone https://github.com/realhypnoticocelot/hypnix
 cd hypnix
+
+# This will generate the hardware-configuration.nix needed for install.
+sudo nixos-generate-config --root /tmp/hypnix --no-filesystems
 
 # (If applicable) Modify flake.nix to change userName and hostName, and set systemDisk and diskFormat.
 nano flake.nix
