@@ -85,7 +85,7 @@
   };
   obs = {
     home-manager = [
-      ../apps/obs
+      ../apps/obs/home-manager.nix
     ];
   };
   plasma-6 = {
