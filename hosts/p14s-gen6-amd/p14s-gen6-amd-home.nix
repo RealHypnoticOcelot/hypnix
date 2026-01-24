@@ -11,8 +11,28 @@
 {
   wayland.windowManager.hyprland = {
     settings = {
+      # Keyboard-specific functions, so they go here!
+      binde = [ # Bind something that'll repeat if you hold it
+        # xf86bluetooth
+        # xf86keyboard
+        # xf86tools
+        ", xf86audiomicmute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+        # xf86display
+        # xf86wlan
+        # xf86messenger
+        # xf86go
+        # cancel
+        # xf86favorites
+        ", xf86audiomute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+        ", xf86audiolowervolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-"
+        "SHIFT, xf86audiolowervolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"
+        ", xf86audioraisevolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+"
+        "SHIFT, xf86audioraisevolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"
+        ", xf86monbrightnessdown, exec, brightnessctl s 5%-"
+        ", xf86monbrightnessup, exec, brightnessctl s +5%"
+      ];
       bindr = [ # Bind something upon key release
-        ", xf86audiomicmute, exec, brightnessctl -d 'platform::micmute' s $(wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | grep -q MUTED && echo 0 || echo 1)"
+        ", xf86audiomicmute, exec, brightnessctl -d 'platform::micmute' s $(wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | grep -q MUTED && echo 1 || echo 0)"
         # Toggle the microphone LED to match the state of microphone mute
       ];
     };
