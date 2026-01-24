@@ -10,6 +10,7 @@
     };
     vencord.themes = {
       "Pesterchum" = ./themes/pesterchum.css;
+      "System24" = ./themes/system24.css;
     };
     vencord.settings = {
       plugins = {
