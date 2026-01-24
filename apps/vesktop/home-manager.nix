@@ -6,7 +6,8 @@
     settings = {
       discordBranch = "canary";
       arRPC = true; # Enable Rich Presence implementation
-
+      minimizeToTray = false;
+      appBadge = false; # Badge on the app icon that indicates notification amount
     };
     vencord.themes = {
       "Pesterchum" = ./themes/pesterchum.css;
