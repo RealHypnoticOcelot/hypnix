@@ -185,4 +185,9 @@
       ../apps/vscodium/home-manager.nix
     ];
   };
+  plasma-manager = {
+    home-manager = [
+      inputs.plasma-manager.homeModules.plasma-manager
+    ];
+  };
 }
