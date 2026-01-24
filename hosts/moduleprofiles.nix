@@ -173,6 +173,9 @@
     ];
   };
   kde-connect = {
+    system = [
+      ../apps/kde-connect
+    ];
     home-manager = [
       ../apps/kde-connect/home-manager.nix
     ];
