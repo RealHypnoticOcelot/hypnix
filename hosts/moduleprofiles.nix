@@ -172,4 +172,14 @@
       ../apps/dolphin
     ];
   };
+  kde-connect = {
+    home-manager = [
+      ../apps/kde-connect/home-manager.nix
+    ];
+  };
+  vscodium = {
+    home-manager = [
+      ../apps/vscodium/home-manager.nix
+    ];
+  };
 }
