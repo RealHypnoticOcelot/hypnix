@@ -29,7 +29,7 @@
         ", xf86audiolowervolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-"
         "SHIFT, xf86audiolowervolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"
         ", xf86audioraisevolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+"
-        "SHIFT, xf86audioraisevolume, wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"
+        "SHIFT, xf86audioraisevolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"
         ", xf86monbrightnessdown, exec, brightnessctl s 5%-"
         ", xf86monbrightnessup, exec, brightnessctl s +5%"
       ];
