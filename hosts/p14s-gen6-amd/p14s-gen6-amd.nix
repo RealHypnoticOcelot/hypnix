@@ -12,4 +12,8 @@
   boot.kernelParams = [
     "microcode.amd_sha_check=off" # Disable microcode checksum verification so that ucodenix can do its thing
   ];
+
+  environment.systemPackages = with pkgs; [
+    alsa-utils
+  ];
 }
