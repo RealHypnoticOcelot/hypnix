@@ -18,7 +18,7 @@
         # xf86bluetooth
         # xf86keyboard
         # xf86tools
-        # xf86audiomicmute
+        ", xf86audiomicmute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
         # xf86display
         # xf86wlan
         # xf86messenger
