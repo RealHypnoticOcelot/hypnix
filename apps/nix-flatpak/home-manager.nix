@@ -1,6 +1,6 @@
 {
   services.flatpak = {
-    enabled = true;
+    enable = true;
     remotes = {
       "flathub" = "https://flathub.org/repo/flathub.flatpakrepo";
     };
