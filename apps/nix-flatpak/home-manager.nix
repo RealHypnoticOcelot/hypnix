@@ -1,3 +1,5 @@
+{ userName, ... }:
+
 {
   services.flatpak = {
     enable = true;
@@ -14,5 +16,5 @@
       }
     ];
   };
-  xdg.systemDirs.data = [ "$HOME/.local/share/flatpak/exports/share" ]; # Makes desktop icons available for installed apps, see https://github.com/gmodena/nix-flatpak/discussions/187
+  xdg.systemDirs.data = [ "${userName}/.local/share/flatpak/exports/share" ]; # Makes desktop icons available for installed apps, see https://github.com/gmodena/nix-flatpak/discussions/187
 }
