@@ -1,9 +1,11 @@
 {
   services.flatpak = {
     enable = true;
-    remotes = {
+    remotes = [
+      {
       "flathub" = "https://flathub.org/repo/flathub.flatpakrepo";
-    };
+      }
+    ];
     packages = [
       {
         appId = "org.vinegarhq.Sober";
