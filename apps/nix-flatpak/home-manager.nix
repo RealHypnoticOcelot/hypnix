@@ -3,7 +3,8 @@
     enable = true;
     remotes = [
       {
-      "flathub" = "https://flathub.org/repo/flathub.flatpakrepo";
+        name = "flathub";
+        location = "https://flathub.org/repo/flathub.flatpakrepo";
       }
     ];
     packages = [
