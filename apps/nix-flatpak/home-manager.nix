@@ -6,7 +6,7 @@
     };
     packages = [
       {
-        appid = "org.vinegarhq.Sober";
+        appId = "org.vinegarhq.Sober";
         origin = "flathub";
       }
     ];
