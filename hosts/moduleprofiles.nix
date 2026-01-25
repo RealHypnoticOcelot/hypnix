@@ -198,6 +198,6 @@
     home-manager = [
       homeManagerModules.nix-flatpak
       ../apps/nix-flatpak/home-manager.nix
-    ]
-  }
+    ];
+  };
 }
