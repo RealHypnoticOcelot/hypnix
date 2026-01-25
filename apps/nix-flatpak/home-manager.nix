@@ -4,7 +4,7 @@
     remotes = [
       {
         name = "flathub";
-        location = "https://flathub.org/repo/flathub.flatpakrepo";
+        location = "https://dl.flathub.org/repo/flathub.flatpakrepo";
       }
     ];
     packages = [
