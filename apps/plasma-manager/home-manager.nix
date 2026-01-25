@@ -4,8 +4,8 @@
     enable = true;
     overrideConfig = true; # Whether this is the only source of truth for configuration
     workspace.colorScheme = "BreezeDark";
-    floating = "false";
     panels = { # The taskbar at the bottom of the screen
+      floating = false;
       widgets = [ # The items on the taskbar
         {
           name = "org.kde.plasma.kickoff";
