@@ -43,7 +43,7 @@
     };
     settings = {
       # Librewolf-specific settings
-      "privacy.resistFingerprinting.letterboxing" = true;
+      # "privacy.resistFingerprinting.letterboxing" = true;
       "webgl.disabled" = false;
       "privacy.sanitize.sanitizeOnShutdown" = false;
       "privacy.clearOnShutdown.history" = false;
