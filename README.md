@@ -65,6 +65,22 @@ At this point, your main user will not have any password available to it. You'll
 
 You'll also want to run `chown -R 1000:1000 /etc/nixos` to have your config's permissions given to the primary user.
 
+#### 4. (Optional) Setting up `sops-nix`
+
+It's simple enough:
+
+```
+mkdir -p ~/.config/sops/age
+age-keygen -o ~/.config/sops/age/keys.txt
+# Generate a private key at the specified location
+```
+
+After running the latter command, yould get an output like:
+
+`Public key: age1wnd4g3w0gncxzdaxqcjd7kavcezzcja0dgldkkhwkzy98jznldys59avel`
+
+Replace the public key in `.sops.yaml` with that key. In order to add secrets in the future, simply run `sops secrets/secrets.yaml`! If `secrets.yaml` already exists and isn't a valid sops file, it'll throw an error.
+
 ## How everything works:
 
 - In `flake.nix`, you determine your username, hostname, and the disk to be installed on(which you can determine via `lsblk`).
