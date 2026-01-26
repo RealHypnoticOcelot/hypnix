@@ -10,7 +10,7 @@
       "flathub:app/org.vinegarhq.Sober//stable"
     ];
   };
-  programs.xdg = {
+  xdg = {
     enable = true;
     systemDirs.data = [
       "~/.local/share/flatpak/exports/share"
