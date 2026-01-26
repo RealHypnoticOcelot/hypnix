@@ -218,4 +218,9 @@
       ../apps/prism-launcher/home-manager.nix
     ];
   };
+  libreoffice-qt = {
+    home-manager = [
+      ../apps/libreoffice-qt/home-manager.nix
+    ];
+  };
 }
