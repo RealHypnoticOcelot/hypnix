@@ -1,0 +1,8 @@
+keys:
+  - &primary age1wnd4g3w0gncxzdaxqcjd7kavcezzcja0dgldkkhwkzy98jznldys59avel
+  # This is where you put the PUBLIC key, and asign it to a key group
+creation_rules:
+  - path_regex: secrets/secrets.yaml$
+    key_groups:
+      - age:
+        - *primary
