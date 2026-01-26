@@ -206,6 +206,6 @@
   feishin = {
     home-manager = [
       ../apps/feishin/home-manager.nix
-    ]
-  }
+    ];
+  };
 }
