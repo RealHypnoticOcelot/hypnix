@@ -238,4 +238,9 @@
       ../apps/merkuro/home-manager.nix
     ];
   };
+  thunderbird = {
+    home-manager = [
+      ../apps/thunderbird/home-manager.nix
+    ]
+  }
 }
