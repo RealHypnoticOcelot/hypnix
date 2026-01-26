@@ -241,6 +241,6 @@
   thunderbird = {
     home-manager = [
       ../apps/thunderbird/home-manager.nix
-    ]
-  }
+    ];
+  };
 }
