@@ -1,6 +1,5 @@
 {
   programs.thunderbid = {
     enable = true;
-    
-  }
+  };
 }
