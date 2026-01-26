@@ -3,6 +3,16 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+  programs.git = {
+    enable = true;
+    settings = {
+      user = {
+        name = config.sops.secrets.git_username.path;
+        email = config.sops.secrets.git_email.path;
+      };
+    };
+  };
+
   home = {
     username = userName;
 

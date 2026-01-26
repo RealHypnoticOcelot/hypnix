@@ -9,12 +9,4 @@
       git_email = {};
     };
   };
-  programs.git = {
-    settings = {
-      user = {
-        name = config.sops.secrets.git_username.path;
-        email = config.sops.secrets.git_email.path;
-      };
-    };
-  };
 }

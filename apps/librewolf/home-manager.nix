@@ -59,6 +59,7 @@
       "browser.urlbar.suggest.topsites" = false;
       "browser.search.separatePrivateDefault" = false; # Whether to use a different search engine for private search
       "browser.tabs.loadinBackground" = false; # Set FALSE to switch to newly-opened links, and TRUE to not
+      "browser.newtabpage.activity-stream.feeds.topsites" = false; # Add shortcuts to new tab
     };
     profiles = {
       "MainProfile" = {
