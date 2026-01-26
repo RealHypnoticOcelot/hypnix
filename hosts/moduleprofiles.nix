@@ -194,10 +194,10 @@
       ../apps/plasma-manager/home-manager.nix
     ];
   };
-  nix-flatpak = {
+  declarative flatpak = {
     home-manager = [
-      inputs.nix-flatpak.homeManagerModules.nix-flatpak
-      ../apps/nix-flatpak/home-manager.nix
+      inputs.flatpaks.homeModules.default
+      ../apps/declarative-flatpak/home-manager.nix
     ];
   };
 }

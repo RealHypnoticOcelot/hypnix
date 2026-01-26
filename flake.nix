@@ -32,8 +32,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
-    nix-flatpak = {
-      url = "github:gmodena/nix-flatpak?ref=latest";
+    flatpaks = {
+      url = "github:in-a-dil-emma/declarative-flatpak/latest";
     };
   };
 
