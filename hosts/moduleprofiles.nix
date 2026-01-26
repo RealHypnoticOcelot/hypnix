@@ -236,6 +236,6 @@
   merkuro = {
     home-manager = [
       ../apps/merkuro/home-manager.nix
-    ]
-  }
+    ];
+  };
 }
