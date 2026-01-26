@@ -211,6 +211,6 @@
   vicinae = {
     home-manager = [
       ../apps/vicinae/home-manager.nix
-    ]
-  }
+    ];
+  };
 }
