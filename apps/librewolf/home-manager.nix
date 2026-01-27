@@ -9,7 +9,7 @@
           {
             Name = "Mojeek";
             Description = "Search the web using Mojeek";
-            URLTemplate = "https://www.mojeek.com/search?q={searchTerms}&theme=dark&sumt=0&sumb=0";
+            URLTemplate = "https://www.mojeek.com/search?q={searchTerms}&theme=dark&sumt=0&sumb=0&newtab=1";
             Method = "POST";
             IconURL = "https://www.mojeek.com/favicon.png";
           }
