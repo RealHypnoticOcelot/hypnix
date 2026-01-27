@@ -5,7 +5,7 @@
     defaultSopsFormat = "yaml";
     age.keyFile = "/home/${userName}/.config/sops/age/keys.txt";
     secrets = {
-      wgcf_privatekey = {};
+      # Secrets used by home manager modules go here
     };
   };
 }
