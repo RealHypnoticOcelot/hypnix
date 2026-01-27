@@ -6,7 +6,7 @@
     age.keyFile = "/home/${userName}/.config/sops/age/keys.txt";
     secrets = {
       # Secrets used by system modules go here
-      wgcf_privatekey = {};
+      # ex: mysecret = {};
     };
   };
   environment.systemPackages = with pkgs; [
