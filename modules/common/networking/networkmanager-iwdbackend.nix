@@ -19,7 +19,7 @@
     inherit hostName;
     networkmanager = {
       enable = true;
-      wifi.backend = "iwd"; # A modern replacement for the alternative, wpa_supplicant
+      wifi.backend = "wpa_supplicant"; # iwd is a modern replacement for the alternative, wpa_supplicant
     };
     wireless.iwd.settings = {
       Settings = {
