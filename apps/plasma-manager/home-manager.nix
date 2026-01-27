@@ -39,6 +39,14 @@
             name = "org.kde.plasma.marginsseparator";
           }
           {
+            name = "org.kde.plasma.battery";
+            config = {
+              General = {
+                showPercentage = true;
+              }
+            }
+          }
+          {
             systemTray.items = {
               # Explicitly show
               shown = [
@@ -53,7 +61,6 @@
               hidden = [
                 #
               ];
-              configs.battery.showPercentage = true;
             };
           }
           {

@@ -49,7 +49,7 @@ in
       "sddm"
       "plasma-6"
       "plasma-manager"
-      "networking-networkmanager-iwdbackend"
+      "networking-networkmanager"
       "printing"
       "pipewire"
       "brightness"

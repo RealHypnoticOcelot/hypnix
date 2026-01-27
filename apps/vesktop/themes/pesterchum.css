@@ -37,223 +37,223 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	--chum-foreground: #000000
 }
 
-._960e4207cea8323e-bg {
+.bg__960e4 {
 	background: var(--chum-medium)
 }
 
-._5e434347c823b592-content {
+.content__5e434 {
 	border: 4px solid var(--chum-light)
 }
 
-._5e434347c823b592-content ._5e434347c823b592-sidebar {
+.content__5e434 .sidebar__5e434 {
 	padding: 0px;
 	margin: 10px
 }
 
-._5e434347c823b592-content ._5e434347c823b592-sidebar+:is(div, main):not(.erd_scroll_detection_container),
-._5e434347c823b592-content ._5e434347c823b592-sidebar+.erd_scroll_detection_container+:is(div, main):not(.erd_scroll_detection_container) {
+.content__5e434 .sidebar__5e434+:is(div, main):not(.erd_scroll_detection_container),
+.content__5e434 .sidebar__5e434+.erd_scroll_detection_container+:is(div, main):not(.erd_scroll_detection_container) {
 	background: unset !important;
 	border-left: 4px solid var(--chum-light)
 }
 
-._5e434347c823b592-content ._5e434347c823b592-sidebar+:is(div, main):not(.erd_scroll_detection_container) .f75fb00fb7356cbe-content,
-._5e434347c823b592-content ._5e434347c823b592-sidebar+:is(div, main):not(.erd_scroll_detection_container) ._133bf5eea8e33a34-tabBody,
-._5e434347c823b592-content ._5e434347c823b592-sidebar+.erd_scroll_detection_container+:is(div, main):not(.erd_scroll_detection_container) .f75fb00fb7356cbe-content,
-._5e434347c823b592-content ._5e434347c823b592-sidebar+.erd_scroll_detection_container+:is(div, main):not(.erd_scroll_detection_container) ._133bf5eea8e33a34-tabBody {
+.content__5e434 .sidebar__5e434+:is(div, main):not(.erd_scroll_detection_container) .content_f75fb0,
+.content__5e434 .sidebar__5e434+:is(div, main):not(.erd_scroll_detection_container) .tabBody__133bf,
+.content__5e434 .sidebar__5e434+.erd_scroll_detection_container+:is(div, main):not(.erd_scroll_detection_container) .content_f75fb0,
+.content__5e434 .sidebar__5e434+.erd_scroll_detection_container+:is(div, main):not(.erd_scroll_detection_container) .tabBody__133bf {
 	padding: 16px;
 	gap: 16px
 }
 
-._5e434347c823b592-content ._5e434347c823b592-sidebar+:is(div, main):not(.erd_scroll_detection_container) .f75fb00fb7356cbe-content::before,
-._5e434347c823b592-content ._5e434347c823b592-sidebar+:is(div, main):not(.erd_scroll_detection_container) ._133bf5eea8e33a34-tabBody::before,
-._5e434347c823b592-content ._5e434347c823b592-sidebar+.erd_scroll_detection_container+:is(div, main):not(.erd_scroll_detection_container) .f75fb00fb7356cbe-content::before,
-._5e434347c823b592-content ._5e434347c823b592-sidebar+.erd_scroll_detection_container+:is(div, main):not(.erd_scroll_detection_container) ._133bf5eea8e33a34-tabBody::before {
+.content__5e434 .sidebar__5e434+:is(div, main):not(.erd_scroll_detection_container) .content_f75fb0::before,
+.content__5e434 .sidebar__5e434+:is(div, main):not(.erd_scroll_detection_container) .tabBody__133bf::before,
+.content__5e434 .sidebar__5e434+.erd_scroll_detection_container+:is(div, main):not(.erd_scroll_detection_container) .content_f75fb0::before,
+.content__5e434 .sidebar__5e434+.erd_scroll_detection_container+:is(div, main):not(.erd_scroll_detection_container) .tabBody__133bf::before {
 	display: none
 }
 
-.e6b7699ce8339e1c-privateChannels ._99e7cad8d4c55236-scroller {
+.privateChannels_e6b769 .scroller__99e7c {
 	background: unset
 }
 
-.e6b7699ce8339e1c-privateChannels ._99e7cad8d4c55236-scroller ._972a0d22c8afa7f0-channel {
+.privateChannels_e6b769 .scroller__99e7c .channel__972a0 {
 	max-width: unset
 }
 
-.e6b7699ce8339e1c-privateChannels ._99e7cad8d4c55236-scroller ._972a0d22c8afa7f0-channel:has(path[d^="M3 5v-.75"]) ._20a53846fe2e8513-name {
+.privateChannels_e6b769 .scroller__99e7c .channel__972a0:has(path[d^="M3 5v-.75"]) .name__20a53 {
 	font-size: 0;
 	height: 20px
 }
 
-.e6b7699ce8339e1c-privateChannels ._99e7cad8d4c55236-scroller ._972a0d22c8afa7f0-channel:has(path[d^="M3 5v-.75"]) ._20a53846fe2e8513-name::before {
+.privateChannels_e6b769 .scroller__99e7c .channel__972a0:has(path[d^="M3 5v-.75"]) .name__20a53::before {
 	font-size: 16px;
 	content: "Chums"
 }
 
-.e6b7699ce8339e1c-privateChannels ._99e7cad8d4c55236-scroller ._99e7cad8d4c55236-headerText {
+.privateChannels_e6b769 .scroller__99e7c .headerText__99e7c {
 	font-size: 0
 }
 
-.e6b7699ce8339e1c-privateChannels ._99e7cad8d4c55236-scroller ._99e7cad8d4c55236-headerText::before {
+.privateChannels_e6b769 .scroller__99e7c .headerText__99e7c::before {
 	font-size: 12px;
 	content: "Chumroll"
 }
 
-._9293f6b2fc12398a-container:has(path[d^="M3 5v-.75"]) ._9293f6b2fc12398a-title {
+.container__9293f:has(path[d^="M3 5v-.75"]) .title__9293f {
 	font-size: 0
 }
 
-._9293f6b2fc12398a-container:has(path[d^="M3 5v-.75"]) ._9293f6b2fc12398a-title::before {
+.container__9293f:has(path[d^="M3 5v-.75"]) .title__9293f::before {
 	font-size: 16px;
 	content: "Chums"
 }
 
-._9293f6b2fc12398a-container .aa8da23faa27393c-item {
+.container__9293f .item_aa8da2 {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-light);
 	color: #000
 }
 
-._9293f6b2fc12398a-container .aa8da23faa27393c-item.aa8da23faa27393c-themed:hover:not(.aa8da23faa27393c-disabled),
-._9293f6b2fc12398a-container .aa8da23faa27393c-item.aa8da23faa27393c-themed.aa8da23faa27393c-selected.aa8da23faa27393c-item,
-._9293f6b2fc12398a-container .aa8da23faa27393c-item._133bf5eea8e33a34-addFriend._133bf5eea8e33a34-addFriend {
+.container__9293f .item_aa8da2.themed_aa8da2:hover:not(.disabled_aa8da2),
+.container__9293f .item_aa8da2.themed_aa8da2.selected_aa8da2.item_aa8da2,
+.container__9293f .item_aa8da2.addFriend__133bf.addFriend__133bf {
 	background-color: var(--chum-light);
 	color: #000
 }
 
-._9293f6b2fc12398a-container ._133bf5eea8e33a34-addFriend span {
+.container__9293f .addFriend__133bf span {
 	font-size: 0;
 	height: 20px
 }
 
-._9293f6b2fc12398a-container ._133bf5eea8e33a34-addFriend span::before {
+.container__9293f .addFriend__133bf span::before {
 	font-size: 16px;
 	content: "Add Chum"
 }
 
-._9293f6b2fc12398a-container .akaBadge__27cd4 {
+.container__9293f .akaBadge__27cd4 {
 	background: #000;
 	color: #fff
 }
 
-.cb9592ad77576717-wrapper.cb9592ad77576717-minimum {
+.wrapper_cb9592.minimum_cb9592 {
 	background: unset
 }
 
-.cb9592ad77576717-wrapper.cb9592ad77576717-minimum .quickSelectLabel__79774,
-.cb9592ad77576717-wrapper.cb9592ad77576717-minimum .quickSelect__540d0,
-.cb9592ad77576717-wrapper.cb9592ad77576717-minimum .f1ceaca61b18918e-controlIcon.f1ceaca61b18918e-themeable {
+.wrapper_cb9592.minimum_cb9592 .quickSelectLabel__79774,
+.wrapper_cb9592.minimum_cb9592 .quickSelect__540d0,
+.wrapper_cb9592.minimum_cb9592 .controlIcon_f1ceac.themeable_f1ceac {
 	color: #000
 }
 
-.cb9592ad77576717-wrapper.cb9592ad77576717-minimum ._1405b3b8e8eb5fd0-controlButton {
+.wrapper_cb9592.minimum_cb9592 .controlButton__1405b {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-dark)
 }
 
-.cb9592ad77576717-wrapper.cb9592ad77576717-minimum ._1405b3b8e8eb5fd0-controlButton .f1ceaca61b18918e-colorable.f1ceaca61b18918e-primaryDark,
-.cb9592ad77576717-wrapper.cb9592ad77576717-minimum ._1405b3b8e8eb5fd0-controlButton .f1ceaca61b18918e-colorable.primaryLight_f1ceac {
+.wrapper_cb9592.minimum_cb9592 .controlButton__1405b .colorable_f1ceac.primaryDark_f1ceac,
+.wrapper_cb9592.minimum_cb9592 .controlButton__1405b .colorable_f1ceac.primaryLight_f1ceac {
 	background: unset
 }
 
-._133bf5eea8e33a34-peopleColumn {
+.peopleColumn__133bf {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark)
 }
 
-._133bf5eea8e33a34-peopleColumn .image__08515[style*="bca918618b884a382ab5.svg"]+._7c0bae9243151ddd-flexChild .text__0e310 {
+.peopleColumn__133bf .image__08515[style*="bca918618b884a382ab5.svg"]+.flexChild__7c0ba .text__0e310 {
 	font-size: 0
 }
 
-._133bf5eea8e33a34-peopleColumn .image__08515[style*="bca918618b884a382ab5.svg"]+._7c0bae9243151ddd-flexChild .text__0e310::before {
+.peopleColumn__133bf .image__08515[style*="bca918618b884a382ab5.svg"]+.flexChild__7c0ba .text__0e310::before {
 	font-size: 16px;
 	content: "Wumpus has no chums."
 }
 
-._133bf5eea8e33a34-peopleColumn#all-tab ._1472a8142d02ea23-title {
+.peopleColumn__133bf#all-tab .title__1472a {
 	position: relative;
 	overflow: visible;
 	margin-inline-start: calc(30px - 1.2em)
 }
 
-._133bf5eea8e33a34-peopleColumn#all-tab ._1472a8142d02ea23-title::before {
+.peopleColumn__133bf#all-tab .title__1472a::before {
 	content: "All chums";
 	position: absolute;
 	background: var(--chum-background);
 	padding-left: 1.2em
 }
 
-._133bf5eea8e33a34-peopleColumn#blocked-tab ._1472a8142d02ea23-title {
+.peopleColumn__133bf#blocked-tab .title__1472a {
 	position: relative;
 	overflow: visible;
 	margin-inline-start: calc(30px + 1.2em)
 }
 
-._133bf5eea8e33a34-peopleColumn#blocked-tab ._1472a8142d02ea23-title::before {
+.peopleColumn__133bf#blocked-tab .title__1472a::before {
 	content: "Trollslum";
 	position: absolute;
 	background: var(--chum-background);
 	left: -1.2em
 }
 
-._133bf5eea8e33a34-peopleColumn#add_friend-tab ._94b083577c5dbbb3-title {
+.peopleColumn__133bf#add_friend-tab .title__94b08 {
 	font-size: 0
 }
 
-._133bf5eea8e33a34-peopleColumn#add_friend-tab ._94b083577c5dbbb3-title::before {
+.peopleColumn__133bf#add_friend-tab .title__94b08::before {
 	font-size: 16px;
 	content: "Add Chum"
 }
 
-._133bf5eea8e33a34-peopleColumn#add_friend-tab .ddd1814f7cd3e6fd-description:first-child {
+.peopleColumn__133bf#add_friend-tab .description_ddd181:first-child {
 	font-size: 0
 }
 
-._133bf5eea8e33a34-peopleColumn#add_friend-tab .ddd1814f7cd3e6fd-description:first-child::before {
+.peopleColumn__133bf#add_friend-tab .description_ddd181:first-child::before {
 	font-size: 14px;
 	content: "You can add chums with their chumhandles."
 }
 
-._133bf5eea8e33a34-peopleColumn#add_friend-tab ._0ed4fc708cdbac0d-input::-moz-placeholder {
+.peopleColumn__133bf#add_friend-tab .input__0ed4f::-moz-placeholder {
 	color: rgba(0, 0, 0, 0)
 }
 
-._133bf5eea8e33a34-peopleColumn#add_friend-tab ._0ed4fc708cdbac0d-input::placeholder {
+.peopleColumn__133bf#add_friend-tab .input__0ed4f::placeholder {
 	color: rgba(0, 0, 0, 0)
 }
 
-._133bf5eea8e33a34-peopleColumn#add_friend-tab ._201d5e8a3c09670a-button {
+.peopleColumn__133bf#add_friend-tab .button__201d5 {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-dark)
 }
 
-._133bf5eea8e33a34-peopleColumn#add_friend-tab ._201d5e8a3c09670a-button ._201d5e8a3c09670a-contents {
+.peopleColumn__133bf#add_friend-tab .button__201d5 .contents__201d5 {
 	font-size: 0
 }
 
-._133bf5eea8e33a34-peopleColumn#add_friend-tab ._201d5e8a3c09670a-button ._201d5e8a3c09670a-contents::before {
+.peopleColumn__133bf#add_friend-tab .button__201d5 .contents__201d5::before {
 	font-size: 14px;
 	content: "Send chum request"
 }
 
-._133bf5eea8e33a34-peopleColumn#add_friend-tab .title_a14595 {
+.peopleColumn__133bf#add_friend-tab .title_a14595 {
 	font-size: 0
 }
 
-._133bf5eea8e33a34-peopleColumn#add_friend-tab .title_a14595::before {
+.peopleColumn__133bf#add_friend-tab .title_a14595::before {
 	font-size: 16px;
 	content: "Other places to make chums"
 }
 
-._133bf5eea8e33a34-nowPlayingColumn {
+.nowPlayingColumn__133bf {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark)
 }
 
-._133bf5eea8e33a34-nowPlayingColumn ._7d20cf18f8a2784c-container {
+.nowPlayingColumn__133bf .container__7d20c {
 	background: unset
 }
 
-._133bf5eea8e33a34-nowPlayingColumn ._7d20cf18f8a2784c-container ._7d20cf18f8a2784c-scroller {
+.nowPlayingColumn__133bf .container__7d20c .scroller__7d20c {
 	border-left: 0;
 	margin-left: 0
 }
@@ -268,13 +268,13 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	background: unset
 }
 
-:is(._4a84a2c88d373bef-scroller, .c880e89226639033-scroller) {
+:is(.scroller__4a84a, .scroller_c880e8) {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark);
 	margin: 16px
 }
 
-:is(._4a84a2c88d373bef-scroller, .c880e89226639033-scroller) .adb41f8099151bc8-header {
+:is(.scroller__4a84a, .scroller_c880e8) .header_adb41f {
 	background: unset
 }
 
@@ -289,344 +289,344 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	background: unset
 }
 
-.f369dba7416c67f0-container {
+.container_f369db {
 	gap: 16px;
 	background: unset
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid {
+.container_f369db .list_f369db,
+.container_f369db .grid_f369db {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-dark)
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list>div:first-child,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid>div:first-child {
+.container_f369db .list_f369db>div:first-child,
+.container_f369db .grid_f369db>div:first-child {
 	padding: 0 12px;
 	padding-right: 4px
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list .f369dba7416c67f0-mainCard,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .f369dba7416c67f0-mainCard {
+.container_f369db .list_f369db .mainCard_f369db,
+.container_f369db .grid_f369db .mainCard_f369db {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark)
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list .f369dba7416c67f0-mainCard._9a337c84ff86a914-isOpen,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .f369dba7416c67f0-mainCard._9a337c84ff86a914-isOpen {
+.container_f369db .list_f369db .mainCard_f369db.isOpen__9a337,
+.container_f369db .grid_f369db .mainCard_f369db.isOpen__9a337 {
 	border-color: var(--chum-light)
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list .f369dba7416c67f0-mainCard ._08166c4389c22135-pinIcon,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .f369dba7416c67f0-mainCard ._08166c4389c22135-pinIcon {
+.container_f369db .list_f369db .mainCard_f369db .pinIcon__08166,
+.container_f369db .grid_f369db .mainCard_f369db .pinIcon__08166 {
 	background: var(--chum-dark)
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list .f369dba7416c67f0-mainCard ._9a337c84ff86a914-contentPreview,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .f369dba7416c67f0-mainCard ._9a337c84ff86a914-contentPreview {
+.container_f369db .list_f369db .mainCard_f369db .contentPreview__9a337,
+.container_f369db .grid_f369db .mainCard_f369db .contentPreview__9a337 {
 	background: unset;
 	border: none
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list .f369dba7416c67f0-mainCard ._9a337c84ff86a914-contentPreview ._9a337c84ff86a914-textContentFooter,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .f369dba7416c67f0-mainCard ._9a337c84ff86a914-contentPreview ._9a337c84ff86a914-textContentFooter {
+.container_f369db .list_f369db .mainCard_f369db .contentPreview__9a337 .textContentFooter__9a337,
+.container_f369db .grid_f369db .mainCard_f369db .contentPreview__9a337 .textContentFooter__9a337 {
 	background: linear-gradient(to top, var(--chum-background), transparent)
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list .faa96b2163f6a142-container:hover,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .faa96b2163f6a142-container:hover {
+.container_f369db .list_f369db .container_faa96b:hover,
+.container_f369db .grid_f369db .container_faa96b:hover {
 	transform: none
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list .f369dba7416c67f0-matchingPostsRow,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .f369dba7416c67f0-matchingPostsRow {
+.container_f369db .list_f369db .matchingPostsRow_f369db,
+.container_f369db .grid_f369db .matchingPostsRow_f369db {
 	background: unset;
 	--text-normal: #000000
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list .f369dba7416c67f0-matchingPostsRow .text-xs-normal_ccc5fb,
-.f369dba7416c67f0-container .f369dba7416c67f0-list .f369dba7416c67f0-matchingPostsRow .text-xs-semibold__2181c,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .f369dba7416c67f0-matchingPostsRow .text-xs-normal_ccc5fb,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .f369dba7416c67f0-matchingPostsRow .text-xs-semibold__2181c {
+.container_f369db .list_f369db .matchingPostsRow_f369db .text-xs-normal_ccc5fb,
+.container_f369db .list_f369db .matchingPostsRow_f369db .text-xs-semibold__2181c,
+.container_f369db .grid_f369db .matchingPostsRow_f369db .text-xs-normal_ccc5fb,
+.container_f369db .grid_f369db .matchingPostsRow_f369db .text-xs-semibold__2181c {
 	font-size: 14px;
 	line-height: 18px
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list .ca49a1898ddc29e3-container,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .ca49a1898ddc29e3-container {
+.container_f369db .list_f369db .container_ca49a1,
+.container_f369db .grid_f369db .container_ca49a1 {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark)
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list .ca49a1898ddc29e3-container .ca49a1898ddc29e3-descriptionContainer,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .ca49a1898ddc29e3-container .ca49a1898ddc29e3-descriptionContainer {
+.container_f369db .list_f369db .container_ca49a1 .descriptionContainer_ca49a1,
+.container_f369db .grid_f369db .container_ca49a1 .descriptionContainer_ca49a1 {
 	background: unset
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list .f369dba7416c67f0-tagsContainer .f369dba7416c67f0-divider,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .f369dba7416c67f0-tagsContainer .f369dba7416c67f0-divider {
+.container_f369db .list_f369db .tagsContainer_f369db .divider_f369db,
+.container_f369db .grid_f369db .tagsContainer_f369db .divider_f369db {
 	width: 4px;
 	background: var(--chum-dark)
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list .f369dba7416c67f0-tagsContainer .f369dba7416c67f0-sortDropdown,
-.f369dba7416c67f0-container .f369dba7416c67f0-list .f369dba7416c67f0-tagsContainer .f369dba7416c67f0-tagsButton,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .f369dba7416c67f0-tagsContainer .f369dba7416c67f0-sortDropdown,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .f369dba7416c67f0-tagsContainer .f369dba7416c67f0-tagsButton {
+.container_f369db .list_f369db .tagsContainer_f369db .sortDropdown_f369db,
+.container_f369db .list_f369db .tagsContainer_f369db .tagsButton_f369db,
+.container_f369db .grid_f369db .tagsContainer_f369db .sortDropdown_f369db,
+.container_f369db .grid_f369db .tagsContainer_f369db .tagsButton_f369db {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-dark);
 	--interactive-normal: #000000
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list .f369dba7416c67f0-tagsContainer .f369dba7416c67f0-sortDropdown[aria-expanded=true],
-.f369dba7416c67f0-container .f369dba7416c67f0-list .f369dba7416c67f0-tagsContainer .f369dba7416c67f0-tagsButton[aria-expanded=true],
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .f369dba7416c67f0-tagsContainer .f369dba7416c67f0-sortDropdown[aria-expanded=true],
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .f369dba7416c67f0-tagsContainer .f369dba7416c67f0-tagsButton[aria-expanded=true] {
+.container_f369db .list_f369db .tagsContainer_f369db .sortDropdown_f369db[aria-expanded=true],
+.container_f369db .list_f369db .tagsContainer_f369db .tagsButton_f369db[aria-expanded=true],
+.container_f369db .grid_f369db .tagsContainer_f369db .sortDropdown_f369db[aria-expanded=true],
+.container_f369db .grid_f369db .tagsContainer_f369db .tagsButton_f369db[aria-expanded=true] {
 	border-color: var(--chum-light)
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list .f369dba7416c67f0-tagsContainer .f369dba7416c67f0-tagsButton,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .f369dba7416c67f0-tagsContainer .f369dba7416c67f0-tagsButton {
+.container_f369db .list_f369db .tagsContainer_f369db .tagsButton_f369db,
+.container_f369db .grid_f369db .tagsContainer_f369db .tagsButton_f369db {
 	padding: 0
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list .f369dba7416c67f0-tagsContainer .f369dba7416c67f0-tagsButton .f369dba7416c67f0-countContainer,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .f369dba7416c67f0-tagsContainer .f369dba7416c67f0-tagsButton .f369dba7416c67f0-countContainer {
+.container_f369db .list_f369db .tagsContainer_f369db .tagsButton_f369db .countContainer_f369db,
+.container_f369db .grid_f369db .tagsContainer_f369db .tagsButton_f369db .countContainer_f369db {
 	background: unset
 }
 
-.f369dba7416c67f0-container .f369dba7416c67f0-list .f369dba7416c67f0-tagsContainer .f369dba7416c67f0-tagsButton .f369dba7416c67f0-countText,
-.f369dba7416c67f0-container .f369dba7416c67f0-grid .f369dba7416c67f0-tagsContainer .f369dba7416c67f0-tagsButton .f369dba7416c67f0-countText {
+.container_f369db .list_f369db .tagsContainer_f369db .tagsButton_f369db .countText_f369db,
+.container_f369db .grid_f369db .tagsContainer_f369db .tagsButton_f369db .countText_f369db {
 	color: #000;
 	font-size: 14px;
 	line-height: 18px
 }
 
-.a2c9e80f6531ccc2-pill.a2c9e80f6531ccc2-pill {
+.pill_a2c9e8.pill_a2c9e8 {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-dark);
 	--text-normal: #000000
 }
 
-.a2c9e80f6531ccc2-pill.a2c9e80f6531ccc2-pill.a2c9e80f6531ccc2-clickable:not(.a2c9e80f6531ccc2-disabled):hover {
+.pill_a2c9e8.pill_a2c9e8.clickable_a2c9e8:not(.disabled_a2c9e8):hover {
 	background: var(--chum-medium)
 }
 
-.a2c9e80f6531ccc2-pill.a2c9e80f6531ccc2-pill.a2c9e80f6531ccc2-selected.a2c9e80f6531ccc2-selected {
+.pill_a2c9e8.pill_a2c9e8.selected_a2c9e8.selected_a2c9e8 {
 	border-color: var(--chum-light);
 	background: var(--chum-medium)
 }
 
 .grid-21dB-S>div:first-child,
-.f369dba7416c67f0-headerRow,
-.f369dba7416c67f0-list>div:first-child {
+.headerRow_f369db,
+.list_f369db>div:first-child {
 	min-width: unset;
 	box-sizing: border-box
 }
 
-._36d072eab2b2e737-scrollerInner {
+.scrollerInner__36d07 {
 	overflow: unset
 }
 
-._36d072eab2b2e737-scrollerInner ._34c2c51cfce1632e-container {
+.scrollerInner__36d07 .container__34c2c {
 	background: unset;
 	pointer-events: none;
 	border-top: 0;
 	top: 0
 }
 
-._36d072eab2b2e737-scrollerInner ._34c2c51cfce1632e-container ._34c2c51cfce1632e-reactButtons,
-._36d072eab2b2e737-scrollerInner ._34c2c51cfce1632e-container ._34c2c51cfce1632e-buttons {
+.scrollerInner__36d07 .container__34c2c .reactButtons__34c2c,
+.scrollerInner__36d07 .container__34c2c .buttons__34c2c {
 	pointer-events: all
 }
 
-._36d072eab2b2e737-scrollerInner .ee23ac2acd215184-divider {
+.scrollerInner__36d07 .divider_ee23ac {
 	display: none
 }
 
-._36d072eab2b2e737-scrollerInner ._34c2c51cfce1632e-addReactButton,
-._36d072eab2b2e737-scrollerInner .buttonInner__34c2c {
+.scrollerInner__36d07 .addReactButton__34c2c,
+.scrollerInner__36d07 .buttonInner__34c2c {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-dark);
 	color: #000
 }
 
-._36d072eab2b2e737-scrollerInner ._34c2c51cfce1632e-addReactButton.f8896c4f6be18f59-active,
-._36d072eab2b2e737-scrollerInner .buttonInner__34c2c.f8896c4f6be18f59-active {
+.scrollerInner__36d07 .addReactButton__34c2c.active_f8896c,
+.scrollerInner__36d07 .buttonInner__34c2c.active_f8896c {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-light)
 }
 
-._36d072eab2b2e737-scrollerInner ._34c2c51cfce1632e-addReactButton:hover,
-._36d072eab2b2e737-scrollerInner ._34c2c51cfce1632e-addReactButton:active .f8896c4f6be18f59-icon,
-._36d072eab2b2e737-scrollerInner ._34c2c51cfce1632e-addReactButton.f8896c4f6be18f59-active .f8896c4f6be18f59-icon,
-._36d072eab2b2e737-scrollerInner ._34c2c51cfce1632e-addReactButton:hover .f8896c4f6be18f59-icon,
-._36d072eab2b2e737-scrollerInner .buttonInner__34c2c:hover,
-._36d072eab2b2e737-scrollerInner .buttonInner__34c2c:active .f8896c4f6be18f59-icon,
-._36d072eab2b2e737-scrollerInner .buttonInner__34c2c.f8896c4f6be18f59-active .f8896c4f6be18f59-icon,
-._36d072eab2b2e737-scrollerInner .buttonInner__34c2c:hover .f8896c4f6be18f59-icon {
+.scrollerInner__36d07 .addReactButton__34c2c:hover,
+.scrollerInner__36d07 .addReactButton__34c2c:active .icon_f8896c,
+.scrollerInner__36d07 .addReactButton__34c2c.active_f8896c .icon_f8896c,
+.scrollerInner__36d07 .addReactButton__34c2c:hover .icon_f8896c,
+.scrollerInner__36d07 .buttonInner__34c2c:hover,
+.scrollerInner__36d07 .buttonInner__34c2c:active .icon_f8896c,
+.scrollerInner__36d07 .buttonInner__34c2c.active_f8896c .icon_f8896c,
+.scrollerInner__36d07 .buttonInner__34c2c:hover .icon_f8896c {
 	color: #000
 }
 
-._36d072eab2b2e737-scrollerInner .f8896c4f6be18f59-reaction {
+.scrollerInner__36d07 .reaction_f8896c {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-dark)
 }
 
-._36d072eab2b2e737-scrollerInner .f8896c4f6be18f59-reaction.f8896c4f6be18f59-reactionMe {
+.scrollerInner__36d07 .reaction_f8896c.reactionMe_f8896c {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-light)
 }
 
-._36d072eab2b2e737-scrollerInner .f8896c4f6be18f59-reaction .f8896c4f6be18f59-reactionCount {
+.scrollerInner__36d07 .reaction_f8896c .reactionCount_f8896c {
 	color: #000
 }
 
-._9293f6b2fc12398a-container:is(.f75fb00fb7356cbe-title, ._9293f6b2fc12398a-themed) {
+.container__9293f:is(.title_f75fb0, .themed__9293f) {
 	background: unset
 }
 
-._9293f6b2fc12398a-container:is(.f75fb00fb7356cbe-title, ._9293f6b2fc12398a-themed)::before {
+.container__9293f:is(.title_f75fb0, .themed__9293f)::before {
 	display: none
 }
 
-._9293f6b2fc12398a-container:is(.f75fb00fb7356cbe-title, ._9293f6b2fc12398a-themed) ._9293f6b2fc12398a-children::after {
+.container__9293f:is(.title_f75fb0, .themed__9293f) .children__9293f::after {
 	background: linear-gradient(90deg, transparent, var(--message-background-alt))
 }
 
-._9293f6b2fc12398a-container:is(.f75fb00fb7356cbe-title, ._9293f6b2fc12398a-themed) ._9293f6b2fc12398a-title,
-._9293f6b2fc12398a-container:is(.f75fb00fb7356cbe-title, ._9293f6b2fc12398a-themed) ._6ec1a06139ec3b27-topic,
-._9293f6b2fc12398a-container:is(.f75fb00fb7356cbe-title, ._9293f6b2fc12398a-themed) .nicknames__12efb {
+.container__9293f:is(.title_f75fb0, .themed__9293f) .title__9293f,
+.container__9293f:is(.title_f75fb0, .themed__9293f) .topic__6ec1a,
+.container__9293f:is(.title_f75fb0, .themed__9293f) .nicknames__12efb {
 	color: #000
 }
 
-._9293f6b2fc12398a-container:is(.f75fb00fb7356cbe-title, ._9293f6b2fc12398a-themed) .divider__9293f {
+.container__9293f:is(.title_f75fb0, .themed__9293f) .divider__9293f {
 	display: none
 }
 
-._9293f6b2fc12398a-container:is(.f75fb00fb7356cbe-title, ._9293f6b2fc12398a-themed) .c322aadb96ff59c9-searchBar,
-._9293f6b2fc12398a-container:is(.f75fb00fb7356cbe-title, ._9293f6b2fc12398a-themed) .searchBar__3fb48 {
+.container__9293f:is(.title_f75fb0, .themed__9293f) .searchBar_c322aa,
+.container__9293f:is(.title_f75fb0, .themed__9293f) .searchBar__3fb48 {
 	background: var(--chum-background)
 }
 
-._9293f6b2fc12398a-container:is(.f75fb00fb7356cbe-title, ._9293f6b2fc12398a-themed) ._9293f6b2fc12398a-icon,
-._9293f6b2fc12398a-container:is(.f75fb00fb7356cbe-title, ._9293f6b2fc12398a-themed) ._9293f6b2fc12398a-clickable ._9293f6b2fc12398a-icon,
-._9293f6b2fc12398a-container:is(.f75fb00fb7356cbe-title, ._9293f6b2fc12398a-themed) ._9293f6b2fc12398a-clickable:hover ._9293f6b2fc12398a-icon,
-._9293f6b2fc12398a-container:is(.f75fb00fb7356cbe-title, ._9293f6b2fc12398a-themed) ._9293f6b2fc12398a-selected ._9293f6b2fc12398a-icon {
+.container__9293f:is(.title_f75fb0, .themed__9293f) .icon__9293f,
+.container__9293f:is(.title_f75fb0, .themed__9293f) .clickable__9293f .icon__9293f,
+.container__9293f:is(.title_f75fb0, .themed__9293f) .clickable__9293f:hover .icon__9293f,
+.container__9293f:is(.title_f75fb0, .themed__9293f) .selected__9293f .icon__9293f {
 	color: #000
 }
 
-._9293f6b2fc12398a-container:is(.f75fb00fb7356cbe-title, ._9293f6b2fc12398a-themed) ._9293f6b2fc12398a-iconWrapper path {
+.container__9293f:is(.title_f75fb0, .themed__9293f) .iconWrapper__9293f path {
 	fill: #000
 }
 
-.c8ffbb79449f399c-container {
+.container_c8ffbb {
 	background: unset
 }
 
-.c8ffbb79449f399c-members {
+.members_c8ffbb {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark)
 }
 
-._0f2e83213c878a13-container,
-.c8ffbb79449f399c-member {
+.container__0f2e8,
+.member_c8ffbb {
 	background: unset
 }
 
-.c791b281f2fedc32-header {
+.header_c791b2 {
 	box-shadow: none
 }
 
-.c791b281f2fedc32-header+.scroller_d20375 {
+.header_c791b2+.scroller_d20375 {
 	padding-bottom: 0;
 	top: 16px;
 	left: 16px;
 	width: calc(100% - 28px)
 }
 
-.c791b281f2fedc32-header+.scroller_d20375 .f75fb00fb7356cbe-content.f75fb00fb7356cbe-content.f75fb00fb7356cbe-content {
+.header_c791b2+.scroller_d20375 .content_f75fb0.content_f75fb0.content_f75fb0 {
 	padding: 0;
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark)
 }
 
-._09a38002c6c2466d-mainTableContainer {
+.mainTableContainer__09a38 {
 	background: var(--chum-background)
 }
 
-.dc83f5490ab160ad-chatHeaderBar {
+.chatHeaderBar_dc83f5 {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-light)
 }
 
-.dc83f5490ab160ad-chatHeaderBar::after {
+.chatHeaderBar_dc83f5::after {
 	display: none
 }
 
-.f75fb00fb7356cbe-chatContent {
+.chatContent_f75fb0 {
 	gap: 16px;
 	background: unset
 }
 
-.f75fb00fb7356cbe-chatContent ._36d072eab2b2e737-messagesWrapper {
+.chatContent_f75fb0 .messagesWrapper__36d07 {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark)
 }
 
-.f75fb00fb7356cbe-chatContent ._0f481cbbd7530492-newMessagesBar,
-.f75fb00fb7356cbe-chatContent ._0f481cbbd7530492-jumpToPresentBar {
+.chatContent_f75fb0 .newMessagesBar__0f481,
+.chatContent_f75fb0 .jumpToPresentBar__0f481 {
 	background: var(--chum-dark)
 }
 
-.f75fb00fb7356cbe-form {
+.form_f75fb0 {
 	padding: 0
 }
 
-.f75fb00fb7356cbe-form::before {
+.form_f75fb0::before {
 	display: none
 }
 
-.f75fb00fb7356cbe-form .f75fb00fb7356cbe-channelTextArea {
+.form_f75fb0 .channelTextArea_f75fb0 {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark);
 	box-sizing: border-box
 }
 
-.f75fb00fb7356cbe-form .f75fb00fb7356cbe-channelTextArea._740174f3d6a2c8fe-channelTextAreaDisabled {
+.form_f75fb0 .channelTextArea_f75fb0.channelTextAreaDisabled__74017 {
 	background: var(--chum-dark)
 }
 
-.f75fb00fb7356cbe-form .f75fb00fb7356cbe-channelTextArea ._740174f3d6a2c8fe-themedBackground {
+.form_f75fb0 .channelTextArea_f75fb0 .themedBackground__74017 {
 	background: unset
 }
 
-.f75fb00fb7356cbe-form .b8880176888cc928-base {
+.form_f75fb0 .base_b88801 {
 	color: #000;
 	inset: auto 0 0
 }
 
-.f75fb00fb7356cbe-form .b8880176888cc928-base ._5ad890d06f24286d-dots._5ad890d06f24286d-themed {
+.form_f75fb0 .base_b88801 .dots__5ad89.themed__5ad89 {
 	color: #000
 }
 
-.f75fb00fb7356cbe-form .b8880176888cc928-base .b216994de061a9e2-cooldownWrapper {
+.form_f75fb0 .base_b88801 .cooldownWrapper_b21699 {
 	color: #000 !important
 }
 
-.d125d22cdfd32cfe-scrollerBase:has(._7449fa59699cedd9-homeContainer) {
+.scrollerBase_d125d2:has(.homeContainer__7449f) {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-dark);
 	margin: 16px
 }
 
-.d125d22cdfd32cfe-scrollerBase:has(._7449fa59699cedd9-homeContainer) .d13feb942bc5e7c6-row,
-.d125d22cdfd32cfe-scrollerBase:has(._7449fa59699cedd9-homeContainer) ._7449fa59699cedd9-sidebarCardWrapper {
+.scrollerBase_d125d2:has(.homeContainer__7449f) .row_d13feb,
+.scrollerBase_d125d2:has(.homeContainer__7449f) .sidebarCardWrapper__7449f {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark)
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-dark);
 	margin: 16px;
@@ -634,98 +634,98 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	gap: 0
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container ._5d7c9a81ac5dd074-emptyPage,
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container .scrollerContainer_c6b11b,
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container .container_c2efea {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .emptyPage__5d7c9,
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .scrollerContainer_c6b11b,
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .container_c2efea {
 	background: unset
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container ._0b56311ebc6682e2-tabBar {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .tabBar__0b563 {
 	border-bottom: 0
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container ._0b56311ebc6682e2-tabBar ._0b56311ebc6682e2-tabBarItem {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .tabBar__0b563 .tabBarItem__0b563 {
 	padding: 2px 8px
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container ._0b56311ebc6682e2-tabBar .textBadge_f05120 {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .tabBar__0b563 .textBadge_f05120 {
 	--background-accent: var(--chum-dark)
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container .heading-md-semibold__76ba1 {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .heading-md-semibold__76ba1 {
 	--header-primary: #000000
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container .heading-md-semibold__76ba1+.text-xs-normal__46d75 {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .heading-md-semibold__76ba1+.text-xs-normal__46d75 {
 	--text-muted: #000000
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container ._5d7c9a81ac5dd074-helpText {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .helpText__5d7c9 {
 	--text-muted: #000000
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container ._5d7c9a81ac5dd074-prompt {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .prompt__5d7c9 {
 	border: none;
 	background: unset
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container ._5d7c9a81ac5dd074-prompt ._270d7a28db32b312-optionButtonWrapper {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .prompt__5d7c9 .optionButtonWrapper__270d7 {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark)
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container ._5d7c9a81ac5dd074-prompt ._270d7a28db32b312-optionButtonWrapper._270d7a28db32b312-selected {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .prompt__5d7c9 .optionButtonWrapper__270d7.selected__270d7 {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-light)
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container ._5d7c9a81ac5dd074-prompt ._270d7a28db32b312-optionButtonWrapper._270d7a28db32b312-selected ._270d7a28db32b312-checkIcon {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .prompt__5d7c9 .optionButtonWrapper__270d7.selected__270d7 .checkIcon__270d7 {
 	background: var(--chum-light)
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container ._5d7c9a81ac5dd074-prompt ._270d7a28db32b312-optionButtonWrapper._270d7a28db32b312-selected ._270d7a28db32b312-checkIcon path {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .prompt__5d7c9 .optionButtonWrapper__270d7.selected__270d7 .checkIcon__270d7 path {
 	fill: #000
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container ._5d7c9a81ac5dd074-profileCard {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .profileCard__5d7c9 {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark)
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container .container__33507 {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .container__33507 {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark)
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container .e4503acec53c64dd-categoryRow {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .categoryRow_e4503a {
 	--text-muted: #000000
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container .e4503acec53c64dd-categoryRow .checkbox_f525d3 {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .categoryRow_e4503a .checkbox_f525d3 {
 	background: #000 !important;
 	border: none
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container .e4503acec53c64dd-channelRow {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .channelRow_e4503a {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark);
 	border-top-width: 0;
 	border-bottom-width: 0
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container .e4503acec53c64dd-channelRow.e4503acec53c64dd-firstChannel {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .channelRow_e4503a.firstChannel_e4503a {
 	border-top-width: 4px
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container .e4503acec53c64dd-channelRow.e4503acec53c64dd-lastChannel {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .channelRow_e4503a.lastChannel_e4503a {
 	border-bottom-width: 4px
 }
 
-._0b56311ebc6682e2-header:has(path[d^="M18.5 23"])+._0b56311ebc6682e2-container._0b56311ebc6682e2-container._0b56311ebc6682e2-container .e4503acec53c64dd-separator {
+.header__0b563:has(path[d^="M18.5 23"])+.container__0b563.container__0b563.container__0b563 .separator_e4503a {
 	display: none
 }
 
-._496688f04cb26d28-content {
+.content__49668 {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark);
 	margin: 16px;
@@ -733,46 +733,46 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	padding-right: 0 !important
 }
 
-._496688f04cb26d28-content ._496688f04cb26d28-contentContainer {
+.content__49668 .contentContainer__49668 {
 	width: auto
 }
 
-._496688f04cb26d28-content .adb50a654b4cd212-container {
+.content__49668 .container_adb50a {
 	background: unset;
 	box-shadow: none;
 	border: none
 }
 
-._496688f04cb26d28-content .adb50a654b4cd212-container .adb50a654b4cd212-coverImageContainer {
+.content__49668 .container_adb50a .coverImageContainer_adb50a {
 	width: unset
 }
 
-._496688f04cb26d28-content .d804ff2e60e07385-container {
+.content__49668 .container_d804ff {
 	padding: 16px
 }
 
-._496688f04cb26d28-content .d804ff2e60e07385-container .d804ff2e60e07385-tab {
+.content__49668 .container_d804ff .tab_d804ff {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-dark);
 	box-shadow: none
 }
 
-._496688f04cb26d28-content .d804ff2e60e07385-container .d804ff2e60e07385-tab.d804ff2e60e07385-selected {
+.content__49668 .container_d804ff .tab_d804ff.selected_d804ff {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-light);
 	box-shadow: none
 }
 
-._496688f04cb26d28-content .d804ff2e60e07385-container .d804ff2e60e07385-tab .text-sm-semibold_d260b0,
-._496688f04cb26d28-content .d804ff2e60e07385-container .d804ff2e60e07385-tab .text-xs-normal__46d75 {
+.content__49668 .container_d804ff .tab_d804ff .text-sm-semibold_d260b0,
+.content__49668 .container_d804ff .tab_d804ff .text-xs-normal__46d75 {
 	color: #000 !important
 }
 
-._496688f04cb26d28-content ._496688f04cb26d28-tabContainer {
+.content__49668 .tabContainer__49668 {
 	border-top: 0
 }
 
-._496688f04cb26d28-content ._3efc4041416bf6dc-cardContainerWithoutTopIndicator {
+.content__49668 .cardContainerWithoutTopIndicator__3efc4 {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-dark);
 	--header-primary: #000000;
@@ -783,38 +783,38 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	--text-normal: #000000
 }
 
-._496688f04cb26d28-content ._3efc4041416bf6dc-cardContainerWithoutTopIndicator ._3efc4041416bf6dc-tierInfoContainer,
-._496688f04cb26d28-content ._3efc4041416bf6dc-cardContainerWithoutTopIndicator ._3efc4041416bf6dc-subscriptionPerks {
+.content__49668 .cardContainerWithoutTopIndicator__3efc4 .tierInfoContainer__3efc4,
+.content__49668 .cardContainerWithoutTopIndicator__3efc4 .subscriptionPerks__3efc4 {
 	background: unset
 }
 
-._496688f04cb26d28-content ._3efc4041416bf6dc-cardContainerWithoutTopIndicator ._3efc4041416bf6dc-roleMessagePreview {
+.content__49668 .cardContainerWithoutTopIndicator__3efc4 .roleMessagePreview__3efc4 {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark);
 	--text-normal: var(--chum-foreground)
 }
 
-.a98f3b020416ad54-searchResultsWrap {
+.searchResultsWrap_a98f3b {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-light)
 }
 
-.a98f3b020416ad54-searchResultsWrap .ae7890a1b8e75804-searchHeader {
+.searchResultsWrap_a98f3b .searchHeader_ae7890 {
 	background: var(--chum-medium);
 	--header-primary: #000000
 }
 
-.a98f3b020416ad54-searchResultsWrap .a98f3b020416ad54-scroller {
+.searchResultsWrap_a98f3b .scroller_a98f3b {
 	padding: 0 10px;
 	padding-right: 6px !important
 }
 
-.a98f3b020416ad54-searchResultsWrap .a7e67f4ddd7c6bb2-searchResultGroup .a7e67f4ddd7c6bb2-channelNameContainer {
+.searchResultsWrap_a98f3b .searchResultGroup_a7e67f .channelNameContainer_a7e67f {
 	--header-primary: #000000;
 	--header-secondary: #000000
 }
 
-.a98f3b020416ad54-searchResultsWrap .a7e67f4ddd7c6bb2-searchResultGroup ._80bf8435713f6adb-searchResult {
+.searchResultsWrap_a98f3b .searchResultGroup_a7e67f .searchResult__80bf8 {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark);
 	border-top: 0;
@@ -822,8 +822,8 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	overflow: unset
 }
 
-.a98f3b020416ad54-searchResultsWrap .a7e67f4ddd7c6bb2-searchResultGroup ._80bf8435713f6adb-searchResult::before,
-.a98f3b020416ad54-searchResultsWrap .a7e67f4ddd7c6bb2-searchResultGroup ._80bf8435713f6adb-searchResult::after {
+.searchResultsWrap_a98f3b .searchResultGroup_a7e67f .searchResult__80bf8::before,
+.searchResultsWrap_a98f3b .searchResultGroup_a7e67f .searchResult__80bf8::after {
 	content: "";
 	display: block;
 	height: 4px;
@@ -832,23 +832,23 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	z-index: 2
 }
 
-.a98f3b020416ad54-searchResultsWrap .a7e67f4ddd7c6bb2-searchResultGroup ._80bf8435713f6adb-searchResult::before {
+.searchResultsWrap_a98f3b .searchResultGroup_a7e67f .searchResult__80bf8::before {
 	top: 0
 }
 
-.a98f3b020416ad54-searchResultsWrap .a7e67f4ddd7c6bb2-searchResultGroup ._80bf8435713f6adb-searchResult::after {
+.searchResultsWrap_a98f3b .searchResultGroup_a7e67f .searchResult__80bf8::after {
 	bottom: 54px
 }
 
-.a98f3b020416ad54-searchResultsWrap .a7e67f4ddd7c6bb2-searchResultGroup ._80bf8435713f6adb-buttonsContainer {
+.searchResultsWrap_a98f3b .searchResultGroup_a7e67f .buttonsContainer__80bf8 {
 	display: none
 }
 
-.a98f3b020416ad54-searchResultsWrap:not(:has(.c1521037ef09de7e-pageControlContainer)) ._80bf8435713f6adb-searchResult::after {
+.searchResultsWrap_a98f3b:not(:has(.pageControlContainer_c15210)) .searchResult__80bf8::after {
 	bottom: 20px
 }
 
-.a98f3b020416ad54-searchResultsWrap ._6c21f4f70f1e833a-container {
+.searchResultsWrap_a98f3b .container__6c21f {
 	position: sticky;
 	bottom: 0;
 	background: var(--chum-medium);
@@ -858,81 +858,81 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	--interactive-hover: #000000
 }
 
-.a98f3b020416ad54-searchResultsWrap ._6c21f4f70f1e833a-container .c1521037ef09de7e-pageButton {
+.searchResultsWrap_a98f3b .container__6c21f .pageButton_c15210 {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-dark)
 }
 
-.a98f3b020416ad54-searchResultsWrap ._6c21f4f70f1e833a-container .c1521037ef09de7e-pageButton.c1521037ef09de7e-activeButton {
+.searchResultsWrap_a98f3b .container__6c21f .pageButton_c15210.activeButton_c15210 {
 	border-color: var(--chum-light);
 	color: #000
 }
 
-.ef3116c2da186559-wrapper {
+.wrapper_ef3116 {
 	background: unset
 }
 
-._6e9f8dce4cc18de3-wrapper:is(._6e9f8dce4cc18de3-wrapper, :hover) ._6e9f8dce4cc18de3-childWrapper:not(._1f388bcaa446c0c8-tutorialContainer ._6e9f8dce4cc18de3-childWrapper) {
+.wrapper__6e9f8:is(.wrapper__6e9f8, :hover) .childWrapper__6e9f8:not(.tutorialContainer__1f388 .childWrapper__6e9f8) {
 	background: var(--chum-background);
 	color: var(--chum-light)
 }
 
-._6e9f8dce4cc18de3-wrapper:is(._6e9f8dce4cc18de3-wrapper, :hover) ._6e9f8dce4cc18de3-childWrapper {
+.wrapper__6e9f8:is(.wrapper__6e9f8, :hover) .childWrapper__6e9f8 {
 	background: url("https://minidiscordthemes.github.io/Pesterchum/img/home.avif") center/80% no-repeat var(--chum-background);
 	color: rgba(0, 0, 0, 0)
 }
 
-.ef3116c2da186559-wrapper ._5bc7ed9d4097f6b5-circleIconButton {
+.wrapper_ef3116 .circleIconButton__5bc7e {
 	color: var(--chum-light)
 }
 
-.ef3116c2da186559-wrapper .footer__214dc {
+.wrapper_ef3116 .footer__214dc {
 	background: unset
 }
 
-.ef3116c2da186559-wrapper .childWrapper_a6ce15,
-.ef3116c2da186559-wrapper .wrapper__8436d:hover .childWrapper_a6ce15,
-.ef3116c2da186559-wrapper .wrapper__8436d.selected_ae80f7 .childWrapper_a6ce15,
-.ef3116c2da186559-wrapper ._5bc7ed9d4097f6b5-circleIconButton {
+.wrapper_ef3116 .childWrapper_a6ce15,
+.wrapper_ef3116 .wrapper__8436d:hover .childWrapper_a6ce15,
+.wrapper_ef3116 .wrapper__8436d.selected_ae80f7 .childWrapper_a6ce15,
+.wrapper_ef3116 .circleIconButton__5bc7e {
 	background-color: var(--chum-background)
 }
 
-.ef3116c2da186559-wrapper ._48112cbe77dc5022-folderGroupBackground,
-.ef3116c2da186559-wrapper .b18fe29d6fe8dd82-hiddenVisually {
+.wrapper_ef3116 .folderGroupBackground__48112,
+.wrapper_ef3116 .hiddenVisually_b18fe2 {
 	background: var(--chum-background)
 }
 
-._01ae244280823725-chatTarget,
-._01ae244280823725-container {
+.chatTarget__01ae2,
+.container__01ae2 {
 	background: var(--chum-medium)
 }
 
-.f02135b221cc85a6-chat,
-.a44415a3320e67de-chat {
+.chat_f02135,
+.chat_a44415 {
 	padding: 16px
 }
 
-.f02135b221cc85a6-chat::before,
-.a44415a3320e67de-chat::before {
+.chat_f02135::before,
+.chat_a44415::before {
 	display: none
 }
 
-._01ae244280823725-floating {
+.floating__01ae2 {
 	filter: none;
 	border-left: 4px solid var(--chum-light)
 }
 
-._01ae244280823725-resizeHandle {
+.resizeHandle__01ae2 {
 	width: 6px;
 	background: var(--chum-light)
 }
 
-._421edea01cb52e16-wordmark {
+.wordmark__421ed {
 	visibility: hidden;
 	padding: 0
 }
 
-._421edea01cb52e16-wordmark::before {
+.wordmark__421ed::before {
 	visibility: visible;
 	padding: 4px 9px 3px;
 	content: "PESTERCHUM";
@@ -941,11 +941,11 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	color: #fff
 }
 
-._421edea01cb52e16-winButton {
+.winButton__421ed {
 	color: #fff
 }
 
-._5e434347c823b592-sidebar {
+.sidebar__5e434 {
 	background: unset;
 	padding: 10px;
 	gap: 10px;
@@ -953,7 +953,7 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	box-sizing: border-box
 }
 
-._5e434347c823b592-sidebar::before {
+.sidebar__5e434::before {
 	content: "PESTERCHUM 6.0";
 	font-size: 27px;
 	font-weight: 700;
@@ -961,9 +961,9 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	color: #fff
 }
 
-._5e434347c823b592-sidebar ._2637a2609f343032-container,
-._5e434347c823b592-sidebar .e6b7699ce8339e1c-privateChannels,
-._5e434347c823b592-sidebar ._5e434347c823b592-panels {
+.sidebar__5e434 .container__2637a,
+.sidebar__5e434 .privateChannels_e6b769,
+.sidebar__5e434 .panels__5e434 {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-light)
 }
@@ -972,54 +972,54 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	--channellist-width: var(--chum-sidebar-width)
 }
 
-._5e434347c823b592-sidebar ._07f9193042954787-overlap ._07f9193042954787-avatar,
-._5e434347c823b592-sidebar ._55bab3f0b2555838-moreContainer {
+.sidebar__5e434 .overlap__07f91 .avatar__07f91,
+.sidebar__5e434 .moreContainer__55bab {
 	background: #000;
 	border: 4px solid var(--chum-dark);
 	border-radius: 999px
 }
 
-._5e434347c823b592-sidebar ._7aaec78b97ff00f7-bar {
+.sidebar__5e434 .bar__7aaec {
 	background: #000;
 	border: 4px solid var(--chum-dark);
 	border-radius: 999px
 }
 
-._5e434347c823b592-sidebar ._260e1982cd52c5c3-wrapper ._260e1982cd52c5c3-users,
-._5e434347c823b592-sidebar ._260e1982cd52c5c3-wrapper ._260e1982cd52c5c3-total {
+.sidebar__5e434 .wrapper__260e1 .users__260e1,
+.sidebar__5e434 .wrapper__260e1 .total__260e1 {
 	background: unset
 }
 
-._5e434347c823b592-sidebar ._260e1982cd52c5c3-wrapper ._260e1982cd52c5c3-total:after {
+.sidebar__5e434 .wrapper__260e1 .total__260e1:after {
 	content: "/";
 	border: 0
 }
 
-._5e434347c823b592-sidebar .voiceChannelsButton__29444:hover {
+.sidebar__5e434 .voiceChannelsButton__29444:hover {
 	background: unset
 }
 
-._5e434347c823b592-panels ._5dec784a68542d60-panel,
-._5e434347c823b592-panels .e131a99484292a19-container,
-._5e434347c823b592-panels ._37e49614b9f110a9-container,
-._5e434347c823b592-panels ._0d6162a4e6a4b802-wrapper {
+.panels__5e434 .panel__5dec7,
+.panels__5e434 .container_e131a9,
+.panels__5e434 .container__37e49,
+.panels__5e434 .wrapper__0d616 {
 	background: unset
 }
 
-._5e434347c823b592-panels ._0d6162a4e6a4b802-contentWrapper,
-._5e434347c823b592-panels .postEnrollmentBackground_c3427e {
+.panels__5e434 .contentWrapper__0d616,
+.panels__5e434 .postEnrollmentBackground_c3427e {
 	background: var(--chum-background) !important
 }
 
-._5e434347c823b592-panels ._5dec784a68542d60-panel {
+.panels__5e434 .panel__5dec7 {
 	border-bottom: 0
 }
 
-._5e434347c823b592-panels .e131a99484292a19-container {
+.panels__5e434 .container_e131a9 {
 	border-bottom: 0
 }
 
-._5e434347c823b592-panels .e131a99484292a19-container .e131a99484292a19-actionButtons .e131a99484292a19-button:not(._201d5e8a3c09670a-disabledButtonWrapper) {
+.panels__5e434 .container_e131a9 .actionButtons_e131a9 .button_e131a9:not(.disabledButtonWrapper__201d5) {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-dark);
 	height: 36px;
@@ -1027,20 +1027,20 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	padding: 0
 }
 
-._5e434347c823b592-panels .e131a99484292a19-container .e131a99484292a19-actionButtons ._201d5e8a3c09670a-disabledButtonWrapper {
+.panels__5e434 .container_e131a9 .actionButtons_e131a9 .disabledButtonWrapper__201d5 {
 	height: 36px
 }
 
-._5e434347c823b592-panels .e131a99484292a19-container .e131a99484292a19-actionButtons ._201d5e8a3c09670a-disabledButtonWrapper ._201d5e8a3c09670a-contents {
+.panels__5e434 .container_e131a9 .actionButtons_e131a9 .disabledButtonWrapper__201d5 .contents__201d5 {
 	display: flex;
 	align-items: center
 }
 
-._5e434347c823b592-panels ._37e49614b9f110a9-container {
+.panels__5e434 .container__37e49 {
 	margin-bottom: 0
 }
 
-._5e434347c823b592-panels ._37e49614b9f110a9-container ._37e49614b9f110a9-avatarWrapper {
+.panels__5e434 .container__37e49 .avatarWrapper__37e49 {
 	margin: 0;
 	padding-left: 0
 }
@@ -1053,11 +1053,11 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	color: #000
 }
 
-._960e4207cea8323e-layer {
+.layer__960e4 {
 	opacity: 1 !important
 }
 
-._960e4207cea8323e-layer+._960e4207cea8323e-layer {
+.layer__960e4+.layer__960e4 {
 	background: unset;
 	-webkit-backdrop-filter: blur(2px) brightness(0.7);
 	backdrop-filter: blur(2px) brightness(0.7);
@@ -1065,13 +1065,13 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	z-index: 100
 }
 
-._960e4207cea8323e-layer+._960e4207cea8323e-layer div:has(>._23e6b439306f125a-standardSidebarView) {
+.layer__960e4+.layer__960e4 div:has(>.standardSidebarView__23e6b) {
 	display: flex;
 	justify-content: center;
 	width: 100%
 }
 
-._23e6b439306f125a-standardSidebarView {
+.standardSidebarView__23e6b {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-light);
 	padding: 10px;
@@ -1081,31 +1081,31 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	top: 20px
 }
 
-.platform-win ._23e6b439306f125a-standardSidebarView {
+.platform-win .standardSidebarView__23e6b {
 	top: 42px
 }
 
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebarRegion {
+.standardSidebarView__23e6b .sidebarRegion__23e6b {
 	flex: 0 0 var(--custom-standard-sidebar-view-sidebar-total-width)
 }
 
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebarRegionScroller {
+.standardSidebarView__23e6b .sidebarRegionScroller__23e6b {
 	background: var(--chum-medium)
 }
 
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebar {
+.standardSidebarView__23e6b .sidebar__23e6b {
 	padding: 0 6px 0 0
 }
 
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebar :is(.aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item, .aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item:hover) {
+.standardSidebarView__23e6b .sidebar__23e6b :is(.item_aa8da2.item_aa8da2.item_aa8da2, .item_aa8da2.item_aa8da2.item_aa8da2:hover) {
 	border-top: 0;
 	border-bottom: 0;
 	overflow: unset;
 	padding: 0
 }
 
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebar :is(.aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item, .aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item:hover)::before,
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebar :is(.aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item, .aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item:hover)::after {
+.standardSidebarView__23e6b .sidebar__23e6b :is(.item_aa8da2.item_aa8da2.item_aa8da2, .item_aa8da2.item_aa8da2.item_aa8da2:hover)::before,
+.standardSidebarView__23e6b .sidebar__23e6b :is(.item_aa8da2.item_aa8da2.item_aa8da2, .item_aa8da2.item_aa8da2.item_aa8da2:hover)::after {
 	content: "";
 	display: block;
 	height: 4px;
@@ -1114,54 +1114,54 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	z-index: 2
 }
 
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebar :is(.aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item, .aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item:hover)::before {
+.standardSidebarView__23e6b .sidebar__23e6b :is(.item_aa8da2.item_aa8da2.item_aa8da2, .item_aa8da2.item_aa8da2.item_aa8da2:hover)::before {
 	top: 0
 }
 
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebar :is(.aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item, .aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item:hover)::after {
+.standardSidebarView__23e6b .sidebar__23e6b :is(.item_aa8da2.item_aa8da2.item_aa8da2, .item_aa8da2.item_aa8da2.item_aa8da2:hover)::after {
 	bottom: 0
 }
 
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebar :is(.aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item, .aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item:hover).aa8da23faa27393c-selected::before,
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebar :is(.aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item, .aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item:hover).aa8da23faa27393c-selected::after {
+.standardSidebarView__23e6b .sidebar__23e6b :is(.item_aa8da2.item_aa8da2.item_aa8da2, .item_aa8da2.item_aa8da2.item_aa8da2:hover).selected_aa8da2::before,
+.standardSidebarView__23e6b .sidebar__23e6b :is(.item_aa8da2.item_aa8da2.item_aa8da2, .item_aa8da2.item_aa8da2.item_aa8da2:hover).selected_aa8da2::after {
 	background: var(--chum-light)
 }
 
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebar :is(.aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item, .aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item:hover)::before {
+.standardSidebarView__23e6b .sidebar__23e6b :is(.item_aa8da2.item_aa8da2.item_aa8da2, .item_aa8da2.item_aa8da2.item_aa8da2:hover)::before {
 	margin-bottom: 6px
 }
 
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebar :is(.aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item, .aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item:hover)::after {
+.standardSidebarView__23e6b .sidebar__23e6b :is(.item_aa8da2.item_aa8da2.item_aa8da2, .item_aa8da2.item_aa8da2.item_aa8da2:hover)::after {
 	margin-top: 6px
 }
 
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebar .aa8da23faa27393c-separator {
+.standardSidebarView__23e6b .sidebar__23e6b .separator_aa8da2 {
 	background: unset
 }
 
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebar .aa8da23faa27393c-header,
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebar ._7df54e658bdcad78-link {
+.standardSidebarView__23e6b .sidebar__23e6b .header_aa8da2,
+.standardSidebarView__23e6b .sidebar__23e6b .link__7df54 {
 	color: #000
 }
 
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebar .aa8da23faa27393c-headerText {
+.standardSidebarView__23e6b .sidebar__23e6b .headerText_aa8da2 {
 	display: flex
 }
 
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebar .aa8da23faa27393c-headerText .category-CysNYv {
+.standardSidebarView__23e6b .sidebar__23e6b .headerText_aa8da2 .category-CysNYv {
 	color: #000 !important;
 	order: -1
 }
 
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebar .aa8da23faa27393c-headerText .category-CysNYv::after {
+.standardSidebarView__23e6b .sidebar__23e6b .headerText_aa8da2 .category-CysNYv::after {
 	content: " / "
 }
 
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-sidebar ._2debea61131de3de-info ._2debea61131de3de-line {
+.standardSidebarView__23e6b .sidebar__23e6b .info__2debe .line__2debe {
 	color: #000 !important
 }
 
-._23e6b439306f125a-standardSidebarView ._23e6b439306f125a-contentRegionScroller {
+.standardSidebarView__23e6b .contentRegionScroller__23e6b {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark)
 }
@@ -1183,7 +1183,7 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	color: #000
 }
 
-.userProfileOuter_c69a7b ._44b0c28be7879b7b-avatar {
+.userProfileOuter_c69a7b .avatar__44b0c {
 	background: var(--chum-dark)
 }
 
@@ -1206,20 +1206,20 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	color: #000
 }
 
-.userProfileOuter_c69a7b .relationshipButtons_ec3b75 .actionButton_fe3e88 ._201d5e8a3c09670a-contents {
+.userProfileOuter_c69a7b .relationshipButtons_ec3b75 .actionButton_fe3e88 .contents__201d5 {
 	font-size: 0
 }
 
-.userProfileOuter_c69a7b .relationshipButtons_ec3b75 .actionButton_fe3e88 ._201d5e8a3c09670a-contents::before {
+.userProfileOuter_c69a7b .relationshipButtons_ec3b75 .actionButton_fe3e88 .contents__201d5::before {
 	font-size: 14px;
 	content: "Pester"
 }
 
-.userProfileOuter_c69a7b .relationshipButtons_ec3b75 .actionButton_fe3e88:disabled ._201d5e8a3c09670a-contents {
+.userProfileOuter_c69a7b .relationshipButtons_ec3b75 .actionButton_fe3e88:disabled .contents__201d5 {
 	font-size: 0
 }
 
-.userProfileOuter_c69a7b .relationshipButtons_ec3b75 .actionButton_fe3e88:disabled ._201d5e8a3c09670a-contents::before {
+.userProfileOuter_c69a7b .relationshipButtons_ec3b75 .actionButton_fe3e88:disabled .contents__201d5::before {
 	font-size: 14px;
 	content: "Chum request sent"
 }
@@ -1251,7 +1251,7 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	gap: 10px
 }
 
-.userProfileOuter_c69a7b .tabBarContainer_b9fccc .tabBar_b9fccc .aa8da23faa27393c-item {
+.userProfileOuter_c69a7b .tabBarContainer_b9fccc .tabBar_b9fccc .item_aa8da2 {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-light);
 	color: #000;
@@ -1259,25 +1259,25 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	box-sizing: border-box
 }
 
-.userProfileOuter_c69a7b .tabBarContainer_b9fccc .tabBar_b9fccc .aa8da23faa27393c-item.aa8da23faa27393c-selected,
-.userProfileOuter_c69a7b .tabBarContainer_b9fccc .tabBar_b9fccc .aa8da23faa27393c-item:hover {
+.userProfileOuter_c69a7b .tabBarContainer_b9fccc .tabBar_b9fccc .item_aa8da2.selected_aa8da2,
+.userProfileOuter_c69a7b .tabBarContainer_b9fccc .tabBar_b9fccc .item_aa8da2:hover {
 	border-bottom-color: var(--chum-dark)
 }
 
-.userProfileOuter_c69a7b .tabBarContainer_b9fccc .tabBar_b9fccc .aa8da23faa27393c-item:first-child {
+.userProfileOuter_c69a7b .tabBarContainer_b9fccc .tabBar_b9fccc .item_aa8da2:first-child {
 	font-size: 0
 }
 
-.userProfileOuter_c69a7b .tabBarContainer_b9fccc .tabBar_b9fccc .aa8da23faa27393c-item:first-child::before {
+.userProfileOuter_c69a7b .tabBarContainer_b9fccc .tabBar_b9fccc .item_aa8da2:first-child::before {
 	font-size: 14px;
 	content: "Chum Info"
 }
 
-.userProfileOuter_c69a7b .tabBarContainer_b9fccc .tabBar_b9fccc .aa8da23faa27393c-item:nth-last-child(2) {
+.userProfileOuter_c69a7b .tabBarContainer_b9fccc .tabBar_b9fccc .item_aa8da2:nth-last-child(2) {
 	font-size: 0
 }
 
-.userProfileOuter_c69a7b .tabBarContainer_b9fccc .tabBar_b9fccc .aa8da23faa27393c-item:nth-last-child(2)::before {
+.userProfileOuter_c69a7b .tabBarContainer_b9fccc .tabBar_b9fccc .item_aa8da2:nth-last-child(2)::before {
 	font-size: 14px;
 	content: "Mutual Chums"
 }
@@ -1294,27 +1294,27 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	color: #000
 }
 
-.userProfileOuter_c69a7b .activity__20c1e ._2ef4989efde1f4e4-headerText {
+.userProfileOuter_c69a7b .activity__20c1e .headerText__2ef49 {
 	color: #4f5660
 }
 
-.userProfileOuter_c69a7b .activity__20c1e ._2ef4989efde1f4e4-activityName,
-.userProfileOuter_c69a7b .activity__20c1e ._2ef4989efde1f4e4-content,
-.userProfileOuter_c69a7b .activity__20c1e ._2ef4989efde1f4e4-details,
-.userProfileOuter_c69a7b .activity__20c1e ._2ef4989efde1f4e4-name,
-.userProfileOuter_c69a7b .activity__20c1e ._2ef4989efde1f4e4-nameNormal,
-.userProfileOuter_c69a7b .activity__20c1e ._2ef4989efde1f4e4-nameWrap {
+.userProfileOuter_c69a7b .activity__20c1e .activityName__2ef49,
+.userProfileOuter_c69a7b .activity__20c1e .content__2ef49,
+.userProfileOuter_c69a7b .activity__20c1e .details__2ef49,
+.userProfileOuter_c69a7b .activity__20c1e .name__2ef49,
+.userProfileOuter_c69a7b .activity__20c1e .nameNormal__2ef49,
+.userProfileOuter_c69a7b .activity__20c1e .nameWrap__2ef49 {
 	color: #000
 }
 
-.userProfileOuter_c69a7b .dfa8b6b94cddb191-role {
+.userProfileOuter_c69a7b .role_dfa8b6 {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark);
 	box-sizing: content-box;
 	padding: 0
 }
 
-.userProfileOuter_c69a7b .dfa8b6b94cddb191-role ._48c1c0768f2a2421-roleNameOverflow {
+.userProfileOuter_c69a7b .role_dfa8b6 .roleNameOverflow__48c1c {
 	color: var(--chum-foreground)
 }
 
@@ -1338,7 +1338,7 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	color: var(--chum-foreground)
 }
 
-.userProfileOuter_c69a7b .e6abe833ac70fcae-connectedAccountContainer {
+.userProfileOuter_c69a7b .connectedAccountContainer_e6abe8 {
 	background: var(--chum-background);
 	border: 4px solid var(--chum-dark)
 }
@@ -1364,68 +1364,68 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	--font-code: courier_prime, courier_new_cyr, Courier New, Courier, monospace
 }
 
-._6c79861fd96f56b1-wrapper {
+.wrapper__6c798 {
 	background: unset
 }
 
-._6c79861fd96f56b1-wrapper .fc817765600a960a-wrapper {
+.wrapper__6c798 .wrapper_fc8177 {
 	background: unset
 }
 
-._6c79861fd96f56b1-wrapper .fc817765600a960a-wrapper .fc817765600a960a-attachment,
-._6c79861fd96f56b1-wrapper .fc817765600a960a-wrapper .fc817765600a960a-avatar,
-._6c79861fd96f56b1-wrapper .fc817765600a960a-wrapper .fc817765600a960a-blob {
+.wrapper__6c798 .wrapper_fc8177 .attachment_fc8177,
+.wrapper__6c798 .wrapper_fc8177 .avatar_fc8177,
+.wrapper__6c798 .wrapper_fc8177 .blob_fc8177 {
 	background: var(--chum-dark);
 	opacity: .2 !important
 }
 
-.f369dba7416c67f0-loadingCard {
+.loadingCard_f369db {
 	background: var(--chum-dark);
 	opacity: .2 !important
 }
 
-.d125d22cdfd32cfe-auto::-webkit-scrollbar,
-._99f8cc7ad4790ce9-auto::-webkit-scrollbar {
+.auto_d125d2::-webkit-scrollbar,
+.auto__99f8c::-webkit-scrollbar {
 	width: 8px;
 	height: 8px
 }
 
-.d125d22cdfd32cfe-auto::-webkit-scrollbar-thumb,
-._99f8cc7ad4790ce9-auto::-webkit-scrollbar-thumb {
+.auto_d125d2::-webkit-scrollbar-thumb,
+.auto__99f8c::-webkit-scrollbar-thumb {
 	background: var(--chum-light)
 }
 
-.d125d22cdfd32cfe-auto::-webkit-scrollbar-thumb,
-.d125d22cdfd32cfe-auto::-webkit-scrollbar-track,
-._99f8cc7ad4790ce9-auto::-webkit-scrollbar-thumb,
-._99f8cc7ad4790ce9-auto::-webkit-scrollbar-track {
+.auto_d125d2::-webkit-scrollbar-thumb,
+.auto_d125d2::-webkit-scrollbar-track,
+.auto__99f8c::-webkit-scrollbar-thumb,
+.auto__99f8c::-webkit-scrollbar-track {
 	border: 4px solid rgba(0, 0, 0, 0)
 }
 
-._36d072eab2b2e737-scroller::-webkit-scrollbar-track {
+.scroller__36d07::-webkit-scrollbar-track {
 	margin-bottom: 0
 }
 
-._99f8cc7ad4790ce9-thin::-webkit-scrollbar,
-.d125d22cdfd32cfe-thin::-webkit-scrollbar {
+.thin__99f8c::-webkit-scrollbar,
+.thin_d125d2::-webkit-scrollbar {
 	width: 4px;
 	height: 4px
 }
 
-._99f8cc7ad4790ce9-thin::-webkit-scrollbar-thumb,
-.d125d22cdfd32cfe-thin::-webkit-scrollbar-thumb {
+.thin__99f8c::-webkit-scrollbar-thumb,
+.thin_d125d2::-webkit-scrollbar-thumb {
 	background: var(--chum-light)
 }
 
-._99f8cc7ad4790ce9-thin::-webkit-scrollbar-thumb,
-._99f8cc7ad4790ce9-thin::-webkit-scrollbar-track,
-.d125d22cdfd32cfe-thin::-webkit-scrollbar-thumb,
-.d125d22cdfd32cfe-thin::-webkit-scrollbar-track {
+.thin__99f8c::-webkit-scrollbar-thumb,
+.thin__99f8c::-webkit-scrollbar-track,
+.thin_d125d2::-webkit-scrollbar-thumb,
+.thin_d125d2::-webkit-scrollbar-track {
 	border: 4px solid rgba(0, 0, 0, 0)
 }
 
-.aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item,
-.aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item:hover {
+.item_aa8da2.item_aa8da2.item_aa8da2.item_aa8da2,
+.item_aa8da2.item_aa8da2.item_aa8da2.item_aa8da2:hover {
 	background: var(--chum-medium);
 	border: 4px solid var(--chum-dark);
 	background: var(--chum-medium);
@@ -1433,20 +1433,20 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 	padding: 0 5px
 }
 
-.aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-item.aa8da23faa27393c-selected {
+.item_aa8da2.item_aa8da2.item_aa8da2.item_aa8da2.selected_aa8da2 {
 	border-color: var(--chum-light);
 	background: var(--chum-medium);
 	padding: 0 5px
 }
 
-.f75fb00fb7356cbe-form .b8880176888cc928-base,
-.f75fb00fb7356cbe-form .b8880176888cc928-base ._5ad890d06f24286d-dots._5ad890d06f24286d-themed,
+.form_f75fb0 .base_b88801,
+.form_f75fb0 .base_b88801 .dots__5ad89.themed__5ad89,
 .userProfileOuter_c69a7b .userTagUsernameBase_c9ccf6,
 .userProfileOuter_c69a7b .discriminator_afed89,
-._9293f6b2fc12398a-container:is(.f75fb00fb7356cbe-title, ._9293f6b2fc12398a-themed) :is(._9293f6b2fc12398a-title, ._6ec1a06139ec3b27-topic, .nicknames__12efb, ._9293f6b2fc12398a-icon, ._9293f6b2fc12398a-clickable ._9293f6b2fc12398a-icon, ._9293f6b2fc12398a-clickable:hover ._9293f6b2fc12398a-icon, ._9293f6b2fc12398a-selected ._9293f6b2fc12398a-icon) {
+.container__9293f:is(.title_f75fb0, .themed__9293f) :is(.title__9293f, .topic__6ec1a, .nicknames__12efb, .icon__9293f, .clickable__9293f .icon__9293f, .clickable__9293f:hover .icon__9293f, .selected__9293f .icon__9293f) {
   color: white;
 }
 
-._9293f6b2fc12398a-container:is(.f75fb00fb7356cbe-title, ._9293f6b2fc12398a-themed) ._9293f6b2fc12398a-iconWrapper path {
+.container__9293f:is(.title_f75fb0, .themed__9293f) .iconWrapper__9293f path {
   fill: white;
 }

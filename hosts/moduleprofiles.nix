@@ -53,9 +53,9 @@
       ../modules/common/printing.nix
     ];
   };
-  networking-networkmanager-iwdbackend = {
+  networking-networkmanager = {
     system = [
-      ../modules/common/networking/networkmanager-iwdbackend.nix
+      ../modules/common/networking/networkmanager.nix
     ];
   };
   pipewire = {
