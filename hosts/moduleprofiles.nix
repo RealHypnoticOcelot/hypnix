@@ -253,4 +253,9 @@
       ../modules/common/networking/warp-wireguard.nix
     ];
   };
+  warp-cli = {
+    home-manager = [
+      ../apps/warp-cli/home-manager.nix
+    ];
+  };
 }
