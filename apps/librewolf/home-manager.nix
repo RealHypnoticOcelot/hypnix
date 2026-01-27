@@ -26,7 +26,7 @@
           "DuckDuckGo"
           "Wikipedia (en)"
         ];
-        Default = "Mojeek";
+        Default = "Startpage";
       };
       ExtensionSettings = {
         "uBlock0@raymondhill.net" = { # uBlock Origin
