@@ -1451,7 +1451,7 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
   fill: white;
 }
 
-.pointerEvents__44b0c[x="14.5"] {
+.pointerEvents__44b0c[x="14.5"]::after {
   x: 0px;
   y: 0px;
 }
