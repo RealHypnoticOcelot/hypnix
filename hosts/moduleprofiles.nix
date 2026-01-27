@@ -243,4 +243,9 @@
       ../apps/thunderbird/home-manager.nix
     ];
   };
+  wgcf = {
+    home-manager = [
+      ../apps/wgcf/home-manager.nix
+    ];
+  };
 }
