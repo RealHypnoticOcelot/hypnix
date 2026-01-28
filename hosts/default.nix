@@ -67,7 +67,7 @@ in
       "vicinae"
       "libreoffice-qt"
       # "kdenlive"
-      "merkuro"
+      "krkuro"
       "filelight"
       "wgcf"
     ];
