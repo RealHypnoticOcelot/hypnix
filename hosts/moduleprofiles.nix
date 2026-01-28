@@ -234,8 +234,8 @@
     ];
   };
   merkuro = {
-    system = [
-      ../apps/merkuro
+    home-manager = [
+      ../apps/merkuro/home-manager.nix
     ];
   };
   thunderbird = {
