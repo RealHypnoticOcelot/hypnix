@@ -70,9 +70,6 @@
             name = "org.kde.plasma.volume";
           }
           {
-            name = "plasmashell_microphone";
-          }
-          {
             name = "org.kde.plasma.brightness";
           }
           {
