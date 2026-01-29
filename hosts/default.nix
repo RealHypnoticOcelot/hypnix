@@ -50,6 +50,7 @@ in
       "plasma-6"
       "plasma-manager"
       "networking-networkmanager"
+      "bluetooth"
       "printing"
       "pipewire"
       "brightness"

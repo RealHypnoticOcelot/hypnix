@@ -258,4 +258,9 @@
       ../apps/warp-cli/home-manager.nix
     ];
   };
+  bluetooth = {
+    system = [
+      ../modules/common/bluetooth.nix
+    ]
+  }
 }
