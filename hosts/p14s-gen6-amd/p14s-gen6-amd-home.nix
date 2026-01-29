@@ -42,7 +42,7 @@
     };
     configFile = {
       "services/plasma-manager-commands.desktop".mute-microphone = "Microphone Mute";
-    }
+    };
   };
   programs.git = {
     settings = {
