@@ -4,6 +4,16 @@
     enable = true;
     overrideConfig = true; # Whether this is the only source of truth for configuration
     workspace.colorScheme = "BreezeDark";
+    powerdevil = {
+      battery.dimDisplay.idleTimeout = 900; # In seconds
+      battery.turnOffDisplay.idleTimeout = 1800; # In seconds
+    };
+    configFile = {
+      klipperrc.General.MaxClipItems = 2048; # Maximum 2048
+    };
+    workspace = {
+      enableMiddleClickPaste = false;
+    };
     panels = [
       { # The taskbar at the bottom of the screen
         floating = false;
@@ -84,12 +94,5 @@
         ];
       }
     ];
-    powerdevil = {
-      battery.dimDisplay.idleTimeout = 900; # In seconds
-      battery.turnOffDisplay.idleTimeout = 1800; # In seconds
-    };
-    configFile = {
-      klipperrc.General.MaxClipItems = 2048; # Maximum 2048
-    };
   };
 }
