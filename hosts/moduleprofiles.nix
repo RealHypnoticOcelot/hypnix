@@ -261,6 +261,6 @@
   bluetooth = {
     system = [
       ../modules/common/bluetooth.nix
-    ]
-  }
+    ];
+  };
 }
