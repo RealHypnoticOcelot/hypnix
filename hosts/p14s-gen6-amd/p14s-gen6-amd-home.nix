@@ -41,7 +41,7 @@
       # Funny business with escaping
     };
     shortcuts = {
-      "services/plasma-manager-commands.desktop".mute-microphone = "XF86AudioMicMute";
+      "services/plasma-manager-commands.desktop".mute-microphone = "Microphone Mute";
     };
   };
   programs.git = {
