@@ -46,7 +46,12 @@
               ];
               # Explicitly hide
               hidden = [
-                #
+                "org.kde.plasma.battery"
+                "org.kde.plasma.networkmanagement"
+                "org.kde.plasma.volume"
+                "org.kde.plasma.brightness"
+                "org.kde.plasma.clipboard"
+                "org.kde.merkuro.contact.applet"
               ];
             };
           }
