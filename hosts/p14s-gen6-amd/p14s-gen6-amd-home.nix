@@ -9,6 +9,7 @@
   ...
 }:
 {
+  # These are configurations for applications, but they don't actually enable said applications; you'll need to select their respective profiles.
   wayland.windowManager.hyprland = {
     settings = {
       # Keyboard-specific functions, so they go here!

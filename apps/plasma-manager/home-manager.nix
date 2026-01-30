@@ -46,6 +46,9 @@
             };
           }
           {
+            name = "org.kde.plasma.mediacontroller"; # Shows the track currently playing
+          }
+          {
             name = "org.kde.plasma.marginsseparator";
           }
           {
