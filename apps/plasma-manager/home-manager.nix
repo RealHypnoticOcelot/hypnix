@@ -10,6 +10,14 @@
     };
     configFile = {
       klipperrc.General.MaxClipItems = 2048; # Maximum 2048
+      krunnerrc= {
+        Plugins = {
+          browserhistoryEnabled = false;
+          browsertabsEnabled = false;
+          krunner_appstreamEnabled = false; # Software Center applications showing up in search
+          krunner_webshortcutsEnabled = false; # Search the web
+        };
+      };
     };
     workspace = {
       enableMiddleClickPaste = false;
