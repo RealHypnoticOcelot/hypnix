@@ -263,4 +263,9 @@
       ../modules/common/bluetooth.nix
     ];
   };
+  unofficial-homestuck-collection = {
+    home-manager = [
+      ../apps/unofficial-homestuck-collection/home-manager.nix
+    ]
+  }
 }
