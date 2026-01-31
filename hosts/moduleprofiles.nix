@@ -278,4 +278,9 @@
       ../modules/common/compression-formats.nix
     ];
   };
+  dolphin-emu = {
+    home-manager = [
+      ../apps/dolphin-emu/home-manager.nix
+    ];
+  };
 }
