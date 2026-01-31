@@ -273,4 +273,9 @@
       ../apps/ryubing/home-manager.nix
     ];
   };
+  compression-formats = {
+    home-manager = [
+      ../modules/common/compression-formats.nix
+    ];
+  };
 }
