@@ -3,7 +3,7 @@
 # included with the Ark application.
 {
   home.packages = with pkgs; [
-    unrar-free # For .rar
+    unar # For .rar
     p7zip # For .7z
   ];
 }
