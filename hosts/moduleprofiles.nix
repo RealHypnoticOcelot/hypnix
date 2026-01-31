@@ -268,4 +268,9 @@
       ../apps/unofficial-homestuck-collection/home-manager.nix
     ];
   };
+  ryubing = {
+    home-manager = [
+      ../apps/ryubing/home-manager.nix
+    ];
+  };
 }
