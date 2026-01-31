@@ -264,7 +264,7 @@
     ];
   };
   unofficial-homestuck-collection = {
-    home-manager = []
+    home-manager = [
       ../apps/unofficial-homestuck-collection/home-manager.nix
     ];
   };
