@@ -283,4 +283,9 @@
       ../apps/dolphin-emu/home-manager.nix
     ];
   };
+  azahar = {
+    home-manager = [
+      ../apps/azahar/home-manager.nix
+    ];
+  };
 }
