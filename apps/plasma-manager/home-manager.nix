@@ -100,7 +100,8 @@
             digitalClock = {
               calendar.firstDayOfWeek = "sunday";
               time.format = "12h";
-              date.format = "ddd M/d";
+              date.format = "custom";
+              date.custom = "ddd M/d";
             };
           }
         ];
