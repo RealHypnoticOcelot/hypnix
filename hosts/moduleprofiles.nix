@@ -288,9 +288,4 @@
       ../apps/azahar/home-manager.nix
     ];
   };
-  mullvad = {
-    home-manager = [
-      ../apps/mullvad/home-manager.nix
-    ];
-  };
 }
