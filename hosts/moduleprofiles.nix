@@ -288,9 +288,9 @@
       ../apps/azahar/home-manager.nix
     ];
   };
-  mullvad-vpn = {
+  mullvad = {
     home-manager = [
-      ../apps/mullvad-vpn/home-manager.nix
+      ../apps/mullvad/home-manager.nix
     ];
   };
 }
