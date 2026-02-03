@@ -288,12 +288,4 @@
       ../apps/azahar/home-manager.nix
     ];
   };
-  cloudflare-warp = {
-    system = [
-      ../apps/cloudflare-warp
-    ];
-    home-manager = [
-      ../apps/cloudflare-warp/home-manager.nix
-    ];
-  };
 }
