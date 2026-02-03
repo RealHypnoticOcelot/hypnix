@@ -51,6 +51,13 @@ lib.nixosSystem {
     ( import ./${hostPreset}/hardware-configuration.nix )
     ( import ./${hostPreset}/${hostPreset}.nix )
     inputs.home-manager.nixosModules.home-manager
+  ]
+  ++ systemModules
+  ++ extraModules
+  ++ lib.optionals (builtins.elem "inputs.impermanence.nixosModules.impermanence" systemModules) (
+    ../modules/impermanence/mkpersist.nix { inherit inputs profiles extraPersist extraHomeManagerPersist; }
+  )
+  ++ [
     {
       home-manager = {
         useGlobalPkgs = true;
@@ -79,11 +86,6 @@ lib.nixosSystem {
         };
       };
     }
-  ]
-  ++ systemModules
-  ++ extraModules
-  ++ lib.optionals (builtins.elem "inputs.impermanence.nixosModules.impermanence" systemModules) (
-    ../modules/impermanence/mkpersist.nix { inherit inputs profiles extraPersist extraHomeManagerPersist; }
-  );
+  ];
   # Also import anything from these lists
 }
