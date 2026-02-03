@@ -291,6 +291,6 @@
   mullvad-vpn = {
     home-manager = [
       ../apps/mullvad-vpn/home-manager.nix
-    ]
-  }
+    ];
+  };
 }
