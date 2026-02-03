@@ -291,6 +291,6 @@
   cloudflare-warp = {
     home-manager = [
       ../apps/cloudflare-warp/home-manager.nix
-    ]
-  }
+    ];
+  };
 }
