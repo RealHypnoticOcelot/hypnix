@@ -4,7 +4,7 @@
   programs.vesktop = {
     enable = true;
     settings = {
-      discordBranch = "canary";
+      discordBranch = "stable";
       arRPC = true; # Enable Rich Presence implementation
       tray = false; # Whether to have a tray icon
       minimizeToTray = false;
