@@ -67,7 +67,7 @@ in
       "feishin"
       "vicinae"
       "libreoffice-qt"
-      # "kdenlive"
+      "kdenlive"
       "merkuro"
       "filelight"
       "wgcf"
