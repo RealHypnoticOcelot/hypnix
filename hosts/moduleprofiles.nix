@@ -291,6 +291,6 @@
   vlc = {
     home-manager = [
       ../apps/vlc/home-manager.nix
-    ]
-  }
+    ];
+  };
 }
