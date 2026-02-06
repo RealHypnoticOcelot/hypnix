@@ -9,7 +9,6 @@
     dedicatedServer.openFirewall = true; # Open ports for Source Dedicated Server hosting
     extraCompatPackages = with pkgs; [
       proton-ge-bin # Install Proton GE
-      thcrap-steam-proton-wrapper
     ];
   };
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [

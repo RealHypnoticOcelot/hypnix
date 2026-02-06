@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    #
+    thcrap-steam-proton-wrapper
+    libarchive
   ];
 }
