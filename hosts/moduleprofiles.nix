@@ -296,6 +296,6 @@
   thcrap-steam-proton-wrapper = {
     system = [
       ../apps/thcrap-steam-proton-wrapper
-    ]
-  }
+    ];
+  };
 }
