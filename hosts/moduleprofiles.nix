@@ -288,4 +288,9 @@
       ../apps/azahar/home-manager.nix
     ];
   };
+  vlc = {
+    home-manager = [
+      ../apps/vlc/home-manager.nix
+    ]
+  }
 }
