@@ -293,4 +293,9 @@
       ../apps/vlc/home-manager.nix
     ];
   };
+  thcrap-steam-proton-wrapper = {
+    system = [
+      ../apps/thcrap-steam-proton-wrapper
+    ]
+  }
 }
