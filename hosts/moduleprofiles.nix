@@ -298,4 +298,9 @@
       ../apps/thcrap-steam-proton-wrapper
     ];
   };
+  kget = {
+    home-manager = [
+      ../apps/kget/home-manager.nix
+    ];
+  };
 }
