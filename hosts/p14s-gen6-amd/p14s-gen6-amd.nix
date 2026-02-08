@@ -22,7 +22,7 @@
         name = "fix-auto-mute";
         runtimeInputs = with pkgs; [alsa-utils];
         text = ''
-          amixer -c 1 set "Auto-Mute Mode" Disabled
+          amixer -c Generic_1 set "Auto-Mute Mode" Disabled
         '';
     });
     wantedBy = [ "multi-user.target" ];
