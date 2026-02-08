@@ -304,11 +304,8 @@
     ];
   };
   mullvad-vpn = {
-    default = [
+    system = [
       ../apps/mullvad-vpn/default.nix
-    ];
-    home-manager = [
-      ../apps/mullvad-vpn/home-manager.nix
     ];
   };
 }
