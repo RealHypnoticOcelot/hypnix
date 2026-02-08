@@ -309,7 +309,7 @@
     ];
   };
   ktorrent = {
-    home-manger = [
+    home-manager = [
       ../apps/ktorrent/home-manager.nix
     ];
   };
