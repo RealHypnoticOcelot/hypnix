@@ -308,4 +308,9 @@
       ../apps/mullvad-vpn/default.nix
     ];
   };
+  ktorrent = {
+    home-manger = [
+      ../apps/ktorrent/home-manager.nix
+    ];
+  };
 }
