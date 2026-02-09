@@ -313,4 +313,9 @@
       ../apps/ktorrent/home-manager.nix
     ];
   };
+  deltachat-desktop = {
+    home-manager = [
+      ../apps/deltachat-desktop/home-manager.nix
+    ]
+  }
 }
