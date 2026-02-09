@@ -45,7 +45,7 @@
       "services/plasma-manager-commands.desktop".mute-microphone = "Microphone Mute";
     };
     workspace = {
-      wallpaper = "../../imgs/wallpapers/AliceGameUI.titlePlayerMenu.titlePlayerMenu_I47.png"
+      wallpaper = "../../imgs/wallpapers/AliceGameUI.titlePlayerMenu.titlePlayerMenu_I47.png";
     };
   };
   programs.git = {
