@@ -12,6 +12,6 @@
         enable = false;
       };
     };
-    image = ./wallpapers/AliceGameUI.titlePlayerMenu.titlePlayerMenu_I47.png;
+    image = ../../imgs/wallpapers/AliceGameUI.titlePlayerMenu.titlePlayerMenu_I47.png;
   };
 }
