@@ -316,6 +316,6 @@
   deltachat-desktop = {
     home-manager = [
       ../apps/deltachat-desktop/home-manager.nix
-    ]
-  }
+    ];
+  };
 }
