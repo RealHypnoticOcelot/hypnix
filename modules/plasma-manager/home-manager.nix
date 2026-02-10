@@ -23,11 +23,7 @@
       enableMiddleClickPaste = false;
     };
     input = {
-      touchpads = [
-        {
-          disableWhileTyping = false;
-        }
-      ]
+      touchpads.disableWhileTyping = false;
     };
     panels = [
       { # The taskbar at the bottom of the screen
