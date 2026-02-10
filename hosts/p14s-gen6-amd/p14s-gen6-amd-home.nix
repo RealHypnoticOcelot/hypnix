@@ -44,6 +44,16 @@
     shortcuts = {
       "services/plasma-manager-commands.desktop".mute-microphone = "Microphone Mute";
     };
+    input = {
+      touchpads = [
+        {
+          vendorId = "1267";
+          productId = "12694";
+          name = "ELAN0679:00 04F3:3196 Touchpad";
+          disableWhileTyping = false;
+        }
+      ];
+    };
   };
   programs.git = {
     settings = {
