@@ -22,9 +22,11 @@
     workspace = {
       enableMiddleClickPaste = false;
     };
-    input = {
-      touchpads.disableWhileTyping = false;
-    };
+    input = [
+      {
+        touchpads.disableWhileTyping = false;
+      }
+    ];
     panels = [
       { # The taskbar at the bottom of the screen
         floating = false;
