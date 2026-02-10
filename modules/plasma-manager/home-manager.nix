@@ -27,7 +27,7 @@
         {
           disableWhileTyping = false;
         }
-      ];
+      ]
     };
     panels = [
       { # The taskbar at the bottom of the screen
