@@ -318,4 +318,9 @@
       ../apps/deltachat-desktop/home-manager.nix
     ];
   };
+  open-dyslexic = {
+    system = [
+      ../modules/common/fonts/open-dyslexic.nix
+    ];
+  };
 }
