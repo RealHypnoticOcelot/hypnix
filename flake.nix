@@ -35,6 +35,10 @@
     flatpaks = {
       url = "github:in-a-dil-emma/declarative-flatpak/latest";
     };
+    arion = {
+      url = "github:hercules-ci/arion";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, ... } @ inputs:
