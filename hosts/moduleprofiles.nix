@@ -328,4 +328,15 @@
       ../modules/docker
     ];
   };
+  podman = {
+    system = [
+      ../modules/podman
+    ];
+  };
+  arion = {
+    system = [
+      inputs.arion.nixosModules.arion
+      ../modules/arion
+    ];
+  };
 }
