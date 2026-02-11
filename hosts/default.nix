@@ -88,14 +88,15 @@ in
     extraPersist = []; # Extra directories to persist with Impermanence
     extraHomeManagerPersist = []; # To be honest, I don't know that this is necessary, but it doesn't hurt to have
   };
-  nuc-14-anh-i7 = mkHost { 
+  nuc-13-anh-i7 = mkHost { 
     stateVersion = "25.11";
     hostPreset = "nuc-13-anh-i7";
     profiles = [
       "systemd-boot"
       "disko"
       "networking-networkmanager"
-      "docker"
+      "podman"
+      "arion"
     ];
   };
 }
