@@ -40,7 +40,7 @@ in
     stateVersion = "26.05";
     hostPreset = "p14s-gen6-amd"; # Determines which hosts/{host} folder you import from
     profiles = [ # Presets for different applications, see moduleprofiles.nix to see what available profiles and what they import
-    # These are imported in order!
+    # These are imported in order! Home Manager also gets imported before system, if both are applicable
       "systemd-boot"
       "disko"
       "sddm"
@@ -87,5 +87,15 @@ in
     extraHomeManagerModules = []; # The same, but for Home Manager
     extraPersist = []; # Extra directories to persist with Impermanence
     extraHomeManagerPersist = []; # To be honest, I don't know that this is necessary, but it doesn't hurt to have
+  };
+  nuc-14-anh-i7 = mkHost { 
+    stateVersion = "25.11";
+    hostPreset = "nuc-13-anh-i7";
+    profiles = [
+      "systemd-boot"
+      "disko"
+      "networking-networkmanager"
+      "docker"
+    ];
   };
 }

@@ -323,4 +323,9 @@
       ../modules/common/fonts/open-dyslexic.nix
     ];
   };
+  docker = {
+    system = [
+      ../modules/docker
+    ];
+  };
 }

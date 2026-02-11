@@ -54,6 +54,10 @@ nix-shell --extra-experimental-features flakes -p git
 
 # Clone this repository into the current working directory.
 git clone https://github.com/realhypnoticocelot/hypnix .
+
+# (If applicable) Modify flake.nix to change userName and hostName, and set systemDisk and diskFormat. (Should be the same as what you set it to during installation)
+nano flake.nix
+
 # Build!
 sudo nixos-rebuild boot --flake .#{host}
 ```
