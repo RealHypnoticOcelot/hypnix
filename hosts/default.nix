@@ -83,7 +83,8 @@ in
       "deltachat-desktop"
       "open-dyslexic"
       "podman"
-      "arion"
+      # "arion"
+      "compose2nix"
     ];
     extraModules = []; # Basically just anything you'd need to import that's not a preset
     extraHomeManagerModules = []; # The same, but for Home Manager
