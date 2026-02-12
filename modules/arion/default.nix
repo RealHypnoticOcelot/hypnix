@@ -1,9 +1,9 @@
 { config, pkgs, lib, inputs, userName, hostName, ... }:
 
 let
-  mkContainers = (import ./mkcontainers.nix {
-    inherit lib inputs userName hostName;
-  });
+  # mkContainers = (import ./mkcontainers.nix {
+  #   inherit lib inputs userName hostName;
+  # });
 in
 {
   environment.systemPackages = with pkgs; [
@@ -16,15 +16,9 @@ in
   # Arion works with Docker, but for NixOS-based containers, you need Podman
   # since NixOS 21.05. Probably just use Podman, then!
   virtualisation.arion = {
-    backend =
-      if (config.virtualisation.podman.enable && config.virtualisation.podman.dockerSocket.enable)
-      then "podman-socket"
-      else "docker";
-  };
-
-  imports = mkContainers {
-    profiles = [
-      "terraria"
-    ];
+    backend = "podman-socket";
+    # projects = mkContainers [
+    #   "terraria"
+    # ];
   };
 }
