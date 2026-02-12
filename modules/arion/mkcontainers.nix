@@ -51,6 +51,7 @@ let
 #     };
 #   }
 # ]
-# In reality, there's very few scenarios where you'd need to import multiple things at once, but it's possible just in case!
+# In reality, there's very few scenarios where you'd need to import multiple things at once
+# (like shown in the minecraft profile), but it's possible just in case!
 in
 builtins.listToAttrs projects
