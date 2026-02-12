@@ -1,11 +1,5 @@
 { pkgs, userName, ... }:
 {
-  environment.systemPackages = [
-    # Do install the docker CLI to talk to podman.
-    # Not needed when virtualisation.docker.enable = true;
-    pkgs.docker-client
-  ];
-
   virtualisation.podman = {
     enable = true;
     dockerSocket.enable = true;
