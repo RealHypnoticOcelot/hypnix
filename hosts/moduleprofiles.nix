@@ -336,7 +336,7 @@
   };
   compose2nix = {
     system = [
-      inputs.compose2nix.packages.x86_64-linux.default
+      ../modules/compose2nix
     ];
   };
 }

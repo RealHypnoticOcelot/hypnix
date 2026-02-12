@@ -1,0 +1,12 @@
+services:
+  terraria-docker:
+    image: ryshe/terraria:vanilla-latest
+    container_name: terraria-docker
+    restart: unless-stopped
+    ports:
+      - 7777:7777
+    environment:
+      - WORLD_FILENAME=Slimeworld.wld
+    tty: true
+    volumes:
+      - ./vanilla-data:/root/.local/share/Terraria/Worlds
