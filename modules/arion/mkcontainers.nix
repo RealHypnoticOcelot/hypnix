@@ -14,9 +14,7 @@ let
       ) {
         name = container;
         value = {
-          settings.imports = [ 
-            containerProfiles.${container}
-          ];
+          settings.imports = containerProfiles.${container};
         };
       }
   ) profiles;
