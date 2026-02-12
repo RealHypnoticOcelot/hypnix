@@ -9,7 +9,6 @@ in
   profiles ? [ ]
 }:
 let
-{
   projects = lib.flatten (
     map (
       container:
@@ -18,4 +17,5 @@ let
       ) containerProfiles.${container}
     ) profiles # The function isn't mapping TO profiles, it's mapping FROM profiles
   );
-}
+in
+projects # Probably really scuffed, but it returns the list of things to import given the profiles!

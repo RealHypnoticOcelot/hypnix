@@ -2,6 +2,6 @@
 
 {
   terraria = [
-    ./containers/terraria.nix
-  ]
+    ./containers/terraria
+  ];
 }

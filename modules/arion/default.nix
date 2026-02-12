@@ -21,4 +21,10 @@ in
       then "podman-socket"
       else "docker";
   };
+
+  imports = mkContainers {
+    profiles = [
+      "terraria"
+    ];
+  };
 }

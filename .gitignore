@@ -1,0 +1,2 @@
+modules/arion/containers/*/*
+!modules/arion/containers/*/*.nix
