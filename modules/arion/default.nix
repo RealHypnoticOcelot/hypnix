@@ -15,7 +15,7 @@ in
 
   # Arion works with Docker, but for NixOS-based containers, you need Podman
   # since NixOS 21.05. Probably just use Podman, then!
-  virtualisation.arion = {
+    virtualisation.arion = {
     backend = "podman-socket";
     projects = mkContainers [
       "terraria"
