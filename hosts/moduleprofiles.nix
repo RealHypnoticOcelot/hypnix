@@ -334,9 +334,4 @@
       ../modules/arion
     ];
   };
-  compose2nix = {
-    system = [
-      ../modules/compose2nix
-    ];
-  };
 }
