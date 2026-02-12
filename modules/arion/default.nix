@@ -3,7 +3,7 @@
 let
   mkContainers = (import ./mkcontainers.nix {
     inherit lib inputs userName hostName;
-  }); #mkHost is the function that generates the system using the profiles and modules we specify
+  });
 in
 {
   environment.systemPackages = with pkgs; [
@@ -20,10 +20,5 @@ in
       if (config.virtualisation.podman.enable && config.virtualisation.podman.dockerSocket.enable)
       then "podman-socket"
       else "docker";
-    services = mkContainers {
-      profiles = [
-        "terraria"
-      ];
-    };
   };
 }

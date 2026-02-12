@@ -3,5 +3,5 @@
 {
   terraria = [
     ./containers/terraria.nix
-  ];
+  ]
 }
