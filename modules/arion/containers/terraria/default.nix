@@ -6,7 +6,7 @@
       restart = "unless-stopped";
       tty = true;
       environment = {
-        WORLD_FILENAME = "test.wld"
+        WORLD_FILENAME = "test.wld";
       };
       volumes = [
         "./data:/root/.local/share/Terraria/Worlds"
