@@ -1,4 +1,4 @@
-{ ... }:
+{ userName, ... }:
 {
   services.terraria = {
     service = {
@@ -9,7 +9,7 @@
         WORLD_FILENAME = "test.wld";
       };
       volumes = [
-        "./data:/root/.local/share/Terraria/Worlds"
+        "/home/${userName}/services/terraria:/root/.local/share/Terraria/Worlds"
       ];
       ports = [
         "7777:7777"
