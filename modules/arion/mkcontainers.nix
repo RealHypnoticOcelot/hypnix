@@ -7,51 +7,118 @@ let
 in
 profiles:
 let
-  projects = map (
-    container:
-      lib.optionals (
-        containerProfiles ? ${container}
-      ) {
-        name = container;
-        value = {
-          settings.imports = map (
-          # What we're doing with map here is modifying each provided path so that they inherit userName
-          # Not pretty, but it works!
-            path:
-              ( import path {
-                inherit userName config;
-              }) 
-          ) containerProfiles.${container};
-        };
+  projects = builtins.listToAttrs (
+    map ( 
+      container:
+        lib.optionals (
+          containerProfiles ? ${container} # If the container exists in containerProfiles
+        ) {
+          name = container;
+          value = builtins.listToAttrs (
+          lib.mapAttrsToList (
+            projectName:
+            value:
+            {
+              name = "settings";
+              value = {
+                imports = map (
+                # What we're doing with map here is intercepting each
+                # provided path and modifying them so that they inherit things
+                path:
+                  ( import path {
+                    inherit userName config;
+                  }) 
+                ) containerProfiles.${container}.${projectName};
+              };
+            }
+          ) containerProfiles.${container}
+        );
       }
-  ) profiles;
+    ) profiles
+  );
+# Let's walk through the above code, assuming profiles = [ "minecraft-router" "minecraft-vanilla" ],
+# and those profiles have the following values in containerprofiles.nix:
+#
+# minecraft-router = {
+#   minecraft = [
+#     ./containers/minecraft
+#   ];
+# };
+# minecraft-vanilla = {
+#   minecraft = [
+#     ./containers/minecraft/vanilla.nix
+#   ];
+# };
+#
+# Given minecraft, we'll check if containerProfiles.minecraft exists. It does, so we proceed!
+# We want to return an attribute set that can be parsed by builtins.listToAttrs. That means
+# we need sets that look like such:
+#
+# {
+#   name = minecraft;
+#   value = {
+#     settings.imports = [
+#       ./containers/minecraft
+#     ];
+#   };
+# }
+# Which once evaluated by builtins.listToAttrs, looks more like this:
+# minecraft = {
+#   settings = {
+#     imports = [
+#       ./containers/minecraft
+#     ];
+#   };
+# };
+#
+# The same is done for minecraft-vanilla, except imports = [ ./containers/minecraft/vanilla.nix ].
+# Note how we're using the project name here, and not the profile name. In other words,
+# instead of minecraft-router.settings.imports, we're setting minecraft.settings.imports.
+# That means we can modularly import different services under the same project space.
+# We want the minecraft-router service and the minecraft-vanilla service under the
+# same project space, which is why they both specify the project as Minecraft!
+# It shold also be possible to import different things under different projects,
+# unless I programmed something wrong. 
 # When all said and done, here's what the above function should output as an example:
-# [
-#   {
-#     terraria = {
-#       settings = {
-#         imports = [
-#           (import ./containers/terraria {
-#             inherit userName config;
-#           })
-#         ];
-#       };
+#
+# {
+#   minecraft = {
+#     settings = {
+#       imports = [
+#         (import ./containers/minecraft {
+#           inherit userName config;
+#         })
+#       ];
 #     };
-#     minecraft = {
-#       settings = {
-#         imports = [
-#           (import ./containers/minecraft {
-#             inherit userName config;
-#           })
-#           (import ./containers/minecraft-reverse-proxy {
-#             inherit userName config;
-#           })
-#         ];
-#       };
+#   };
+#   minecraft = {
+#     settings = {
+#       imports = [
+#         (import ./containers/minecraft/vanilla.nix {
+#           inherit userName config;
+#         })
+#       ];
 #     };
-#   }
-# ]
-# In reality, there's very few scenarios where you'd need to import multiple things at once
-# like shown in the minecraft profile, but it's possible just in case!
+#   };
+# }
+#
+# Those attribute sets will merge, and ultimately be equivalent to this:
+#
+# {
+#   minecraft = {
+#     settings = {
+#       imports = [
+#         (import ./containers/minecraft {
+#           inherit userName config;
+#         })
+#         (import ./containers/minecraft/vanilla.nix {
+#           inherit userName config;
+#         })
+#       ];
+#     };
+#   };
+# }
+#
+# Voila!
 in
-builtins.listToAttrs projects
+projects

@@ -12,7 +12,7 @@ in
       environment = {
         PUID = 1000;
         GUID = 1000;
-        TZ = "America/Detroit";
+        TZ = "America/New_York";
         FILE__APP_URL = config.sops.secrets.bookstack-appurl.path;
         DB_HOST = "${serviceName}_db";
         DB_PORT = 3306;
@@ -36,7 +36,7 @@ in
       environment = {
         PUID = 1000;
         GUID = 1000;
-        TZ = "America/Detroit";
+        TZ = "America/New_York";
         FILE__MYSQL_ROOT_PASSWORD = config.sops.secrets.bookstack-password.path;
         MYSQL_DATABASE = "bookstackapp";
         MYSQL_USER = "bookstack";
