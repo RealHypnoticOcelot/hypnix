@@ -82,6 +82,8 @@ in
       "ktorrent"
       "deltachat-desktop"
       "open-dyslexic"
+      "podman"
+      "arion"
     ];
     extraModules = []; # Basically just anything you'd need to import that's not a preset
     extraHomeManagerModules = []; # The same, but for Home Manager
@@ -94,6 +96,7 @@ in
     profiles = [
       "systemd-boot"
       "disko"
+      "sops"
       "networking-networkmanager"
       "podman"
       "arion"

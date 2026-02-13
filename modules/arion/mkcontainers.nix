@@ -1,4 +1,4 @@
-{ lib, inputs, userName, hostName, ... }:
+{ lib, inputs, userName, hostName, config, ... }:
 
 let
   containerProfiles = (import ./containerprofiles.nix {
@@ -19,7 +19,7 @@ let
           # Not pretty, but it works!
             path:
               ( import path {
-                inherit userName;
+                inherit userName config;
               }) 
           ) containerProfiles.${container};
         };
@@ -32,7 +32,7 @@ let
 #       settings = {
 #         imports = [
 #           (import ./containers/terraria {
-#             inherit userName;
+#             inherit userName config;
 #           })
 #         ];
 #       };
@@ -41,10 +41,10 @@ let
 #       settings = {
 #         imports = [
 #           (import ./containers/minecraft {
-#             inherit userName;
+#             inherit userName config;
 #           })
 #           (import ./containers/minecraft-reverse-proxy {
-#             inherit userName;
+#             inherit userName config;
 #           })
 #         ];
 #       };

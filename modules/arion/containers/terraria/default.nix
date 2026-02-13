@@ -1,6 +1,11 @@
-{ userName, ... }:
+{ userName, config, ... }:
+let 
+  serviceName = "terraria";
+  volumePath = "/home/${userName}/services/${serviceName}";
+in
 {
-  services.terraria = {
+  project.name = ${serviceName};
+  services.${serviceName} = {
     service = {
       image = "ryshe/terraria:vanilla-latest";
       restart = "unless-stopped";
@@ -9,7 +14,7 @@
         WORLD_FILENAME = "test.wld";
       };
       volumes = [
-        "/home/${userName}/services/terraria:/root/.local/share/Terraria/Worlds"
+        "${volumePath}:/root/.local/share/Terraria/Worlds"
       ];
       ports = [
         "7777:7777"

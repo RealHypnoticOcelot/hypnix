@@ -2,7 +2,7 @@
 
 let
   mkContainers = (import ./mkcontainers.nix {
-    inherit lib inputs userName hostName;
+    inherit config lib inputs userName hostName;
   });
 in
 {
@@ -19,6 +19,7 @@ in
     backend = "podman-socket";
     projects = mkContainers [
       "terraria"
+      "bookstack"
     ];
   };
 }
