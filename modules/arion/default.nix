@@ -18,8 +18,6 @@ in
     virtualisation.arion = {
     backend = "podman-socket";
     projects = mkContainers [
-      "terraria"
-      "bookstack"
     ];
   };
 }

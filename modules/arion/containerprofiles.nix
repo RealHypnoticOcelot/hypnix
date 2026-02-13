@@ -4,4 +4,10 @@
   terraria = [
     ./containers/terraria
   ];
+  bookstack = [
+    ./containers/bookstack
+  ];
+  baikal = [
+    ./containers/baikal
+  ];
 }

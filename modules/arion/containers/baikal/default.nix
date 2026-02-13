@@ -4,7 +4,7 @@ let
   volumePath = "/home/${userName}/services/${serviceName}";
 in
 {
-  project.name = ${serviceName};
+  project.name = serviceName;
   services.${serviceName} = {
     service = {
       image = "ckulka/baikal:nginx";
