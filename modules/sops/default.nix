@@ -5,8 +5,7 @@
     defaultSopsFormat = "yaml";
     age.keyFile = "/home/${userName}/.config/sops/age/keys.txt";
     secrets = {
-      bookstack-appurl = {};
-      bookstack-password = {};
+      # mysecret = {};
     };
   };
   environment.systemPackages = with pkgs; [

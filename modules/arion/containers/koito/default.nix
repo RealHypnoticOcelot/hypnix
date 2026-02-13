@@ -10,8 +10,8 @@ in
       image = "gabehf/koito:latest";
       restart = "unless-stopped";
       environment = {
-        KOITO_DATABASE_URL= "postgres://postgres:" + config.sops.secrets.koito-db_password + "@db:5432/koitodb";
-        KOITO_ALLOWED_HOSTS = config.sops.secrets.koito-allowed_hosts;
+        KOITO_DATABASE_URL= "postgres://postgres:" + config.sops.templates.koito-db_password.path + "@db:5432/koitodb";
+        KOITO_ALLOWED_HOSTS = config.sops.secrets.koito-allowed_hosts.path;
       };
       volumes = [
         "${volumePath}/data:/etc/koito"
@@ -27,7 +27,7 @@ in
       environment = {
         POSTGRES_DB = "koitodb";
         POSTGRES_USER = "postgres";
-        POSTGRES_PASSWORD = config.sops.secrets.koito-db_password;
+        POSTGRES_PASSWORD = config.sops.secrets.koito-db_password.path;
       };
       volumes = [
         "${volumePath}/db:/var/lib/postgresql/data"
