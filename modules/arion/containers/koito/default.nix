@@ -27,7 +27,7 @@ in
       environment = {
         POSTGRES_DB = "koitodb";
         POSTGRES_USER = "postgres";
-        POSTGRESS_PASSWORD = config.sops.secrets.koito-db_password
+        POSTGRES_PASSWORD = config.sops.secrets.koito-db_password;
       };
       volumes = [
         "${volumePath}/db:/var/lib/postgresql/data"
