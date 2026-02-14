@@ -1,29 +1,10 @@
-{ config, ... }:
+{ config, profileName, ... }:
 let
-  secrets = [
-    "koito-db_password"
-    "koito-allowed_hosts"
-  ];
+  mkSecrets = (import ../../mksecrets.nix {
+    inherit config profileName;
+  });
 in
-{
-  sops = {
-    secrets = builtins.listToAttrs (
-      map (
-        secret: {
-          name = secret;
-          value = {};
-        }
-      ) secrets
-    );
-    templates = builtins.listToAttrs (
-      map (
-        secret: {
-          name = secret;
-          value = {
-            content = config.sops.placeholder.${secret};
-          };
-        }
-      ) secrets
-    );
-  };
-}
+mkSecrets [
+  "allowed_hosts"
+  "db_password"
+]

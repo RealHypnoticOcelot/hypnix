@@ -1,11 +1,7 @@
-{ userName, config, ... }:
-let 
-  serviceName = "minecraft";
-  volumePath = "/home/${userName}/services/${serviceName}";
-in
+{ userName, config, projectName, profileName, ... }:
 {
-  project.name = serviceName;
-  services."${serviceName}_router" = {
+  project.name = projectName;
+  services.profileName = {
     service = {
       image = "itzg/mc-router";
       restart = "unless-stopped";

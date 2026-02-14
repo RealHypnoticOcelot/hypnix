@@ -1,12 +1,12 @@
-{ userName, config, ... }:
+{ userName, config, projectName, profileName, volumePath, ... }:
+# projectName: minecraft
+# profileName: minecraft-vanilla
 let 
-  serviceName = "minecraft";
-  # Not changing it to minecraft-vanilla because I'd rather have it be in the ~/services/minecraft directory
-  volumePath = "/home/${userName}/services/${serviceName}";
+  volumePath = "/home/${userName}/services/${projectName}";
 in
 {
-  project.name = serviceName;
-  services."${serviceName}-vanilla" = {
+  project.name = projectName;
+  services.profileName = {
     service = {
       image = "itzg/minecraft-server";
       restart = "unless-stopped";
@@ -26,10 +26,10 @@ in
       #   "19132:19132/udp" # Only needed if using Geyser/Floodgate
       # ];
       volumes = [
-        "${volumePath}/vanilla:/data"
+        "${volumePath}/${profileName}:/data"
       ];
       depends_on = [
-        "${serviceName}_router"
+        "${projectName}-router"
       ];
       labels = {
         "mc-router.host" = "vanilla.example.com";

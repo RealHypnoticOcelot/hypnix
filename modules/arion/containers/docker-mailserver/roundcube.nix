@@ -1,11 +1,7 @@
-{ userName, config, ... }:
-let 
-  serviceName = "docker-mailserver";
-  volumePath = "/home/${userName}/services/${serviceName}";
-in
+{ userName, config, projectName, profileName, volumePath, ... }:
 {
-  project.name = serviceName;
-  services."roundcube" = {
+  project.name = projectName;
+  services.profileName = {
     service = {
       image = "roundcube/roundcubemail:latest";
       restart = "unless-stopped";
@@ -16,8 +12,8 @@ in
       environment = {
         ROUNDCUBEMAIL_DB_TYPE = "sqlite";
         ROUNCUBEMAIL_SKIN = "elastic";
-        ROUNDCUBEMAIL_DEFAULT_HOST = "tls://" + config.sops.secrets.dms-hostname;
-        ROUNDCUBEMAIL_SMTP_SERVER = "tls://" + config.sops.secrets.dms-hostname;
+        ROUNDCUBEMAIL_DEFAULT_HOST = "tls://" + config.sops.templates."${projectName}-hostname".path;
+        ROUNDCUBEMAIL_SMTP_SERVER = "tls://" + config.sops.templates."${projectName}-hostname".path;
         ROUNDCUBEMAIL_UPLOAD_MAX_FILESIZE = "100M";
         ROUNDCUBEMAIL_COMPOSER_PLUGINS = "roundcube/carddav";
         ROUNDCUBEMAIL_PLUGINS = "carddav";

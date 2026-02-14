@@ -1,11 +1,7 @@
-{ userName, config, ... }:
-let 
-  serviceName = "minecraft";
-  volumePath = "/home/${userName}/services/${serviceName}";
-in
+{ userName, config, projectName, profileName, volumePath, ... }:
 {
-  project.name = serviceName;
-  services."${serviceName}-modrinth" = {
+  project.name = projectName;
+  services.profileName = {
     service = {
       image = "itzg/minecraft-server";
       restart = "unless-stopped";
@@ -25,11 +21,11 @@ in
       #   "19132:19132/udp" # Only needed if using Geyser/Floodgate
       # ];
       volumes = [
-        "${volumePath}/modrinth:/data"
+        "${volumePath}/${profileName}:/data"
         "${volumePath}/downloads:/downloads"
       ];
       depends_on = [
-        "${serviceName}_router"
+        "${projectName}-router"
       ];
       labels = {
         "mc-router.host" = "modrinth.example.com";

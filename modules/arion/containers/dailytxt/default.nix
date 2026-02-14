@@ -1,11 +1,7 @@
-{ userName, config, ... }:
-let 
-  serviceName = "dailytxt";
-  volumePath = "/home/${userName}/services/${serviceName}";
-in
+{ userName, config, projectName, profileName, volumePath, ... }:
 {
-  project.name = serviceName;
-  services.${serviceName} = {
+  project.name = projectName;
+  services.profileName = {
     service = {
       image = "phitux/dailytxt:latest";
       restart = "unless-stopped";
@@ -14,10 +10,10 @@ in
       ];
       environment = {
         # Can create secret token with openssl rand -base64 32
-        SECRET_TOKEN = config.sops.secrets.dailytxt-secret_token;
+        SECRET_TOKEN = config.sops.templates."${projectName}-secret_token".path;
         INDENT = 4;
         ALLOW_REGISTRATION = "false";
-        ADMIN_PASSWORD = config.sops.secrets.dailytxt-admin_password;
+        ADMIN_PASSWORD = config.sops.templates."${projectName}-admin_password".path;
         LOGOUT_AFTER_DAYS = 30;
       };
     };

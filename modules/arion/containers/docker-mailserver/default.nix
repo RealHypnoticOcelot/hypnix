@@ -1,15 +1,11 @@
-{ userName, config, ... }:
-let 
-  serviceName = "docker-mailserver";
-  volumePath = "/home/${userName}/services/${serviceName}";
-in
+{ userName, config, projectName, profileName, volumePath, ... }:
 {
-  project.name = serviceName;
-  services.${serviceName} = {
+  project.name = projectName;
+  services.profileName = {
     service = {
       image = "ghcr.io/docker-mailserver/docker-mailserver:latest";
       # Provide the FQDN of your mail server here (Your DNS MX record should point to this value)
-      hostname = config.sops.secrets.dms-hostname;
+      hostname = config.sops.templates."${projectName}-hostname".path;
       restart = "unless-stopped";
       volumes = [
         "${volumePath}/docker-data/dms/mail-data/:/var/mail"

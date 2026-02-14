@@ -1,17 +1,13 @@
-{ userName, config, ... }:
-let 
-  serviceName = "terraria";
-  volumePath = "/home/${userName}/services/${serviceName}";
-in
+{ userName, config, projectName, profileName, volumePath, ... }:
 {
-  project.name = serviceName;
-  services.${serviceName} = {
+  project.name = projectName;
+  services.profileName = {
     service = {
       image = "ryshe/terraria:vanilla-latest";
       restart = "unless-stopped";
       tty = true;
       environment = {
-        WORLD_FILENAME = "test.wld";
+        WORLD_FILENAME = "World.wld";
       };
       volumes = [
         "${volumePath}:/root/.local/share/Terraria/Worlds"

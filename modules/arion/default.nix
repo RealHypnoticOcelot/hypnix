@@ -14,6 +14,11 @@ let
       profile:
       lib.optionals (
         containerProfiles ? ${profile} && containerProfiles.${profile} ? "sops"
+      ) map (
+        sopsImport: ( import sopsImport {
+          inherit config;
+          profileName = profile;
+        })
       ) containerProfiles.${profile}.sops
     ) selectedContainers
   );
@@ -29,19 +34,23 @@ let
           lib.mapAttrsToList (
             projectName:
             value:
-            if (projectName != "sops") then {
+            if (projectName != "sops") then
+            {
               name = "settings";
               value = {
                 imports = map (
                 # What we're doing with map here is intercepting each
                 # provided path and modifying them so that they inherit things
                   path: ( import path {
-                    inherit userName config;
+                    inherit userName config projectName; # ex. minecraft
+                    profileName = container; # ex. minecraft-router
+                    volumePath = "/home/${userName}/services/${projectName}";
                   })
                 ) containerProfiles.${container}.${projectName};
               };
             }
-            else { # Return an empty list if the project is sops, because we're handling that specially above
+            else
+            { # Return an empty list if the project is sops, because we're handling that specially
               name = "settings";
               value = {
                 imports = [];
