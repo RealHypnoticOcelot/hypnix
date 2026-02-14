@@ -10,15 +10,16 @@
         PUID = 1000;
         GUID = 1000;
         TZ = "America/New_York";
-        APP_URL = config.sops.templates."${projectName}-app_url".path;
         DB_HOST = "${profileName}_db";
         DB_PORT = 3306;
         DB_USER = "bookstack";
-        DB_PASSWORD = config.sops.templates."${projectName}-db_password".path;
         DB_DATABASE = "bookstackapp";
         EXPORT_PAGE_SIZE = "letter";
         APP_DEFAULT_DARK_MODE = "true";
       };
+      env_file = [
+        config.sops.templates."${profileName}".path
+      ];
       volumes = [
         "${volumePath}/config:/config"
       ];
@@ -35,11 +36,12 @@
         PUID = 1000;
         GUID = 1000;
         TZ = "America/New_York";
-        FILE__MYSQL_ROOT_PASSWORD = config.sops.templates."${projectName}-db_password".path;
         MYSQL_DATABASE = "bookstackapp";
         MYSQL_USER = "bookstack";
-        FILE__MYSQL_PASSWORD = config.sops.templates."${projectName}-db_password".path; 
       };
+      env_file = [
+        config.sops.templates."${profileName}_db".path
+      ];
       volumes = [
         "${volumePath}/db:/config"
       ];

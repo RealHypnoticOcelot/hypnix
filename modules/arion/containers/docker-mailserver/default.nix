@@ -5,8 +5,6 @@
     service = {
       container_name = "${profileName}";
       image = "ghcr.io/docker-mailserver/docker-mailserver:latest";
-      # Provide the FQDN of your mail server here (Your DNS MX record should point to this value)
-      hostname = config.sops.templates."${projectName}-hostname".path;
       restart = "unless-stopped";
       volumes = [
         "${volumePath}/docker-data/dms/mail-data/:/var/mail"
@@ -16,7 +14,7 @@
         "/etc/localtime:/etc/localtime:ro"
       ];
       env_file = [
-        "${volumePath}/mailserver.env"
+        config.sops.templates."${profileName}".path
       ];
       ports = [
         "25:25"    # SMTP  (explicit TLS => STARTTLS, Authentication is DISABLED => use port 465/587 instead)

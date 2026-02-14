@@ -13,12 +13,13 @@
       environment = {
         ROUNDCUBEMAIL_DB_TYPE = "sqlite";
         ROUNCUBEMAIL_SKIN = "elastic";
-        ROUNDCUBEMAIL_DEFAULT_HOST = "tls://" + config.sops.templates."${projectName}-hostname".path;
-        ROUNDCUBEMAIL_SMTP_SERVER = "tls://" + config.sops.templates."${projectName}-hostname".path;
         ROUNDCUBEMAIL_UPLOAD_MAX_FILESIZE = "100M";
         ROUNDCUBEMAIL_COMPOSER_PLUGINS = "roundcube/carddav";
         ROUNDCUBEMAIL_PLUGINS = "carddav";
       };
+      env_file = [
+        config.sops.templates."${projectName}_roundcube".path
+      ];
     }
   }
 }

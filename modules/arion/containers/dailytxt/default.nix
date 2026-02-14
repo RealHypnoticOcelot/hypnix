@@ -10,13 +10,13 @@
         "${volumePath}/data:/data"
       ];
       environment = {
-        # Can create secret token with openssl rand -base64 32
-        SECRET_TOKEN = config.sops.templates."${projectName}-secret_token".path;
         INDENT = 4;
         ALLOW_REGISTRATION = "false";
-        ADMIN_PASSWORD = config.sops.templates."${projectName}-admin_password".path;
         LOGOUT_AFTER_DAYS = 30;
       };
+      env_file = [
+        config.sops.templates."${profileName}".path
+      ];
     };
   };
 }
