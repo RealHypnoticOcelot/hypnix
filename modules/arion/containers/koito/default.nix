@@ -1,7 +1,7 @@
 { userName, config, projectName, profileName, volumePath, ... }:
 {
   project.name = projectName;
-  services.profileName = {
+  services.${profileName} = {
     service = {
       image = "gabehf/koito:latest";
       restart = "unless-stopped";

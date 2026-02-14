@@ -1,7 +1,7 @@
 { userName, config, projectName, profileName, volumePath, ... }:
 {
   project.name = projectName;
-  services.profileName = {
+  services.${profileName} = {
     service = {
       image = "roundcube/roundcubemail:latest";
       restart = "unless-stopped";

@@ -1,7 +1,7 @@
 { userName, config, projectName, profileName, volumePath, ... }:
 {
   project.name = projectName;
-  services.profileName = {
+  services.${profileName} = {
     service = {
       image = "ghcr.io/docker-mailserver/docker-mailserver:latest";
       # Provide the FQDN of your mail server here (Your DNS MX record should point to this value)

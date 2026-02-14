@@ -1,7 +1,7 @@
 { userName, config, projectName, profileName, ... }:
 {
   project.name = projectName;
-  services.profileName = {
+  services.${profileName} = {
     service = {
       image = "itzg/mc-router";
       restart = "unless-stopped";

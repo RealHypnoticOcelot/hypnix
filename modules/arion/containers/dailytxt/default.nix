@@ -1,7 +1,7 @@
 { userName, config, projectName, profileName, volumePath, ... }:
 {
   project.name = projectName;
-  services.profileName = {
+  services.${profileName} = {
     service = {
       image = "phitux/dailytxt:latest";
       restart = "unless-stopped";

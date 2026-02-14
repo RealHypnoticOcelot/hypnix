@@ -1,7 +1,7 @@
 { userName, config, projectName, profileName, volumePath, ... }:
 {
   project.name = projectName;
-  services.profileName = {
+  services.${profileName} = {
     service = {
       image = "ghcr.io/bluesky-social/pds:latest";
       restart = "unless-stopped";

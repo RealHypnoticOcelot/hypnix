@@ -1,12 +1,9 @@
 { userName, config, projectName, profileName, volumePath, ... }:
 # projectName: minecraft
 # profileName: minecraft-vanilla
-let 
-  volumePath = "/home/${userName}/services/${projectName}";
-in
 {
   project.name = projectName;
-  services.profileName = {
+  services.${profileName} = {
     service = {
       image = "itzg/minecraft-server";
       restart = "unless-stopped";
