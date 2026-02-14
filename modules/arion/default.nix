@@ -1,11 +1,9 @@
 { config, pkgs, lib, inputs, userName, hostName, ... }:
 
 let
-  containerProfiles = (import ./containerprofiles.nix {
-    inherit lib inputs userName;
-  });
+  containerProfiles = (import ./containerprofiles.nix );
   selectedContainers = [
-    "koito"
+    # PUT YOUR CONTAINERS HERE!
   ];
 in
 let

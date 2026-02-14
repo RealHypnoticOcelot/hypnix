@@ -1,5 +1,3 @@
-{ lib, inputs, userName, ... }:
-
 {
   terraria = { # Profile name
     terraria = [ # Project name
