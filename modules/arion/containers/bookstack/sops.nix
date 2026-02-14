@@ -5,5 +5,6 @@ let
   });
 in
 mkSecrets [
-  "hostname"
+  "app_url"
+  "db_password"
 ]

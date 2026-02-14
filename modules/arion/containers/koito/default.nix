@@ -13,11 +13,11 @@
         "${volumePath}/data:/etc/koito"
       ];
       depends_on = [
-        "${projectName}_db"
+        "${profileName}_db"
       ];
     };
   };
-  services."${projectName}_db" = {
+  services."${profileName}_db" = {
     service = {
       image = "postgres:16";
       environment = {

@@ -3,7 +3,7 @@
 {
   terraria = { # Profile name
     terraria = [ # Project name
-      ./containers/terraria # Things to import into project
+      ./containers/terraria # Things to import into project under profile
     ];
   };
   bookstack = {
@@ -21,8 +21,8 @@
       ./containers/minecraft
     ];
   };
-  minecraft-vanilla = {
-    minecraft = [
+  minecraft-vanilla = { # Profile name
+    minecraft = [ # Project name
       ./containers/minecraft/vanilla.nix
     ];
   };

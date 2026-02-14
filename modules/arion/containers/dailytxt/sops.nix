@@ -1,32 +1,10 @@
 { config, profileName, ... }:
 let
-  secrets = map (
-    secret: "${profileName}-${secret}"
-  ) [
-    "hostname"
-  ];
-  # Prefixes each secret with profileName-
-  # i.e. koito-allowed_hosts, koito-db_password
+  mkSecrets = (import ../../mksecrets.nix {
+    inherit config profileName;
+  });
 in
-{
-  sops = {
-    secrets = builtins.listToAttrs (
-      map (
-        secret: {
-          name = secret;
-          value = {};
-        }
-      ) secrets
-    );
-    templates = builtins.listToAttrs (
-      map (
-        secret: {
-          name = secret;
-          value = {
-            content = config.sops.placeholder.${secret};
-          };
-        }
-      ) secrets
-    );
-  };
-}
+mkSecrets [
+  "secret_token"
+  "admin_password"
+]

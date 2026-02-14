@@ -1,11 +1,7 @@
-{ userName, config, ... }:
-let 
-  serviceName = "baikal";
-  volumePath = "/home/${userName}/services/${serviceName}";
-in
+{ userName, config, projectName, profileName, volumePath, ... }:
 {
-  project.name = serviceName;
-  services.${serviceName} = {
+  project.name = projectName;
+  services.profileName = {
     service = {
       image = "ckulka/baikal:nginx";
       restart = "unless-stopped";
