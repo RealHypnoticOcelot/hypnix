@@ -1,9 +1,6 @@
 { config, pkgs, lib, inputs, userName, hostName, ... }:
 
 let
-  mkContainers = (import ./mkcontainers.nix {
-    inherit config lib inputs userName hostName;
-  });
   containerProfiles = (import ./containerprofiles.nix {
     inherit lib inputs userName;
   });
@@ -17,11 +14,8 @@ let
       profile:
       lib.optionals (
         containerProfiles ? ${profile} && containerProfiles.${profile} ? "sops"
-        # Checks if profile exists within moduleProfiles, then checks if moduleProfiles.{$profile}
-        # is valid, then checks if moduleProfiles.${profile} has a "system" attribute
       ) containerProfiles.${profile}.sops
-      # If conditions are met, return moduleProfiles.{$profile}.system
-    ) selectedContainers # The function isn't mapping TO profiles, it's mapping FROM profiles
+    ) selectedContainers
   );
 
   projects = builtins.listToAttrs (
@@ -35,20 +29,22 @@ let
           lib.mapAttrsToList (
             projectName:
             value:
-            {
+            if (projectName != "sops") then {
               name = "settings";
               value = {
                 imports = map (
                 # What we're doing with map here is intercepting each
                 # provided path and modifying them so that they inherit things
-                # Also, we're making sure that it's not "sops", since that's imported separately.
-                  path:
-                  lib.optionals (
-                    !(containerProfiles.${container} ? "sops")
-                  ) ( import path {
+                  path: ( import path {
                     inherit userName config;
-                  }) 
+                  })
                 ) containerProfiles.${container}.${projectName};
+              };
+            }
+            else { # Return an empty list if the project is sops, because we're handling that specially above
+              name = "settings";
+              value = {
+                imports = [];
               };
             }
           ) containerProfiles.${container}

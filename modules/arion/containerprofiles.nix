@@ -67,6 +67,6 @@
     ];
     sops = [
       ./containers/koito/sops.nix
-    ]
+    ];
   };
 }
