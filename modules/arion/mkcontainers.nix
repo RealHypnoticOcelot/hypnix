@@ -77,7 +77,7 @@ let
 # That means we can modularly import different services under the same project space.
 # We want the minecraft-router service and the minecraft-vanilla service under the
 # same project space, which is why they both specify the project as Minecraft!
-# It shold also be possible to import different things under different projects,
+# It should also be possible to import different things under different projects,
 # unless I programmed something wrong. 
 # When all said and done, here's what the above function should output as an example:
 #
