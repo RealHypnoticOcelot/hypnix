@@ -3,6 +3,7 @@
   project.name = projectName;
   services.${profileName} = {
     service = {
+      container_name = "${profileName}";
       image = "ghcr.io/docker-mailserver/docker-mailserver:latest";
       # Provide the FQDN of your mail server here (Your DNS MX record should point to this value)
       hostname = config.sops.templates."${projectName}-hostname".path;

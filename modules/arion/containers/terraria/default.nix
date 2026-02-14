@@ -2,6 +2,7 @@
 {
   project.name = projectName;
   services.${profileName} = {
+    container_name = "${profileName}";
     service = {
       image = "ryshe/terraria:vanilla-latest";
       restart = "unless-stopped";

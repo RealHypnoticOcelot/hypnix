@@ -3,10 +3,11 @@
   project.name = projectName;
   services.${profileName} = {
     service = {
+      container_name = profileName;
       image = "gabehf/koito:latest";
       restart = "unless-stopped";
       environment = {
-        KOITO_DATABASE_URL= "postgres://postgres:" + config.sops.templates."${projectName}-db_password".path + "@db:5432/koitodb";
+        KOITO_DATABASE_URL= "postgres://postgres:" + config.sops.templates."${projectName}-db_password".path + "@${profileName}_db:5432/koitodb";
         KOITO_ALLOWED_HOSTS = config.sops.templates."koito-allowed_hosts".path;
       };
       volumes = [
@@ -19,6 +20,7 @@
   };
   services."${profileName}_db" = {
     service = {
+      container_name = "${profileName}_db";
       image = "postgres:16";
       environment = {
         POSTGRES_DB = "koitodb";

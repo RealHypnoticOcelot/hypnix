@@ -3,6 +3,7 @@
   project.name = projectName;
   services.${profileName} = {
     service = {
+      container_name = "${profileName}";
       image = "lscr.io/linuxserver/bookstack";
       restart = "unless-stopped";
       environment = {
@@ -28,6 +29,7 @@
   };
   services."${profileName}_db" = {
     service = {
+      container_name = "${profileName}_db";
       image = "lscr.io/linuxserver/mariadb";
       environment = {
         PUID = 1000;

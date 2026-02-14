@@ -5,6 +5,7 @@
   project.name = projectName;
   services.${profileName} = {
     service = {
+      container_name = "${profileName}";
       image = "itzg/minecraft-server";
       restart = "unless-stopped";
       environment = {

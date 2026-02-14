@@ -3,6 +3,7 @@
   project.name = projectName;
   services.${profileName} = {
     service = {
+      container_name = "${profileName}";
       image = "roundcube/roundcubemail:latest";
       restart = "unless-stopped";
       volumes = [
