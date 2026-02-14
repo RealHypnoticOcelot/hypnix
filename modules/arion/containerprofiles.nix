@@ -51,7 +51,7 @@
       ./containers/docker-mailserver
     ];
   };
-  roundcuber = {
+  roundcube = {
     docker-mailserver = [
       ./containers/docker-mailserver/roundcube.nix
     ];
@@ -65,5 +65,8 @@
     koito = [
       ./containers/koito
     ];
+    sops = [
+      ./containers/koito/sops.nix
+    ]
   };
 }
