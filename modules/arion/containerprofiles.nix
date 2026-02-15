@@ -8,6 +8,9 @@
     bookstack = [
       ./containers/bookstack
     ];
+    sops = [
+      ./containers/bookstack/sops.nix
+    ];
   };
   baikal = {
     baikal = [
@@ -33,6 +36,9 @@
     minecraft = [
       ./containers/minecraft/auto_curseforge.nix
     ];
+    sops = [
+      ./containers/minecraft/auto_curseforge_sops.nix
+    ];
   };
   bsky-pds = {
     bsky-pds = [
@@ -43,10 +49,16 @@
     dailytxt = [
       ./containers/dailytxt
     ];
+    sops = [
+      ./containers/dailytxt/sops.nix
+    ];
   };
   docker-mailserver = {
     docker-mailserver = [
       ./containers/docker-mailserver
+    ];
+    sops = [
+      ./containers/docker-mailserver/sops.nix
     ];
   };
   roundcube = {

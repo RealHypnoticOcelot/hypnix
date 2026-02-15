@@ -16,9 +16,11 @@
         ENABLE_COMMAND_BLOCK = "true";
         ALLOW_FLIGHT = "true";
         SPAWN_PROTECTION = "0";
-        CF_API_KEY = config.sops.secrets.cf-api-key;
         CF_SLUG = "all-the-mods-10";
       };
+      env_file = [
+        config.sops.templates."${profileName}".path
+      ];
       # ports = [
       #   "19132:19132/udp" # Only needed if using Geyser/Floodgate
       # ];
