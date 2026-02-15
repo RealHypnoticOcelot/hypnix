@@ -15,6 +15,10 @@
       ];
       env_file = [
         config.sops.templates."${profileName}".path
+        "${volumePath}/mailserver.env"
+        # After starting this continaer, run
+        # curl https://raw.githubusercontent.com/docker-mailserver/docker-mailserver/master/mailserver.env > ${volumePath}/mailserver.env
+        # and restart it to provide the env file.
       ];
       ports = [
         "25:25"    # SMTP  (explicit TLS => STARTTLS, Authentication is DISABLED => use port 465/587 instead)
