@@ -3,21 +3,21 @@
 let
   containerProfiles = (import ./containerprofiles.nix );
   selectedContainers = [
-    # PUT YOUR CONTAINERS HERE!
+    "terraria"
   ];
 in
 let
   sopsImports = lib.flatten (
     map (
       profile:
-      lib.optionals (
-        containerProfiles ? ${profile} && containerProfiles.${profile} ? "sops"
-      ) map (
+      if (containerProfiles ? ${profile} && containerProfiles.${profile} ? "sops") then
+      map (
         sopsImport: ( import sopsImport {
           inherit config;
           profileName = profile;
         })
       ) containerProfiles.${profile}.sops
+      else []
     ) selectedContainers
   );
 
