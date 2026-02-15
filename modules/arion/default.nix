@@ -1,9 +1,8 @@
-{ config, pkgs, lib, inputs, userName, hostName, ... }:
+{ config, pkgs, lib, inputs, userName, hostName, systemDisk, ... }:
 
 let
   containerProfiles = (import ./containerprofiles.nix );
   selectedContainers = [
-    "terraria"
   ];
 in
 let
@@ -40,7 +39,7 @@ let
                 # What we're doing with map here is intercepting each
                 # provided path and modifying them so that they inherit things
                   path: ( import path {
-                    inherit userName config projectName; # ex. minecraft
+                    inherit userName systemDisk config projectName; # ex. minecraft
                     profileName = container; # ex. minecraft-router
                     volumePath = "/home/${userName}/services/${projectName}";
                   })

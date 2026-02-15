@@ -44,6 +44,9 @@
     bsky-pds = [
       ./containers/bsky-pds
     ];
+    sops = [
+      ./containers/bsky-pds/sops.nix
+    ];
   };
   dailytxt = {
     dailytxt = [
@@ -77,6 +80,56 @@
     ];
     sops = [
       ./containers/koito/sops.nix
+    ];
+  };
+  docker-picard = {
+    docker-picard = [
+      ./containers/docker-picard
+    ];
+    sops = [
+      ./containers/docker-picard/sops.nix
+    ];
+  };
+  navidrome = {
+    navidrome = [
+      ./containers/navidrome
+    ];
+    sops = [
+      ./containers/navidrome/sops.nix
+    ];
+  };
+  nginx = {
+    nginx = [
+      ./containers/nginx
+    ];
+  };
+  project-zomboid = {
+    project-zomboid = [
+      ./containers/project-zomboid
+    ];
+    sops = [
+      ./containers/project-zomboid/sops.nix
+    ];
+  };
+  scrutiny = {
+    scrutiny = [
+      ./containers/scrutiny
+    ];
+  };
+  snikket = {
+    snikket = [
+      ./containers/snikket
+    ];
+    sops = [
+      ./containers/snikket/sops.nix
+    ];
+  };
+  vaultwarden = {
+    vaultwarden = [
+      ./containers/vaultwarden
+    ];
+    sops = [
+      ./containers/vaultwarden/sops.nix
     ];
   };
 }
