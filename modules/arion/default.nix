@@ -41,7 +41,7 @@ let
                   path: ( import path {
                     inherit userName systemDisk config projectName; # ex. minecraft
                     profileName = container; # ex. minecraft-router
-                    volumePath = "/home/${userName}/services/${projectName}";
+                    volumePath = "/srv/${projectName}";
                   })
                 ) containerProfiles.${container}.${projectName};
               };
