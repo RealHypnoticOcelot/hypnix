@@ -334,4 +334,9 @@
       ../modules/arion
     ];
   };
+  qgis = {
+    home-manager = [
+      ../apps/qgis/home-manager.nix
+    ];
+  };
 }
