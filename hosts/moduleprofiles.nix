@@ -339,4 +339,9 @@
       ../apps/qgis/home-manager.nix
     ];
   };
+  feh = {
+    home-manager = [
+      ../apps/feh/home-manager.nix
+    ]
+  }
 }
