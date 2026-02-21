@@ -342,6 +342,6 @@
   feh = {
     home-manager = [
       ../apps/feh/home-manager.nix
-    ]
-  }
+    ];
+  };
 }
