@@ -1,8 +1,5 @@
 {
-  programs.gallery-dl = {
-    enable = true;
-    settings = {
-      extractor.base-directory = "~/Archive";
-    };
-  };
+  home.packages = with pkgs; [
+    gallery-dl
+  ];
 }
