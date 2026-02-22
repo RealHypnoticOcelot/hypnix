@@ -344,4 +344,9 @@
       ../apps/feh/home-manager.nix
     ];
   };
+  gallery-dl = {
+    home-manager = [
+      ../apps/gallery-dl/home-manager.nix
+    ];
+  };
 }
