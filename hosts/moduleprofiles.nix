@@ -349,4 +349,14 @@
       ../apps/gallery-dl/home-manager.nix
     ];
   };
+  skanlite = {
+    home-manager = [
+      ../apps/skanlite/home-manager.nix
+    ];
+  };
+  tree = {
+    home-manager = [
+      ../apps/tree/home-manager.nix
+    ];
+  };
 }
