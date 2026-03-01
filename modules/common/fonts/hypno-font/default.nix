@@ -2,7 +2,7 @@
 let
   hypno-font = pkgs.stdenvNoCC.mkDerivation {
     name = "hypno-font";
-    executable = ../../../../assets/fonts/Hypnoticocelot-Regular.otf;
+    executable = ../../../../assets/fonts/hypno-font/Hypnoticocelot-Regular.otf;
 
     installPhase = ''
       runHook preInstall
