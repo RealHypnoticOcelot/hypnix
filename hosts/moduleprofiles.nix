@@ -361,7 +361,7 @@
   };
   hypno-font = {
     system = [
-      ../modules/common/fonts/hypno-font.nix
+      ../modules/common/fonts/hypno-font
     ];
   };
 }
