@@ -1,16 +1,18 @@
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 let
   hypno-font = pkgs.stdenvNoCC.mkDerivation {
     name = "hypno-font";
-    src = ../../assets/fonts/hypno-font.otf;
+    executable = ../../../assets/fonts/hypno-font.otf;
 
     installPhase = ''
       runHook preInstall
 
-      install -Dm644 $src -t $out/share/fonts/opentype
+      install -Dm644 $executable -t $out/share/fonts/opentype
 
       runHook postInstall
     '';
+
+    phases = [ "installPhase" ]; # Removes all phases except installPhase, otherwise it tries to unzip it
 
     meta = {
       description = "Custom font based off of my handwriting!";

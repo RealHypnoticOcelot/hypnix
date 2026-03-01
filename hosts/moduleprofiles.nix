@@ -359,4 +359,9 @@
       ../apps/tree/home-manager.nix
     ];
   };
+  hypno-font = {
+    system = [
+      ../modules/common/fonts/hypno-font.nix
+    ];
+  };
 }
