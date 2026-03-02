@@ -52,7 +52,6 @@ in
       "networking-networkmanager"
       "bluetooth"
       "printing"
-      "avahi"
       "pipewire"
       "brightness"
       "ucodenix"
