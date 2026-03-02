@@ -366,7 +366,7 @@
   };
   avahi = {
     system = [
-      ../modules/printing/avahi.nix
+      ../modules/common/printing/avahi.nix
     ];
   };
 }
