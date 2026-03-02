@@ -9,5 +9,5 @@
       nssmdns4 = true;
       # mDNS Name Server Switch plugin, allows for applications to resolve devices on the .local domain
     }; # By enabling Avahi, we now search on UDP port 5353 for printers
-  }
+  };
 }
