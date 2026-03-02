@@ -50,7 +50,7 @@
   };
   printing = {
     system = [
-      ../modules/common/printing.nix
+      ../modules/common/printing
     ];
   };
   networking-networkmanager = {
@@ -362,6 +362,11 @@
   hypno-font = {
     system = [
       ../modules/common/fonts/hypno-font
+    ];
+  };
+  avahi = {
+    system = [
+      ../modules/printing/avahi.nix
     ];
   };
 }
