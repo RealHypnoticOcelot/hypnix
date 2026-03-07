@@ -364,4 +364,9 @@
       ../modules/common/fonts/hypno-font
     ];
   };
+  motrix = {
+    home-manager = [
+      ../apps/motrix/home-manager.nix
+    ];
+  };
 }

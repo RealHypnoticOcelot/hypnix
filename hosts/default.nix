@@ -88,6 +88,7 @@ in
       "tree"
       "thunderbird"
       "hypno-font"
+      "motrix"
     ];
     extraModules = []; # Basically just anything you'd need to import that's not a preset
     extraHomeManagerModules = []; # The same, but for Home Manager
