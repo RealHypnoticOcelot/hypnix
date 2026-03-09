@@ -369,4 +369,9 @@
       ../apps/motrix/home-manager.nix
     ];
   };
+  anki = {
+    home-manager = [
+      ../apps/anki/home-manager.nix
+    ];
+  };
 }
