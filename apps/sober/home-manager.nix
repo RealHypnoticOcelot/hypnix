@@ -1,6 +1,6 @@
-{ lib, ... }:
+{ lib, config, ... }:
 
-assert assertMsg (services.flatpak.enabled == true) "Enable the declarative-flatpak module first!";
+#TODO: Create warning if declarative-flatpak isn't enabled
 {
   services.flatpak = {
     remotes = {
