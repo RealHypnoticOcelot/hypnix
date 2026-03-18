@@ -374,4 +374,14 @@
       ../apps/anki/home-manager.nix
     ];
   };
+  sober = {
+    home-manager = [
+      ../apps/sober/home-manager.nix
+    ];
+  };
+  orion-beta = {
+    home-manager = [
+      ../apps/orion-beta/home-manager.nix
+    ];
+  };
 }
