@@ -65,13 +65,13 @@
         SiteSettings = "false";
         Locked = "false";
       };
-      DisableFirefoxAccounts = "false"; # Enable Firefox Sync
       EncryptedMediaExtensions = "true"; # Encrypted Media Extensions, or DRM-protected media
     };
     settings = {
       # Librewolf-specific settings
       # "privacy.resistFingerprinting.letterboxing" = true;
       "webgl.disabled" = false;
+      "identity.fxaccounts.enabled" = true;
       # Firefox settings
       "browser.theme.content-theme" = 0; # Dark theme!
       "browser.newtabpage.activity-stream.showSponsoredCheckboxes" = false; # "Support LibreWolf" checkbox
