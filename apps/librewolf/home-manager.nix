@@ -32,13 +32,15 @@
           }
         ];
         Remove = [
+          "Google"
+          "Bing"
+          "Perplexity"
           "DuckDuckGo"
           "Wikipedia (en)"
           "LibRedirect"
         ];
         Default = "Startpage";
       };
-      SearchSuggestEnabled = "true";
       ExtensionSettings = {
         "uBlock0@raymondhill.net" = { # uBlock Origin
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
@@ -56,19 +58,8 @@
           default_area = "navbar";
         };
       };
-      DisplayBookmarksToolbar = "never";
-      SanitizeOnShutdown = {
-        Cache = "false";
-        Cookies = "false";
-        FormData = "false";
-        History = "false";
-        Sessions = "false";
-        SiteSettings = "false";
-        Locked = "false";
-      };
-      EncryptedMediaExtensions = "true"; # Encrypted Media Extensions, or DRM-protected media
     };
-    settings = {
+    settings = { # These settings apply to all profiles
       # Librewolf-specific settings
       # "privacy.resistFingerprinting.letterboxing" = true;
       "webgl.disabled" = false;
@@ -78,6 +69,7 @@
       "privacy.clearOnShutdown.downloads" = false;
       "media.eme.enabled" = true; # Encrypted Media Extensions, or DRM-protected media
       # Firefox settings
+      "browser.search.suggest.enabled" = true;
       "browser.theme.content-theme" = 0; # Dark theme!
       "browser.newtabpage.activity-stream.showSponsoredCheckboxes" = false; # "Support LibreWolf" checkbox
       "privacy.userContext.enabled" = false; # Container Tabs
@@ -91,8 +83,12 @@
     profiles = {
       "MainProfile" = {
         id = 0;
+        settings = {
+          "browser.toolbars.bookmarks.visibility" = "never"; # When to show bookmarks toolbar
+        };
         search = {
-          privateDefault = "Startpage"; # Default is determined by above policies
+          default = "Startpage";
+          privateDefault = "Startpage";
         };
       };
       "School" = {
@@ -102,6 +98,7 @@
         };
         search = {
           default = "Startpage";
+          privateDefault = "Startpage";
         };
       };
     };
