@@ -2,7 +2,7 @@
 {
   programs.plasma = {
     enable = true;
-    overrideConfig = true; # Whether this is the only source of truth for configuration
+    overrideConfig = false; # Whether this is the only source of truth for configuration
     workspace.colorScheme = "BreezeDark";
     powerdevil = {
       battery.dimDisplay.idleTimeout = 900; # In seconds
