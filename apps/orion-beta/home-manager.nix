@@ -3,13 +3,13 @@
 let
   orion-flatpak = pkgs.fetchurl {
     url = "https://orionbrowser.com/download/oriongtk-early-beta";
-    hash = "sha256-lTeyxzJNQeMdu1IVdovNMtgn77jRIhSybLdMbTkf2Ww=";
+    hash = "sha256-bX2k0SPyPuaGhYBKJfEn/QnIK2BLBfDjaku8eGfQ+Z4=";
   };
 in
 {
   services.flatpak = {
     packages = [
-      ":${orion-flatpak}"
+      ":${orion-flatpak}.flatpak" # Need to add .flatpak, because the url doesn't include it?
     ];
   };
 }
