@@ -6,7 +6,7 @@ let
   # Since the available options don't need to change per profile, this implementation is fine. If you wanted to be more
   # elegant, you'd have to change things up a bit!
   searchEngines = {
-    kagi = {
+    "kagi" = {
       name = "Kagi";
       description = "A privacy-focused, user-centric search engine.";
       urls = [
@@ -28,7 +28,7 @@ let
       ];
       iconMapObj."32" = "https://kagi.com/favicon-32x32.png";
     };
-    startpage = {
+    "startpage" = {
       name = "Startpage";
       description = "Startpage Search";
       urls = [
@@ -52,7 +52,7 @@ let
       ];
       iconMapObj."32" = "https://www.startpage.com/favicon.ico";
     };
-    mojeek = {
+    "mojeek" = {
       name = "Mojeek";
       description = "Search the web using Mojeek";
       urls = [
@@ -70,12 +70,12 @@ let
       ];
       iconMapObj."16" = "https://www.mojeek.com/favicon.png";
     };
-    google.metadata.hidden = true;
-    bing.metadata.hidden = true;
-    duckduckgo.metadata.hidden = true;
-    perplexity.metadata.hidden = true;
-    wikipedia.metadata.hidden = true;
-    libredirect.metadata.hidden = true;
+    "google".metaData.hidden = true;
+    "bing".metaData.hidden = true;
+    "duckduckgo".metaData.hidden = true;
+    "perplexity".metaData.hidden = true;
+    "wikipedia".metaData.hidden = true;
+    "libredirect".metaData.hidden = true;
   };
 in
 {
@@ -180,8 +180,8 @@ in
         };
         search = {
           engines = searchEngines;
-          default = "Startpage";
-          privateDefault = "Startpage";
+          default = "startpage";
+          privateDefault = "startpage";
           force = true;
         };
       };
@@ -192,8 +192,8 @@ in
         };
         search = {
           engines = searchEngines;
-          default = "Startpage";
-          privateDefault = "Startpage";
+          default = "startpage";
+          privateDefault = "startpage";
           force = true;
         };
       };
