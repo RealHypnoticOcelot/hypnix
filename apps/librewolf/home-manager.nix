@@ -34,8 +34,9 @@
         Remove = [
           "DuckDuckGo"
           "Wikipedia (en)"
+          "LibRedirect"
         ];
-        Default = "Kagi";
+        Default = "Startpage";
       };
       SearchSuggestEnabled = "true";
       ExtensionSettings = {
@@ -90,11 +91,17 @@
     profiles = {
       "MainProfile" = {
         id = 0;
+        search = {
+          privateDefault = "Startpage"; # Default is determined by above policies
+        };
       };
       "School" = {
         id = 1;
         settings = {
           "browser.toolbars.bookmarks.visibility" = "newtab"; # When to show bookmarks toolbar
+        };
+        search = {
+          default = "Startpage";
         };
       };
     };
