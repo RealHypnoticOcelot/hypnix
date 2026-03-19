@@ -47,7 +47,6 @@
                   # `file://nix/store/blahblahwhatever/yourapp.desktop` to `applications:yourapp.desktop`.
                   "applications:librewolf.desktop"
                   "applications:org.kde.dolphin.desktop"
-                  "applications:steam.desktop"
                   "applications:vesktop.desktop"
                 ];
               };
