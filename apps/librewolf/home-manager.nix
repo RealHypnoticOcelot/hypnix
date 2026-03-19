@@ -44,27 +44,32 @@
           installation_mode = "blocked"; # Prevent other extensions from being installed, they must be defined here
         };
         "uBlock0@raymondhill.net" = { # uBlock Origin
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/uBlock0@raymondhill.net/latest.xpi";
           installation_mode = "force_installed";
           default_area = "menupanel"; # menupanel is under the extensions button, navbar is on the toolbar
         };
         "{446900e4-71c2-419f-a6a7-df9c091e268b}" = { # Bitwarden
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi";
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/{446900e4-71c2-419f-a6a7-df9c091e268b}/latest.xpi";
           installation_mode = "force_installed";
           default_area = "navbar";
         };
         "jid0-3GUEt1r69sQNSrca5p8kx9Ezc3U@jetpack" = { # Terms of Service; Didn't Read
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/terms-of-service-didnt-read/latest.xpi";
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/jid0-3GUEt1r69sQNSrca5p8kx9Ezc3U@jetpack/latest.xpi";
           installation_mode = "force_installed";
           default_area = "navbar";
         };
         "feed-preview@code.guido-berhoerster.org" = { # Feed Preview
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/feed-preview/latest.xpi";
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/feed-preview@code.guido-berhoerster.org/latest.xpi";
           installation_mode = "force_installed";
           default_area = "menupanel";
         };
         "{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}" = { # User-Agent Switcher and Manager
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/user-agent-string-switcher/latest.xpi";
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}/latest.xpi";
+          installation_mode = "force_installed";
+          default_area = "menupanel";
+        };
+        "7eoorv3@alefvanoon.anonaddy.me" = { # LibRedirect
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/7esoorv3@alefvanoon.anonaddy.me/latest.xpi";
           installation_mode = "force_installed";
           default_area = "menupanel";
         };
