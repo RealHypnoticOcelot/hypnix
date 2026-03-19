@@ -72,6 +72,10 @@
       # "privacy.resistFingerprinting.letterboxing" = true;
       "webgl.disabled" = false;
       "identity.fxaccounts.enabled" = true;
+      "privacy.sanitize.sanitizeOnShutdown" = false;
+      "privacy.clearOnShutdown.history" = false;
+      "privacy.clearOnShutdown.downloads" = false;
+      "media.eme.enabled" = true; # Encrypted Media Extensions, or DRM-protected media
       # Firefox settings
       "browser.theme.content-theme" = 0; # Dark theme!
       "browser.newtabpage.activity-stream.showSponsoredCheckboxes" = false; # "Support LibreWolf" checkbox
