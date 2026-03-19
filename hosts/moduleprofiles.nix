@@ -194,15 +194,6 @@
       ../modules/plasma-manager/home-manager.nix
     ];
   };
-  declarative-flatpak = {
-    system = [
-      ../apps/declarative-flatpak
-    ];
-    home-manager = [
-      inputs.flatpaks.homeModules.default
-      ../apps/declarative-flatpak/home-manager.nix
-    ];
-  };
   feishin = {
     home-manager = [
       ../apps/feishin/home-manager.nix
@@ -375,12 +366,22 @@
     ];
   };
   sober = {
+    system = [
+      ../modules/declarative-flatpak # For Flatpak applications, also just import Declarative Flatpak stuff
+    ];
     home-manager = [
+      inputs.flatpaks.homeModules.default
+      ../modules/declarative-flatpak/home-manager.nix # There must be a more elegant way to do this!
       ../apps/sober/home-manager.nix
     ];
   };
   orion-beta = {
+    system = [
+      ../modules/declarative-flatpak
+    ];
     home-manager = [
+      inputs.flatpaks.homeModules.default
+      ../modules/declarative-flatpak/home-manager.nix
       ../apps/orion-beta/home-manager.nix
     ];
   };
