@@ -43,11 +43,10 @@ in
     # These are imported in order! Home Manager also gets imported before system, if both are applicable
       "systemd-boot"
       "disko"
-      "sddm"
       "sops"
       "stylix"
-      "sddm"
       "plasma-6"
+      "plasma-login-manager"
       "plasma-manager"
       "networking-networkmanager"
       "bluetooth"

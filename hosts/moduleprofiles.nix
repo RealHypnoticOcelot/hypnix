@@ -385,4 +385,9 @@
       ../apps/orion-beta/home-manager.nix
     ];
   };
+  plasma-login-manager = {
+    system = [
+      ../modules/common/window-system/display-manager/plasma-login-manager.nix
+    ];
+  };
 }
