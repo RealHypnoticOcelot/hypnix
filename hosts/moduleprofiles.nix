@@ -390,4 +390,14 @@
       ../modules/common/window-system/display-manager/plasma-login-manager.nix
     ];
   };
+  dolphin-mpn = {
+    system = [
+      ../modules/declarative-flatpak
+    ];
+    home-manager = [
+      inputs.flatpaks.homeModules.default
+      ../modules/declarative-flatpak/home-manager.nix
+      ../apps/dolphin-mpn/home-manager.nix
+    ];
+  };
 }
