@@ -2,8 +2,8 @@
 
 let
   dolphin-mpn-flatpak = pkgs.fetchurl {
-    url = "https://github.com/MarioPartyNetplay/Dolphin-MPN/releases/download/latest/DolphinMPN-flatpak-linux-x86_64.flatpak";
-    hash = "sha256-bX2k0SPyPuaGhYBKJfEn/QnIK2BLBfDjaku8eGfQ+Z4=";
+    url = "https://github.com/MarioPartyNetplay/Dolphin-MPN/releases/latest/download/DolphinMPN-flatpak-linux-x86_64.flatpak";
+    hash = "sha256-oBJHSQelv4rVohyZW/gLsaaLqVAwYTiTHlTxYLbFtB4=";
   };
 in
 {
