@@ -9,7 +9,6 @@
       battery.turnOffDisplay.idleTimeout = 1800; # In seconds
     };
     configFile = {
-      "baloofilerc"."Basic Settings"."Indexing-Enabled" = false; # I don't know why, but baloo seems to be the source of some issues? May need further testing.
       klipperrc.General.MaxClipItems = 2048; # Maximum 2048
       krunnerrc= {
         Plugins = {

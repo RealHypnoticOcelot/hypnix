@@ -57,7 +57,6 @@ in
       "librewolf"
       "vesktop"
       "obs"
-      "easyeffects"
       "steam"
       "vscodium"
       "kde-connect"
