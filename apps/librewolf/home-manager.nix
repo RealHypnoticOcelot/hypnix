@@ -68,7 +68,7 @@
           installation_mode = "force_installed";
           default_area = "menupanel";
         };
-        "7eoorv3@alefvanoon.anonaddy.me" = { # LibRedirect
+        "7esoorv3@alefvanoon.anonaddy.me" = { # LibRedirect
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/7esoorv3@alefvanoon.anonaddy.me/latest.xpi";
           installation_mode = "force_installed";
           default_area = "menupanel";
