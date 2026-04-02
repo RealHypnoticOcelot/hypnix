@@ -400,4 +400,9 @@
       ../apps/dolphin-mpn/home-manager.nix
     ];
   };
+  lynx = {
+    home-manager = [
+      ../apps/lynx/home-manager.nix
+    ];
+  };
 }
