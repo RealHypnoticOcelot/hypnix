@@ -405,4 +405,9 @@
       ../apps/lynx/home-manager.nix
     ];
   };
+  filezilla = {
+    home-manager = [
+      ../apps/filezilla/home-manager.nix
+    ];
+  };
 }
