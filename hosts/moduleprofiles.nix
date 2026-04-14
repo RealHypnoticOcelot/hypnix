@@ -410,4 +410,9 @@
       ../apps/filezilla/home-manager.nix
     ];
   };
+  ryubing-canary = {
+    home-manager = [
+      ../apps/ryubing-canary/home-manager.nix
+    ];
+  };
 }
