@@ -1,13 +1,16 @@
-{ pkgs, builtins ... }:
+{ pkgs, ... }:
 
 let
-  latest-release = builtins.fromJSON (fetchurl {
-    url = "https://git.ryujinx.app/api/v1/repos/Ryubing/Canary/releases/latest";
-  });
-  ryubing-canary = pkgs.fetchurl {
-    url = "https://git.ryujinx.app/Ryubing/Canary/releases/download/${latest-release.tag_name}/ryujinx-canary-${latest-release.tag_name}-linux_x64.tar.gz";
-    hash = "sha256-bX2k0SPyPuaGhYBKJfEn/QnIK2BLBfDjaku8eGfQ+Z4=";
-    name = "oriongtk-earlybeta-1.flatpak";
+  ryubing-canary = pkgs.appimageTools.wrapType2 rec {
+    pname = "ryujinx-canary";
+    version = "1.3.269";  
+    src = pkgs.fetchurl {
+      url = "https://git.ryujinx.app/Ryubing/Canary/releases/download/${version}/ryujinx-canary-${version}-x64.AppImage";
+      hash = "sha256-OvqqwStmvDBADOPMHw8G3rJeF1NytvRBepnAOSfTDg4=";
+    };
+    extraPkgs = pkgs: with pkgs; [
+      icu
+    ];
   };
 in
 {
