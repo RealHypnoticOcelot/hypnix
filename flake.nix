@@ -43,6 +43,10 @@
       url = "github:aksiksi/compose2nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    cc3dsfs = {
+      url = "github:RocaBOT/cc3dsfs";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, ... } @ inputs:

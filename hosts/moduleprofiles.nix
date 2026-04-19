@@ -410,9 +410,9 @@
       ../apps/filezilla/home-manager.nix
     ];
   };
-  ryubing-canary = {
+  cc3dsfs = {
     home-manager = [
-      ../apps/ryubing-canary/home-manager.nix
+      ../apps/cc3dsfs/home-manager.nix
     ];
   };
 }
