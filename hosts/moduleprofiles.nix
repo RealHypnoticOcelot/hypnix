@@ -413,7 +413,7 @@
   cc3dsfs = {
     system = [
       ../apps/cc3dsfs
-    ]
+    ];
     home-manager = [
       ../apps/cc3dsfs/home-manager.nix
     ];
