@@ -40,9 +40,9 @@
       };
       ExtensionSettings = {
         # You can find extension IDs by going to about:support and going to the extensions section
-        "*" = { # Special catch-all for all extensions not included in the policy
-          installation_mode = "blocked"; # Prevent other extensions from being installed, they must be defined here
-        };
+        # "*" = { # Special catch-all for all extensions not included in the policy
+        #   installation_mode = "blocked"; # Prevent other extensions from being installed, they must be defined here
+        # };
         "uBlock0@raymondhill.net" = { # uBlock Origin
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/uBlock0@raymondhill.net/latest.xpi";
           installation_mode = "force_installed";
@@ -58,11 +58,11 @@
           installation_mode = "force_installed";
           default_area = "navbar";
         };
-        "feed-preview@code.guido-berhoerster.org" = { # Feed Preview
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/feed-preview@code.guido-berhoerster.org/latest.xpi";
-          installation_mode = "force_installed";
-          default_area = "menupanel";
-        };
+        # "feed-preview@code.guido-berhoerster.org" = { # Feed Preview
+        #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/feed-preview@code.guido-berhoerster.org/latest.xpi";
+        #   installation_mode = "force_installed";
+        #   default_area = "menupanel";
+        # };
         "{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}" = { # User-Agent Switcher and Manager
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}/latest.xpi";
           installation_mode = "force_installed";
