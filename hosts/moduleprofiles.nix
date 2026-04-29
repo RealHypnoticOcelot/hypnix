@@ -418,4 +418,14 @@
       ../apps/cc3dsfs/home-manager.nix
     ];
   };
+  jdk21 = {
+    home-manager = [
+      ../apps/jdk21/home-manager.nix
+    ];
+  };
+  ungoogled-chromium = {
+    home-manager = [
+      ../apps/ungoogled-chromium/home-manager.nix
+    ];
+  };
 }
