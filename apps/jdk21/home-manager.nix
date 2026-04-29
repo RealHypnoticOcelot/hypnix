@@ -3,8 +3,6 @@
 {
   programs.java = {
     enable = true;
-    package = with pkgs; [
-      jdk21
-    ];
+    package = pkgs.jdk21;
   };
 }

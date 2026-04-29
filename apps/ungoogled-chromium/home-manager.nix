@@ -3,8 +3,6 @@
 {
   programs.chromium = {
     enable = true;
-    package = with pkgs; [
-      ungoogled-chromium
-    ];
+    package = pkgs.ungoogled-chromium;
   };
 }
