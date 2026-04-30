@@ -79,7 +79,7 @@ in
       "ktorrent"
       "open-dyslexic"
       "feh"
-      "gallery-dl"
+      # "gallery-dl"
       "skanlite"
       "tree"
       "thunderbird"
