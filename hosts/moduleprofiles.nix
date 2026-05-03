@@ -428,4 +428,9 @@
       ../apps/ungoogled-chromium/home-manager.nix
     ];
   };
+  audiocd-kio = {
+    home-manager = [
+      ../apps/audiocd-kio/home-manager.nix
+    ];
+  };
 }
