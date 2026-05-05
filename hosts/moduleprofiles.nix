@@ -433,4 +433,9 @@
       ../apps/audiocd-kio/home-manager.nix
     ];
   };
+  sonobus = {
+    home-manager = [
+      ../apps/sonobus/home-manager.nix
+    ];
+  };
 }
