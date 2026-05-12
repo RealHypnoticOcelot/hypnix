@@ -3,5 +3,5 @@
 {
   programs.feh = {
     enable = true;
-  }
+  };
 }
