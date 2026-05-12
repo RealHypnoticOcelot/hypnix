@@ -1,7 +1,8 @@
 { pkgs, config, ... }:
 
 {
-  home.packages = with pkgs; [
-    prismlauncher
-  ];
+  programs.prismlauncher = {
+    enable = true;
+    settings = { };
+  }
 }
