@@ -6,7 +6,7 @@
     profiles.default.extensions = with pkgs.vscode-extensions; [
       jnoortheen.nix-ide
       svelte.svelte-vscode
-      latformio.platformio-vscode-ide
+      platformio.platformio-vscode-ide
     ];
   };
   home.packages = with pkgs; [
