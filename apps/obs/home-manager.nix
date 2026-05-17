@@ -11,6 +11,7 @@
       obs-vaapi # AMD hardware acceleration
       obs-gstreamer # 
       obs-vkcapture # Vulkan/OpenGL Capture
+      obs-source-record
     ];
   };
 }
