@@ -5,15 +5,7 @@
     enable=true;
     policies = {
       SearchEngines = {
-        Add = [
-          {
-            Name = "Kagi";
-            Description = "A privacy-focused, user-centric search engine.";
-            URLTemplate = "https://kagi.com/search?q={searchTerms}";
-            Method = "GET";
-            IconURL = "https://kagi.com/favicon-32x32.png";
-            SuggestURLTemplate = "https://kagisuggest.com/api/autosuggest?q={searchTerms}";
-          }
+        Add = [ 
           {
             Name = "Startpage";
             Description = "Startpage Search";
@@ -22,6 +14,14 @@
             Method = "GET";
             IconURL = "https://www.startpage.com/favicon.ico";
             SuggestURLTemplate = "https://www.startpage.com/osuggestions?q={searchTerms}";
+          }
+          {
+            Name = "Kagi";
+            Description = "A privacy-focused, user-centric search engine.";
+            URLTemplate = "https://kagi.com/search?q={searchTerms}";
+            Method = "GET";
+            IconURL = "https://kagi.com/favicon-32x32.png";
+            SuggestURLTemplate = "https://kagisuggest.com/api/autosuggest?q={searchTerms}";
           }
           {
             Name = "Mojeek";
@@ -84,6 +84,7 @@
       "privacy.clearOnShutdown.history" = false;
       "privacy.clearOnShutdown.downloads" = false;
       "media.eme.enabled" = true; # Encrypted Media Extensions, or DRM-protected media
+      "network.http.referer.XOriginPolicy" = 2; # Limit cross-origin referrers
       # Firefox settings
       "browser.search.suggest.enabled" = true;
       "browser.theme.content-theme" = 0; # Dark theme!
@@ -95,6 +96,8 @@
       "browser.search.separatePrivateDefault" = false; # Whether to use a different search engine for private search
       "browser.tabs.loadInBackground" = false; # Set FALSE to switch to newly-opened links, and TRUE to not
       "browser.newtabpage.activity-stream.feeds.topsites" = false; # Add shortcuts to new tab
+      "network.trr.mode" = 3; # Max Protection DNS over HTTPS
+      "network.trr.uri" = "https://dns.mullvad.net/dns-query"; # Use Mullvad's DoH connection 
     };
     profiles = {
       "MainProfile" = {
