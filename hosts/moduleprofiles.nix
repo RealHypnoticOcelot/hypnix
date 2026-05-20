@@ -438,4 +438,9 @@
       ../apps/sonobus/home-manager.nix
     ];
   };
+  localsend = {
+    home-manager = [
+      ../apps/localsend/home-manager.nix
+    ];
+  };
 }
