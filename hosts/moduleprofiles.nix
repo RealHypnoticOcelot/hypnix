@@ -439,8 +439,8 @@
     ];
   };
   localsend = {
-    home-manager = [
-      ../apps/localsend/home-manager.nix
+    system = [
+      ../apps/localsend
     ];
   };
 }
