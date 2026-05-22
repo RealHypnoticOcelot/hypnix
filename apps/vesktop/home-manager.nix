@@ -88,6 +88,7 @@
         ViewIcons.enabled = true;
         VoiceDownload.enabled = true;
         VoiceMessages.enabled = true;
+        VolumeBooster.enabled = true;
         YoutubeAdblock.enabled = true;
       };
       enabledThemes = [ "Pesterchum.css" ]; # You have to append ".css" to whatever theme is named up in vencord.themes

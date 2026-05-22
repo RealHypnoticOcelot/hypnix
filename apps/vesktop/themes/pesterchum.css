@@ -2,7 +2,7 @@
  * @name Pesterchum
  * @description A Discord theme emulating Pesterchum from Homestuck.
  * @author HypnoticOcelot
- * @version 1.0.0
+ * @version 1.0.1
  * @authorId 404053132910395393
  * @authorLink https://ocelot.lol/
 */
@@ -268,13 +268,13 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
   background: unset
 }
 
-:is(.scroller__4a84a, .scroller_c880e8) {
+:is(.scroller__4a84a, .scroller__59141) {
   background: var(--chum-background);
   border: 4px solid var(--chum-dark);
   margin: 16px
 }
 
-:is(.scroller__4a84a, .scroller_c880e8) .header_adb41f {
+:is(.scroller__4a84a, .scroller__59141) .header_adb41f {
   background: unset
 }
 
@@ -848,7 +848,7 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
   bottom: 20px
 }
 
-.searchResultsWrap_a98f3b .container__6c21f {
+.searchResultsWrap_a98f3b .container_d4630c {
   position: sticky;
   bottom: 0;
   background: var(--chum-medium);
@@ -858,12 +858,12 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
   --interactive-hover: #000000
 }
 
-.searchResultsWrap_a98f3b .container__6c21f .pageButton_c15210 {
+.searchResultsWrap_a98f3b .container_d4630c .pageButton_c15210 {
   background: var(--chum-medium);
   border: 4px solid var(--chum-dark)
 }
 
-.searchResultsWrap_a98f3b .container__6c21f .pageButton_c15210.activeButton_c15210 {
+.searchResultsWrap_a98f3b .container_d4630c .pageButton_c15210.activeButton_c15210 {
   border-color: var(--chum-light);
   color: #000
 }
@@ -908,12 +908,12 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
 }
 
 .chat_f02135,
-.chat_a44415 {
+.chat_ee72fa {
   padding: 16px
 }
 
 .chat_f02135::before,
-.chat_a44415::before {
+.chat_ee72fa::before {
   display: none
 }
 
