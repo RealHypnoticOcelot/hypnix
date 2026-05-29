@@ -11,6 +11,9 @@
       proton-ge-bin # Install Proton GE
     ];
   };
+  environment.systemPackages = with pkgs; [
+    steam-run
+  ];
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
     "steam"
     "steam-unwrapped"
