@@ -443,4 +443,9 @@
       ../apps/localsend
     ];
   };
+  automatic-timezoned = {
+    home-manager = [
+      ../modules/common/automatic-timezoned.nix
+    ]
+  }
 }
