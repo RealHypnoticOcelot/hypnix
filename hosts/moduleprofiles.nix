@@ -444,8 +444,8 @@
     ];
   };
   automatic-timezoned = {
-    home-manager = [
+    system = [
       ../modules/common/automatic-timezoned.nix
-    ]
-  }
+    ];
+  };
 }

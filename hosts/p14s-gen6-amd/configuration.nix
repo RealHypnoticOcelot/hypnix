@@ -13,7 +13,7 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Set your time zone.
-  time.timeZone = "America/New_York";
+  time.timeZone = lib.mkDefault "America/New_York";
 
   # Configure console keymap
   console.keyMap = "us";
