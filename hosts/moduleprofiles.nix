@@ -456,6 +456,6 @@
   nodejs-ports = {
     system = [
       ../modules/common/nodejs-ports.nix
-    ]
-  }
+    ];
+  };
 }
