@@ -4,7 +4,7 @@
   programs.vesktop = {
     enable = true;
     settings = {
-      discordBranch = "stable";
+      discordBranch = "canary";
       arRPC = true; # Enable Rich Presence implementation
       tray = false; # Whether to have a tray icon
       minimizeToTray = false;
@@ -46,26 +46,27 @@
         NoUnblockToJump.enabled = true;
         PauseInvitesForever.enabled = true;
         PermissionFreeWill.enabled = true;
-        PinDMs = {
-          enabled = true;
-          pinOrder = 1;
-          # 1 = Custom: Allows rearranging the order of your pinned DMs
-          # I believe with drop-down options, you select a zero-indexed option number(so the first option would be 0, the next would be 1, etc.)
-          userBasedCategoryList = {
-            "404053132910395393" = [ # Your user ID
-              {
-                id = "mainPins";
-                name = "Pins";
-                color = 8027011; # The color of the category name in decimal format, NOT hexadecimal(You'll have to convert, for example #15e209 is equal to 1434121)
-                collapsed = false;
-                channels = [ # Channel IDs for channels you want to pin. DIFFERENT from user IDs! 
-                  "1172645088925585520" 
-                  "766857547155636224"
-                ];
-              }
-            ];
-          };
-        };
+        # Removed because it was added to Discord
+        # PinDMs = {
+        #   enabled = true;
+        #   pinOrder = 1;
+        #   # 1 = Custom: Allows rearranging the order of your pinned DMs
+        #   # I believe with drop-down options, you select a zero-indexed option number(so the first option would be 0, the next would be 1, etc.)
+        #   userBasedCategoryList = {
+        #     "404053132910395393" = [ # Your user ID
+        #       {
+        #         id = "mainPins";
+        #         name = "Pins";
+        #         color = 8027011; # The color of the category name in decimal format, NOT hexadecimal(You'll have to convert, for example #15e209 is equal to 1434121)
+        #         collapsed = false;
+        #         channels = [ # Channel IDs for channels you want to pin. DIFFERENT from user IDs! 
+        #           "1172645088925585520" 
+        #           "766857547155636224"
+        #         ];
+        #       }
+        #     ];
+        #   };
+        # };
         ReplaceGoogleSearch = {
           enabled = true;
           customEngineName = "Startpage";

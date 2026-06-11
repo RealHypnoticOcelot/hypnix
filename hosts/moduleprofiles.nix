@@ -448,4 +448,14 @@
       ../modules/common/automatic-timezoned.nix
     ];
   };
+  winboat = {
+    system = [
+      ../apps/winboat
+    ];
+  };
+  nodejs-ports = {
+    system = [
+      ../modules/common/nodejs-ports.nix
+    ]
+  }
 }
