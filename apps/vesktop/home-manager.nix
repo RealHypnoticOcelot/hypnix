@@ -4,7 +4,7 @@
   programs.vesktop = {
     enable = true;
     settings = {
-      discordBranch = "canary";
+      discordBranch = "stable";
       arRPC = true; # Enable Rich Presence implementation
       tray = false; # Whether to have a tray icon
       minimizeToTray = false;
@@ -13,7 +13,6 @@
     };
     vencord.themes = {
       "Pesterchum" = ./themes/pesterchum.css;
-      "System24" = ./themes/system24.css;
     };
     vencord.settings = {
       plugins = {

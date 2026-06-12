@@ -2,7 +2,7 @@
  * @name Pesterchum
  * @description A Discord theme emulating Pesterchum from Homestuck.
  * @author HypnoticOcelot
- * @version 1.0.1
+ * @version 1.0.2
  * @authorId 404053132910395393
  * @authorLink https://ocelot.lol/
 */
@@ -848,7 +848,7 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
   bottom: 20px
 }
 
-.searchResultsWrap_a98f3b .container_d4630c {
+.searchResultsWrap_a98f3b .container__23ba6 {
   position: sticky;
   bottom: 0;
   background: var(--chum-medium);
@@ -858,12 +858,12 @@ https://syndishanx.github.io/Website/Update_Classes.html when the theme is looki
   --interactive-hover: #000000
 }
 
-.searchResultsWrap_a98f3b .container_d4630c .pageButton_c15210 {
+.searchResultsWrap_a98f3b .container__23ba6 .pageButton_c15210 {
   background: var(--chum-medium);
   border: 4px solid var(--chum-dark)
 }
 
-.searchResultsWrap_a98f3b .container_d4630c .pageButton_c15210.activeButton_c15210 {
+.searchResultsWrap_a98f3b .container__23ba6 .pageButton_c15210.activeButton_c15210 {
   border-color: var(--chum-light);
   color: #000
 }

@@ -458,4 +458,9 @@
       ../modules/common/nodejs-ports.nix
     ];
   };
+  fluxer = {
+    home-manager = [
+      ../apps/fluxer/home-manager.nix
+    ]
+  }
 }
