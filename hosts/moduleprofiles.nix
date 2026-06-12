@@ -461,6 +461,6 @@
   fluxer = {
     home-manager = [
       ../apps/fluxer/home-manager.nix
-    ]
-  }
+    ];
+  };
 }
