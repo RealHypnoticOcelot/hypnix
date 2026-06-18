@@ -48,7 +48,7 @@
                   "applications:librewolf.desktop"
                   "applications:org.kde.dolphin.desktop"
                   "applications:vesktop.desktop"
-                  "applications:fluxer.desktop"
+                  "applications:app.fluxer.Fluxer.desktop"
                 ];
               };
             };

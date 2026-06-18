@@ -463,4 +463,9 @@
       ../apps/fluxer/home-manager.nix
     ];
   };
+  kde-oxygen = {
+    home-manager = [
+      ../modules/common/window-system/plasma-6/themes/oxygen.nix
+    ];
+  };
 }
