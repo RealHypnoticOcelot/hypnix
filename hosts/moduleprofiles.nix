@@ -453,9 +453,9 @@
       ../apps/winboat
     ];
   };
-  nodejs-ports = {
+  nodejs-open-ports = {
     system = [
-      ../modules/common/nodejs-ports.nix
+      ../modules/common/nodejs-open-ports.nix
     ];
   };
   fluxer = {
@@ -466,6 +466,46 @@
   kde-oxygen = {
     home-manager = [
       ../modules/common/window-system/plasma-6/themes/oxygen.nix
+    ];
+  };
+  kde-partition-manager = {
+    home-manager = [
+      ../apps/kde-partition-manager/home-manager.nix
+    ];
+  };
+  kontrast = {
+    home-manager = [
+      ../apps/kontrast/home-manager.nix
+    ];
+  };
+  subtitle-composer = {
+    home-manager = [
+      ../apps/subtitle-composer/home-manager.nix
+    ];
+  };
+  audex = {
+    home-manager = [
+      ../apps/audex/home-manager.nix
+    ];
+  };
+  kweather = {
+    home-manager = [
+      ../apps/kweather/home-manager.nix
+    ];
+  };
+  kleopatra = {
+    home-manager = [
+      ../apps/kleopatra/home-manager.nix
+    ];
+  };
+  iso-image-writer = {
+    home-manager = [
+      ../apps/iso-image-writer/home-manager.nix
+    ];
+  };
+  kolourpaint = {
+    home-manager = [
+      ../apps/kolourpaint/home-manager.nix
     ];
   };
 }

@@ -40,7 +40,7 @@ in
     stateVersion = "26.05";
     hostPreset = "p14s-gen6-amd"; # Determines which hosts/{host} folder you import from
     profiles = [ # Presets for different applications, see moduleprofiles.nix to see what available profiles and what they import
-    # These are imported in order! Home Manager also gets imported before system, if both are applicable
+      # These are imported in order! Home Manager also gets imported before system, if both are applicable
       "systemd-boot"
       "disko"
       "sops"
@@ -79,7 +79,7 @@ in
       "ktorrent"
       "open-dyslexic"
       "feh"
-      # "gallery-dl"
+      "gallery-dl"
       "skanlite"
       "tree"
       "thunderbird"
@@ -94,10 +94,16 @@ in
       "cc3dsfs"
       "audiocd-kio"
       "localsend"
-      # "winboat"
-      "nodejs-ports"
+      "nodejs-open-ports"
       "fluxer"
-      "kde-oxygen"
+      "kde-partition-manager"
+      "kontrast"
+      "audex"
+      "subtitle-composer"
+      "kweather"
+      "kleopatra"
+      "iso-image-writer"
+      "kolourpaint"
     ];
     extraModules = []; # Basically just anything you'd need to import that's not a preset
     extraHomeManagerModules = []; # The same, but for Home Manager

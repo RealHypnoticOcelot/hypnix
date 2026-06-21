@@ -3,7 +3,6 @@
   programs.plasma = {
     enable = true;
     overrideConfig = false; # Whether this is the only source of truth for configuration
-    workspace.colorScheme = "BreezeDark";
     powerdevil = {
       battery.dimDisplay.idleTimeout = 900; # In seconds
       battery.turnOffDisplay.idleTimeout = 1800; # In seconds
@@ -21,6 +20,7 @@
     };
     workspace = {
       enableMiddleClickPaste = false;
+      colorScheme = "BreezeDark";
     };
     panels = [
       { # The taskbar at the bottom of the screen
