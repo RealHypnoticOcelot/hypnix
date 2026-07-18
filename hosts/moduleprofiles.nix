@@ -523,4 +523,9 @@
       ../modules/common/pipewire-virtual-mic.nix
     ];
   };
+  qpwgraph = {
+    home-manager = [
+      ../apps/qpwgraph/home-manager.nix
+    ];
+  };
 }
