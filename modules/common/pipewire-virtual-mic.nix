@@ -4,11 +4,20 @@
       "11-virtual-devices" = {
         "context.modules" = [
           {
-            name = "module-null-sink";
+            name = "libpipewire-module-loopback";
             args = {
-              "node.name" = "tts_sink";
-              "node.description" = "TTS Sink";
-              "media.class" = "Audio/Sink";
+              "node.description" = "TTS Virtual Microphone";
+              "capture.props" = {
+                "node.name" = "tts_sink";
+                "node.description" = "TTS Sink";
+                "media.class" = "Audio/Sink";
+              };
+              "playback.props" = {
+                "node.name" = "tts_source";
+                "node.description" = "TTS Source";
+                "media.class" = "Audio/Source";
+              };
+              "audio.position" = [ "FL" "FR" ]; # Required, for some reason
             };
           }
         ];
