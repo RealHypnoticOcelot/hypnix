@@ -508,4 +508,9 @@
       ../apps/kolourpaint/home-manager.nix
     ];
   };
+  piper-tts = {
+    home-manager = [
+      ../apps/piper-tts/home-manager.nix
+    ];
+  };
 }
