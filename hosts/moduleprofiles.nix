@@ -513,4 +513,9 @@
       ../apps/piper-tts/home-manager.nix
     ];
   };
+  kmouth = {
+    home-manager = [
+      ../apps/kmouth/home-manager.nix
+    ];
+  };
 }
