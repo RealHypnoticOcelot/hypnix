@@ -1,7 +1,8 @@
 { pkgs, ... }:
 
 {
-  home.packages = with pkgs.kdePackages; [
-    kmouth
+  home.packages = with pkgs; [
+    kdePackages.kmouth
+    espeak-ng
   ];
 }
