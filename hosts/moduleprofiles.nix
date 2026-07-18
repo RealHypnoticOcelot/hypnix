@@ -518,4 +518,9 @@
       ../apps/kmouth/home-manager.nix
     ];
   };
+  pipewire-virtual-mic = {
+    system = [
+      ../modules/common/pipewire-virtual-mic.nix
+    ];
+  };
 }
