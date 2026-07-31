@@ -1,7 +1,7 @@
 {
   services = {
-    pipewire.extraConfig = {
-      pipewire = {
+    pipewire = {
+      extraConfig.pipewire = {
         "11-virtual-devices" = {
           "context.modules" = [
             {

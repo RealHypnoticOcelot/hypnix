@@ -97,7 +97,7 @@
       "browser.tabs.loadInBackground" = false; # Set FALSE to switch to newly-opened links, and TRUE to not
       "browser.newtabpage.activity-stream.feeds.topsites" = false; # Add shortcuts to new tab
       "network.trr.mode" = 3; # Max Protection DNS over HTTPS
-      "network.trr.uri" = "https://dns.mullvad.net/dns-query"; # Use Mullvad's DoH connection 
+      "network.trr.uri" = "https://dns10.quad9.net/dns-query"; # IP of the DoH connection 
     };
     profiles = {
       "MainProfile" = {
