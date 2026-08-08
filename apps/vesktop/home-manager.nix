@@ -37,11 +37,17 @@
           # This option is also found in aforementioned repository, in aforementioned index files
         };
         ExpressionCloner.enabled = true;
-        FavoriteGifSearch.enabled = true;
         ForceOwnerCrown.enabled = true;
-        FriendsSince.enabled = true;
+        FriendInvites.enabled = true;
+        FullSearchContext.enabled = true;
+        GreetStickerPicker = {
+          enabled = true;
+          greetMode = 1; # Treat greetings as normal messages, can sticker spam
+        };
         iLoveSpam.enabled = true;
-        NormalizeMessageLinks.enabled = true;
+        KeepCurrentChannel.enabled = true;
+        NoMaskedUrlPaste.enabled = true;
+        NoOnboardingDelay.enabled = true;
         NoUnblockToJump.enabled = true;
         PauseInvitesForever.enabled = true;
         PermissionFreeWill.enabled = true;
