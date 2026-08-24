@@ -7,7 +7,7 @@
       SearchEngines = {
         Add = [ 
           {
-            Name = "Startpage";
+            Name = "Declarative Startpage";
             Description = "Startpage Search";
             URLTemplate = "https://www.startpage.com/sp/search?query={searchTerms}&prfe=6419af721e37d90b9602249d42ea246ece39b1011e1bea0fcf1d100ebe0a547dd4cfd4f119c410a6d62282183f17e7eba737af8354ab335d03b384f979fc3806c08c462db7525270b8a381b5eeb9";
             # REALLY long, but this contains user preferences! Now, when we search, theme and everything will always be set by default.
@@ -16,7 +16,7 @@
             SuggestURLTemplate = "https://www.startpage.com/osuggestions?q={searchTerms}";
           }
           {
-            Name = "Kagi";
+            Name = "Declarative Kagi";
             Description = "A privacy-focused, user-centric search engine.";
             URLTemplate = "https://kagi.com/search?q={searchTerms}";
             Method = "GET";
@@ -24,7 +24,7 @@
             SuggestURLTemplate = "https://kagisuggest.com/api/autosuggest?q={searchTerms}";
           }
           {
-            Name = "Mojeek";
+            Name = "Declarative Mojeek";
             Description = "Search the web using Mojeek";
             URLTemplate = "https://www.mojeek.com/search?q={searchTerms}&theme=dark&sumt=0&sumb=0&newtab=1";
             Method = "POST";
@@ -32,11 +32,15 @@
           }
         ];
         Remove = [
-          "DuckDuckGo"
+          # Remove all from https://librewolf.dev/librewolf/source/src/branch/main/assets/search-config-v2.json
+          # I'd remove all the other Wikipedias, but don't want to. Sorry!
+          "Startpage"
+          "DuckDuckGo No-AI"
+          "Mojeek"
           "Wikipedia (en)"
           "LibRedirect"
         ];
-        Default = "Startpage";
+        Default = "Declarative Startpage";
       };
       ExtensionSettings = {
         # You can find extension IDs by going to about:support and going to the extensions section
