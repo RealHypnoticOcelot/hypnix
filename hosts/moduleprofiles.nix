@@ -528,4 +528,9 @@
       ../apps/qpwgraph/home-manager.nix
     ];
   };
+  electrum = {
+    home-manager = [
+      ../apps/electrum/home-manager.nix
+    ];
+  };
 }

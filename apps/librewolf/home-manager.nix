@@ -79,7 +79,7 @@
         };
       };
     };
-    settings = { # These settings apply to all profiles
+    settings = { # These settings should apply to all profiles
       # Librewolf-specific settings
       # "privacy.resistFingerprinting.letterboxing" = true;
       "webgl.disabled" = false;
@@ -90,7 +90,7 @@
       "media.eme.enabled" = true; # Encrypted Media Extensions, or DRM-protected media
       "network.http.referer.XOriginPolicy" = 2; # Limit cross-origin referrers
       # Firefox settings
-      "browser.search.suggest.enabled" = true;
+      "browser.search.suggest.enabled" = false;
       "browser.theme.content-theme" = 0; # Dark theme!
       "browser.newtabpage.activity-stream.showSponsoredCheckboxes" = false; # "Support LibreWolf" checkbox
       "privacy.userContext.enabled" = false; # Container Tabs
