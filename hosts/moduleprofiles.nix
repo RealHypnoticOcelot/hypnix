@@ -533,4 +533,9 @@
       ../apps/electrum/home-manager.nix
     ];
   };
+  sherpa-onnx = {
+    home-manager = [
+      ../apps/sherpa-onnx/home-manager.nix
+    ];
+  };
 }
