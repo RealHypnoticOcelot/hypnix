@@ -538,4 +538,9 @@
       ../apps/sherpa-onnx/home-manager.nix
     ];
   };
+  mcpelauncher = {
+    home-manager = [
+      ../apps/mcpelauncher/home-manager.nix
+    ];
+  };
 }
