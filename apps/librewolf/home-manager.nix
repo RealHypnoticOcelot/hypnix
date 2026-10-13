@@ -91,7 +91,8 @@
       "network.http.referer.XOriginPolicy" = 2; # Limit cross-origin referrers
       # Firefox settings
       "browser.search.suggest.enabled" = false;
-      "extensions.activeThemeID" = "nova-ash@mozilla.org"; # Default theme!
+      "extensions.activeThemeID" = "default-theme@mozilla.org"; # Default theme!
+      "browser.theme.native-theme" = true; # Use Linux system theme
       "browser.newtabpage.activity-stream.showSponsoredCheckboxes" = false; # "Support LibreWolf" checkbox
       "privacy.userContext.enabled" = false; # Container Tabs
       "browser.urlbar.suggest.engines" = false;

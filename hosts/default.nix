@@ -90,7 +90,6 @@ in
       "filezilla"
       "cc3dsfs"
       "audiocd-kio"
-      "localsend"
       "nodejs-open-ports"
       "fluxer"
       "kde-partition-manager"
@@ -105,7 +104,7 @@ in
       "pipewire-virtual-mic"
       "qpwgraph"
       "ungoogled-chromium"
-      # "sherpa-onnx" 
+      "sherpa-onnx" 
       "mcpelauncher"
     ];
     extraModules = []; # Basically just anything you'd need to import that's not a preset
