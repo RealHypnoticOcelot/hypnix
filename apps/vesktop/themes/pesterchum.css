@@ -30,12 +30,12 @@ https://syndishanx.codeberg.page/Website/Update_Classes.html when the theme is l
 
 .theme-dark {
   --chum-background: #000000;
-  --chum-foreground: #ffffff
+  --chum-foreground: #ffffff;
 }
 
 .theme-light {
   --chum-background: #ffffff;
-  --chum-foreground: #000000
+  --chum-foreground: #000000;
 }
 
 .bg__960e4 {
@@ -1457,6 +1457,14 @@ https://syndishanx.codeberg.page/Website/Update_Classes.html when the theme is l
   y: 0px;
 }
 
-.sidebar__5e434::after {
+.sidebar__5e434::after { /* Fixes unthemed color below profile in bottom-left */
   background-color: var(--chum-medium);
+}
+
+.container__8a031 .sidebar__409aa, .content_e9e3ed, .contentHeader_e9e3ed { /* Changes settings colors */
+    background-color: var(--chum-medium);
+}
+
+.vc-card-base, .vc-card-normal, .vc-addon-card { /* Color of Vencord cards */
+    background-color: var(--chum-dark);
 }
