@@ -848,7 +848,7 @@ https://syndishanx.codeberg.page/Website/Update_Classes.html when the theme is l
   bottom: 20px
 }
 
-.searchResultsWrap_a98f3b .container__23ba6 {
+.searchResultsWrap_a98f3b .container_a244c3 {
   position: sticky;
   bottom: 0;
   background: var(--chum-medium);
@@ -858,12 +858,12 @@ https://syndishanx.codeberg.page/Website/Update_Classes.html when the theme is l
   --interactive-hover: #000000
 }
 
-.searchResultsWrap_a98f3b .container__23ba6 .pageButton_c15210 {
+.searchResultsWrap_a98f3b .container_a244c3 .pageButton_c15210 {
   background: var(--chum-medium);
   border: 4px solid var(--chum-dark)
 }
 
-.searchResultsWrap_a98f3b .container__23ba6 .pageButton_c15210.activeButton_c15210 {
+.searchResultsWrap_a98f3b .container_a244c3 .pageButton_c15210.activeButton_c15210 {
   border-color: var(--chum-light);
   color: #000
 }
