@@ -21,10 +21,11 @@ https://syndishanx.codeberg.page/Website/Update_Classes.html when the theme is l
 @import"https://devgocri.github.io/epico/sq.min.css";
 
 :root {
-  --chum-dark: #241a42;
-  --chum-medium: #020204;
-  --chum-light: #241a42;
+  --chum-dark: #c48a00;
+  --chum-medium: #fdb302;
+  --chum-light: #fff700;
   --chum-sidebar-width: 300px;
+  --background-base-lowest: var(--chum-medium); /* Added 10/14/2026 */
 }
 
 .theme-dark {
@@ -1454,4 +1455,8 @@ https://syndishanx.codeberg.page/Website/Update_Classes.html when the theme is l
 #app-mount .wrapper__44b0c .pointerEvents__44b0c[x="14.5"] { /* Fixes alignment of typing indicator in member list */
   x: 0px;
   y: 0px;
+}
+
+.sidebar__5e434::after {
+  background-color: var(--chum-medium);
 }
