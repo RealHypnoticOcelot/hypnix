@@ -2,10 +2,10 @@
 
 {
   programs.librewolf = {
-    enable=true;
+    enable = true;
     policies = {
       SearchEngines = {
-        Add = [ 
+        Add = [ # The names start with "Declarative" so that they're not overriden by LibreWolf search engines with the same name
           {
             Name = "Declarative Startpage";
             Description = "Startpage Search";
@@ -98,7 +98,7 @@
       "browser.urlbar.suggest.engines" = false;
       "browser.urlbar.suggest.quickactions" = false;
       "browser.urlbar.suggest.topsites" = false;
-      "browser.search.separatePrivateDefault" = false; # Whether to use a different search engine for private search
+      "browser.search.separatePrivateDefault.enabled" = true; # Whether to use a different search engine for private search
       "browser.tabs.loadInBackground" = false; # Set FALSE to switch to newly-opened links, and TRUE to not
       "browser.newtabpage.activity-stream.feeds.topsites" = false; # Add shortcuts to new tab
       "network.trr.mode" = 3; # Max Protection DNS over HTTPS
