@@ -87,7 +87,7 @@
       "privacy.sanitize.sanitizeOnShutdown" = false;
       "privacy.clearOnShutdown.history" = false;
       "privacy.clearOnShutdown.downloads" = false;
-      "media.eme.enabled" = true; # Encrypted Media Extensions, or DRM-protected media
+      "media.eme.enabled" = false; # Encrypted Media Extensions, or DRM-protected media
       "network.http.referer.XOriginPolicy" = 2; # Limit cross-origin referrers
       # Firefox settings
       "browser.search.suggest.enabled" = false;
