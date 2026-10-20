@@ -88,6 +88,7 @@
       "privacy.clearOnShutdown.history" = false;
       "privacy.clearOnShutdown.downloads" = false;
       "media.eme.enabled" = false; # Encrypted Media Extensions, or DRM-protected media
+      "browser.eme.ui.enabled" = false; # Whether to prompt enabling DRM when opening a DRM-enabled tab
       "network.http.referer.XOriginPolicy" = 2; # Limit cross-origin referrers
       # Firefox settings
       "browser.search.suggest.enabled" = false;

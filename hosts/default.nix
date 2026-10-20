@@ -84,7 +84,7 @@ in
       "hypno-font"
       "anki"
       "sober"
-      "orion-beta"
+      # "orion-beta"
       "dolphin-mpn"
       "lynx"
       "filezilla"
