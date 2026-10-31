@@ -21,13 +21,13 @@
         # Inside of index.tsx, there's a "name" property
         # Alternatively, just open up Vencord/Vesktop and see what they're named in the plugins tab
         # You can ALSO just open Vencord/Vesktop settings and click "Open Settings Folder", and navigate to settings.json
+        AddAttachments.enabled = true;
         AlwaysExpandRoles.enabled = true;
         BetterRoleContext.enabled = true;
         BetterSettings.enabled = true;
         ClearURLs.enabled = true;
         CopyEmojiMarkdown.enabled = true;
         CopyFileContents.enabled = true;
-        CopyStickerLinks.enabled = true;
         CopyUserURLs.enabled = true;
         CrashHandler.enabled = true;
         DisableCallIdle.enabled = true;
@@ -36,7 +36,7 @@
           toolbarDevMenu = true;
           # This option is also found in aforementioned repository, in aforementioned index files
         };
-        ExpressionCloner.enabled = true;
+        ExpressionManager.enabled = true;
         ForceOwnerCrown.enabled = true;
         FriendInvites.enabled = true;
         FullSearchContext.enabled = true;
@@ -45,6 +45,7 @@
           greetMode = 1; # Treat greetings as normal messages, can sticker spam
         };
         iLoveSpam.enabled = true;
+        ImageFilename.enabled = true;
         KeepCurrentChannel.enabled = true;
         NoMaskedUrlPaste.enabled = true;
         NoOnboardingDelay.enabled = true;

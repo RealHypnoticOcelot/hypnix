@@ -35,7 +35,7 @@ in
       ../etc/nixos/hardware-configuration.nix
     ];
   };
-  # Normal hosts(follow this )
+  # Normal hosts(follow this)
   p14s-gen6-amd = mkHost {
     stateVersion = "26.05";
     hostPreset = "p14s-gen6-amd"; # Determines which hosts/{host} folder you import from
