@@ -59,7 +59,7 @@ git clone https://github.com/realhypnoticocelot/hypnix .
 nano flake.nix
 
 # Build!
-sudo nixos-rebuild boot --flake .#{host}
+sudo nixos-rebuild boot --sudo --flake .#{host}
 ```
 Reboot, and you'll have your fresh new system!
 

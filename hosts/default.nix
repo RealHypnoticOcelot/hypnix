@@ -104,6 +104,7 @@ in
       "pipewire-virtual-mic"
       "ungoogled-chromium"
       "mcpelauncher"
+      "electrum"
       "eigenwallet"
       "tor-browser"
     ];
