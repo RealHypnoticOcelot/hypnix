@@ -10,6 +10,7 @@
       minimizeToTray = false;
       appBadge = false; # Badge on the app icon that indicates notification amount
       hardwareVideoAcceleration = true;
+      nativeTitleBar = true;
     };
     vencord.themes = {
       "Pesterchum" = ./themes/pesterchum.css;

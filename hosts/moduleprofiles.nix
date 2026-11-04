@@ -290,9 +290,12 @@
     ];
   };
   mullvad-vpn = {
-    home-manager = [
-      ../apps/mullvad-vpn/home-manager.nix
+    system = [
+      ../apps/mullvad-vpn
     ];
+    # home-manager = [
+    #   ../apps/mullvad-vpn/home-manager.nix
+    # ];
   };
   ktorrent = {
     home-manager = [
