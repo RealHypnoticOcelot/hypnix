@@ -102,10 +102,10 @@ in
       "kolourpaint"
       "kmouth"
       "pipewire-virtual-mic"
-      "qpwgraph"
       "ungoogled-chromium"
-      "sherpa-onnx" 
       "mcpelauncher"
+      "eigenwallet"
+      "tor-browser"
     ];
     extraModules = []; # Basically just anything you'd need to import that's not a preset
     extraHomeManagerModules = []; # The same, but for Home Manager

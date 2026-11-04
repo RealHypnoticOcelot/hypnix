@@ -543,4 +543,14 @@
       ../apps/mcpelauncher/home-manager.nix
     ];
   };
+  eigenwallet = {
+    home-manager = [
+      ../apps/eigenwallet/home-manager.nix
+    ];
+  };
+  tor-browser = {
+    home-manager = [
+      ../apps/tor-browser/home-manager.nix
+    ];
+  };
 }
