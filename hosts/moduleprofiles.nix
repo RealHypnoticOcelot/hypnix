@@ -556,4 +556,9 @@
       ../apps/tor-browser/home-manager.nix
     ];
   };
+  bisq2 = {
+    home-manager = [
+      ../apps/bisq2/home-manager.nix
+    ];
+  };
 }
