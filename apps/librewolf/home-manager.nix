@@ -83,7 +83,8 @@
       # Librewolf-specific settings
       # "privacy.resistFingerprinting.letterboxing" = true;
       "webgl.disabled" = false;
-      "identity.fxaccounts.enabled" = true;
+      "identity.fxaccounts.enabled" = true; # Firefox Sync accounts
+      "librewolf.jit.enabled-by-default" = true; # Javascript JIT
       "privacy.sanitize.sanitizeOnShutdown" = false;
       "privacy.clearOnShutdown.history" = false;
       "privacy.clearOnShutdown.downloads" = false;
