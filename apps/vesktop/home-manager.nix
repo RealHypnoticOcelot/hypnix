@@ -25,6 +25,7 @@
         AddAttachments.enabled = true;
         AlwaysExpandRoles.enabled = true;
         BetterRoleContext.enabled = true;
+        BetterSearch.enabled = true;
         BetterSettings.enabled = true;
         ClearURLs.enabled = true;
         CopyEmojiMarkdown.enabled = true;
