@@ -566,4 +566,9 @@
       ../modules/common/java.nix
     ];
   };
+  universal-pokemon-randomizer-fvx = {
+    home-manager = [
+      ../apps/universal-pokemon-randomizer-fvx/home-manager.nix
+    ];
+  };
 }

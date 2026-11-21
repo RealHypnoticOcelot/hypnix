@@ -49,6 +49,10 @@
       url = "github:RocaBOT/cc3dsfs";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    upr-fvx = {
+      url = "github:RealHypnoticOcelot/upr-fvx-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, ... } @ inputs:
