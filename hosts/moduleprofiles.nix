@@ -561,4 +561,9 @@
       ../apps/bisq2/home-manager.nix
     ];
   };
+  java = {
+    system = [
+      ../modules/common/java.nix
+    ];
+  };
 }
