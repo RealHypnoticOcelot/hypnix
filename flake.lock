@@ -634,11 +634,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1795304784,
-        "narHash": "sha256-gSQbX/WM8DqEu4wyC4yDLnbMq9b5JcFw05JbvVh0acE=",
+        "lastModified": 1795307154,
+        "narHash": "sha256-l/keqp+7bxxbfYuhOzJKetDTnBc1RKRRi6+L3pxD9V4=",
         "owner": "RealHypnoticOcelot",
         "repo": "upr-fvx-flake",
-        "rev": "589ff52a5c597e55d29abcd086f202ba2c30de4a",
+        "rev": "eb945e1b61c78f6df2bacbcfbe33522341b56f69",
         "type": "github"
       },
       "original": {
