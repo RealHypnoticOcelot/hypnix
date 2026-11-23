@@ -703,11 +703,11 @@
         "upr-fvx-repo": "upr-fvx-repo"
       },
       "locked": {
-        "lastModified": 1795445795,
-        "narHash": "sha256-+LPQHRTiscZpuZUx5qGXT9WjP6ENtDpYghLUub4Daxg=",
+        "lastModified": 1795448825,
+        "narHash": "sha256-OLLiB/3Y13V+oHJEC5myfPgVO5yse+8F8j9dOl1mSqE=",
         "owner": "RealHypnoticOcelot",
         "repo": "upr-fvx-flake",
-        "rev": "b33851d265594c86becc99dfb7cd6f5a38ec42c5",
+        "rev": "0e008c0838b9fbdef6fbd56281215c5466350ece",
         "type": "github"
       },
       "original": {
