@@ -92,20 +92,40 @@
     },
     "cc3dsfs": {
       "inputs": {
+        "cc3dsfs-src": "cc3dsfs-src",
+        "libusb-cmake": "libusb-cmake",
         "nixpkgs": [
           "nixpkgs"
-        ]
+        ],
+        "sfml": "sfml",
+        "sheenbidi": "sheenbidi"
       },
       "locked": {
-        "lastModified": 1781710596,
-        "narHash": "sha256-+pKFTitTWz/kGE0Vk5zb2BTbDl/wDhCvN+IKYyURFmE=",
-        "owner": "RocaBOT",
-        "repo": "cc3dsfs",
-        "rev": "8207d89220a113d0c8e45e60a69743bdb613aa01",
+        "lastModified": 1795408308,
+        "narHash": "sha256-vQfH8b8FBsGW53uDmPr58NhiskMNHLtTeaFgkwhMHIw=",
+        "owner": "RealHypnoticOcelot",
+        "repo": "cc3dsfs-flake",
+        "rev": "c50e23a19792abb56485623f1fb16c56d87a864f",
         "type": "github"
       },
       "original": {
-        "owner": "RocaBOT",
+        "owner": "RealHypnoticOcelot",
+        "repo": "cc3dsfs-flake",
+        "type": "github"
+      }
+    },
+    "cc3dsfs-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1789955354,
+        "narHash": "sha256-AB109sYRSm5XEmye6uncR4SWWbcQtCKbDqYNY5+C8rM=",
+        "owner": "Lorenzooone",
+        "repo": "cc3dsfs",
+        "rev": "6c039255a32970ac77b16ae5d8ef52d44464ede5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Lorenzooone",
         "repo": "cc3dsfs",
         "type": "github"
       }
@@ -314,11 +334,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1795268568,
-        "narHash": "sha256-1RJm4DEu7YHJv94sjSY7sjqT+kHx/AUwmtUN4dtFBUo=",
+        "lastModified": 1795366757,
+        "narHash": "sha256-Tp4Kh4R7ID1f2mMCDlb2PiFQ/DZZsnXB2u2juWN+TT4=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "6857c7f7c338ad181729c52071386b0d3afa24bc",
+        "rev": "3b8140d21fa0a70b1b38c2ed29853dfe686234a6",
         "type": "github"
       },
       "original": {
@@ -347,6 +367,22 @@
       "original": {
         "owner": "nix-community",
         "repo": "impermanence",
+        "type": "github"
+      }
+    },
+    "libusb-cmake": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1784403424,
+        "narHash": "sha256-cXbZdtKUar+7SIYbnCUn1TZeg2cNsiw4WWHNUYe4vtI=",
+        "owner": "libusb",
+        "repo": "libusb-cmake",
+        "rev": "bea6567b63796ab27c1c33257d230284fb2d8316",
+        "type": "github"
+      },
+      "original": {
+        "owner": "libusb",
+        "repo": "libusb-cmake",
         "type": "github"
       }
     },
@@ -474,6 +510,38 @@
         "stylix": "stylix",
         "ucodenix": "ucodenix",
         "upr-fvx": "upr-fvx"
+      }
+    },
+    "sfml": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1794581678,
+        "narHash": "sha256-UQutuHyjytM+J1w1n5xkOG2U4N0XfISlCz2hkHYJPZM=",
+        "owner": "SFML",
+        "repo": "SFML",
+        "rev": "f5887b46307bdacb451ee6fd79349bbb8a79eaeb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SFML",
+        "repo": "SFML",
+        "type": "github"
+      }
+    },
+    "sheenbidi": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1793260601,
+        "narHash": "sha256-D5GbFbZOUaTsm3g5oZkGmDbpHTG3c5ZigOaPtuwxLHY=",
+        "owner": "Tehreer",
+        "repo": "SheenBidi",
+        "rev": "67b6f9d1489fb9222a9f46bba12649d4e7e3bfef",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Tehreer",
+        "repo": "SheenBidi",
+        "type": "github"
       }
     },
     "sops-nix": {
@@ -631,19 +699,36 @@
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
-        ]
+        ],
+        "upr-fvx-repo": "upr-fvx-repo"
       },
       "locked": {
-        "lastModified": 1795307154,
-        "narHash": "sha256-l/keqp+7bxxbfYuhOzJKetDTnBc1RKRRi6+L3pxD9V4=",
+        "lastModified": 1795445795,
+        "narHash": "sha256-+LPQHRTiscZpuZUx5qGXT9WjP6ENtDpYghLUub4Daxg=",
         "owner": "RealHypnoticOcelot",
         "repo": "upr-fvx-flake",
-        "rev": "eb945e1b61c78f6df2bacbcfbe33522341b56f69",
+        "rev": "b33851d265594c86becc99dfb7cd6f5a38ec42c5",
         "type": "github"
       },
       "original": {
         "owner": "RealHypnoticOcelot",
         "repo": "upr-fvx-flake",
+        "type": "github"
+      }
+    },
+    "upr-fvx-repo": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1795344321,
+        "narHash": "sha256-+UM/YdbmsRdYC6j8oZV4g+klFsBuTQrYgU+YJazQHrE=",
+        "owner": "upr-fvx",
+        "repo": "universal-pokemon-randomizer-fvx",
+        "rev": "18eaf5e1b00bebd0f178ca4ef4f4bfcc88ba3ce9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "upr-fvx",
+        "repo": "universal-pokemon-randomizer-fvx",
         "type": "github"
       }
     }

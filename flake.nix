@@ -46,7 +46,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     cc3dsfs = {
-      url = "github:RocaBOT/cc3dsfs";
+      url = "github:RealHypnoticOcelot/cc3dsfs-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     upr-fvx = {
