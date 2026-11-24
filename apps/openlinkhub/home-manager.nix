@@ -7,6 +7,7 @@
       enable = true;
       settings = {
         celsius = false;
+        rgbOff = true;
       };
     };
   };
