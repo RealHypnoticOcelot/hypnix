@@ -1,7 +1,10 @@
 { pkgs, ... }:
 
 {
-  home.packages = with pkgs; [
-    openlinkhub
-  ];
+  services.openlinkhub = {
+    enable = true;
+    dashboard = {
+      enable = true;
+    };
+  };
 }

@@ -9,4 +9,8 @@
       "flathub:app/app.fluxer.Fluxer//stable"
     ];
   };
+  # home.packages = with pkgs; [
+  #   fluxer-bin
+  # ];
+  # Soon, once it merges into unstable!
 }
