@@ -5,6 +5,9 @@
     enable = true;
     dashboard = {
       enable = true;
+      settings = {
+        celsius = false;
+      };
     };
   };
 }
