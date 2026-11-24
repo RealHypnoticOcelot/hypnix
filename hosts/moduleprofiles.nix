@@ -576,4 +576,9 @@
       ../modules/common/headsetcontrol.nix
     ];
   };
+  openlinkhub = {
+    home-manager = [
+      ../apps/openlinkhub/home-manager.nix
+    ];
+  };
 }
