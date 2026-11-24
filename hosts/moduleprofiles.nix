@@ -577,6 +577,9 @@
     ];
   };
   openlinkhub = {
+    system = [
+      ../apps/openlinkhub
+    ]
     home-manager = [
       ../apps/openlinkhub/home-manager.nix
     ];
