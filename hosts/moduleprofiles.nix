@@ -571,4 +571,9 @@
       ../apps/universal-pokemon-randomizer-fvx/home-manager.nix
     ];
   };
+  headsetcontrol = {
+    home-manager = [
+      ../modules/common/headsetcontrol.nix
+    ];
+  };
 }
