@@ -2,5 +2,5 @@
 {
   programs.partitionmanager = {
     enable = true;
-  }
+  };
 }
