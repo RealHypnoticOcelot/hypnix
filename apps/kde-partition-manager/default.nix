@@ -1,0 +1,6 @@
+{ ... }:
+{
+  programs.partitionmanager = {
+    enable = true;
+  }
+}

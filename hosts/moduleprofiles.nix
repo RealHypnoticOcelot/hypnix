@@ -472,8 +472,8 @@
     ];
   };
   kde-partition-manager = {
-    home-manager = [
-      ../apps/kde-partition-manager/home-manager.nix
+    system = [
+      ../apps/kde-partition-manager
     ];
   };
   kontrast = {
